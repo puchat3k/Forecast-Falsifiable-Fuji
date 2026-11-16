@@ -76,7 +76,30 @@ print(fuji.leaderboard(exp))
 - binary resolution
 - Brier scoring for members, aggregate, and baselines
 - experiment leaderboard
+- descriptive calibration bins (forecast probability versus observed event frequency)
+- paired comparison against an explicitly locked baseline on the **same resolved propositions**
 - zero runtime dependencies outside Python's standard library
+
+## Measuring whether forecasts help
+
+After enough cases have resolved, inspect a method's calibration and compare it
+against the baseline that was locked *before* the outcome. These are deterministic
+analyses of the existing ledger; they do not generate predictions or consume model tokens.
+
+```python
+calibration = fuji.calibration_report(exp, "AGGREGATE", "mean", bins=5)
+comparison = fuji.compare_to_baseline(exp, "AGGREGATE", "mean", "NAIVE_50")
+```
+
+Both reports distinguish `insufficient_data` from `descriptive_only`. Their default
+minimum of 20 resolved or paired propositions is a conservative **display threshold,
+not a statistical significance criterion**. Reports include the actual sample
+size; even larger samples can be correlated, selected or unrepresentative. A
+positive Brier improvement does not establish causality, business value or that
+the forecasting system generalises. Absent baseline pairs are never silently
+substituted with unrelated historical questions.
+
+For Frays integration, see [the SHADOW adapter contract](docs/FRAYS-SHADOW-ADAPTER.md).
 
 ## What it intentionally does not include yet
 
