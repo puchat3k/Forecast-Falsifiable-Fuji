@@ -270,6 +270,83 @@ class Fuji:
         ).fetchall()
         return [dict(r) for r in rows]
 
+    def calibration_report(self, experiment_id: str, method_type: str, method_name: str, *,
+                           bins: int = 5, min_resolved: int = 20) -> dict[str, Any]:
+        """Describe observed calibration; never interpret small samples as validated skill.
+
+        Each resolved proposition contributes once to the selected forecaster/method.
+        Cases may be correlated, so this is descriptive rather than a confidence test.
+        """
+        if method_type not in ("FORECAST", "AGGREGATE", "BASELINE"):
+            raise ValueError("invalid method type")
+        if not 2 <= bins <= 20 or not 1 <= min_resolved:
+            raise ValueError("invalid report bounds")
+        rows = self.conn.execute(
+            """SELECT s.probability,s.outcome,s.brier
+               FROM scores s JOIN propositions p ON p.proposition_id=s.proposition_id
+               JOIN cases c ON c.case_id=p.case_id
+               WHERE c.experiment_id=? AND s.method_type=? AND s.method_name=?""",
+            (experiment_id, method_type, method_name),
+        ).fetchall()
+        buckets: list[list[sqlite3.Row]] = [[] for _ in range(bins)]
+        for row in rows:
+            index = min(int(float(row["probability"]) * bins), bins - 1)
+            buckets[index].append(row)
+        return {
+            "method_type": method_type,
+            "method_name": method_name,
+            "resolved_count": len(rows),
+            "minimum_resolved": min_resolved,
+            "status": "descriptive_only" if len(rows) >= min_resolved else "insufficient_data",
+            "mean_brier": sum(float(r["brier"]) for r in rows) / len(rows) if rows else None,
+            "bins": [
+                {
+                    "lower": i / bins,
+                    "upper": (i + 1) / bins,
+                    "count": len(group),
+                    "mean_probability": sum(float(r["probability"]) for r in group) / len(group) if group else None,
+                    "observed_rate": sum(int(r["outcome"]) for r in group) / len(group) if group else None,
+                }
+                for i, group in enumerate(buckets)
+            ],
+        }
+
+    def compare_to_baseline(self, experiment_id: str, method_type: str, method_name: str,
+                            baseline_name: str, *, min_paired: int = 20) -> dict[str, Any]:
+        """Compare on identical resolved propositions, not different question sets.
+
+        Positive mean_brier_improvement means the candidate beat the baseline;
+        neither this value nor sample count proves statistical significance.
+        """
+        if method_type not in ("FORECAST", "AGGREGATE"):
+            raise ValueError("candidate must be a forecast or aggregate")
+        if min_paired < 1:
+            raise ValueError("min_paired must be positive")
+        rows = self.conn.execute(
+            """SELECT candidate.brier AS candidate_brier, baseline.brier AS baseline_brier
+               FROM scores candidate
+               JOIN scores baseline ON baseline.proposition_id=candidate.proposition_id
+               JOIN propositions p ON p.proposition_id=candidate.proposition_id
+               JOIN cases c ON c.case_id=p.case_id
+               WHERE c.experiment_id=? AND candidate.method_type=?
+                 AND candidate.method_name=? AND baseline.method_type='BASELINE'
+                 AND baseline.method_name=?""",
+            (experiment_id, method_type, method_name, baseline_name),
+        ).fetchall()
+        n = len(rows)
+        return {
+            "candidate": f"{method_type}:{method_name}",
+            "baseline": baseline_name,
+            "paired_count": n,
+            "minimum_paired": min_paired,
+            "status": "descriptive_only" if n >= min_paired else "insufficient_data",
+            "candidate_mean_brier": sum(float(r["candidate_brier"]) for r in rows) / n if n else None,
+            "baseline_mean_brier": sum(float(r["baseline_brier"]) for r in rows) / n if n else None,
+            "mean_brier_improvement": sum(
+                float(r["baseline_brier"]) - float(r["candidate_brier"]) for r in rows
+            ) / n if n else None,
+        }
+
     def _insert_score(self, proposition_id: str, method_type: str, method_name: str,
                       probability: float, outcome: int, brier: float) -> None:
         self.conn.execute(
