@@ -11,7 +11,6 @@ import math
 import os
 import re
 import sqlite3
-import tempfile
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -75,15 +74,15 @@ class WorkflowFuji:
         with self.lockpath.open("a+b") as guard:
             os.fchmod(guard.fileno(), 0o600)
             fcntl.flock(guard.fileno(), fcntl.LOCK_EX)
-            disk = sqlite3.connect(self.path)
+            disk = Fuji(self.path)
             os.chmod(self.path, 0o600)
             work = Fuji(":memory:")
             try:
-                disk.backup(work.conn)
+                disk.conn.backup(work.conn)
                 self._install_guards(work.conn)
                 yield work
                 work.conn.commit()
-                work.conn.backup(disk)
+                work.conn.backup(disk.conn)
             finally:
                 work.close()
                 disk.close()
