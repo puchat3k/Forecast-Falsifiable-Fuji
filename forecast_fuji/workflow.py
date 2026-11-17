@@ -295,7 +295,13 @@ class WorkflowFuji:
                 raise PermissionError("purpose_mismatch")
             if observed < _instant(casemeta["earliest_observable_at"]):
                 raise ValueError("premature_resolution")
-            if request["source_ref"] != propmeta["resolution_source"]:
+            expected = propmeta["resolution_source"]
+            # An exact URI or an explicit namespace (e.g. "gmail:") may be fixed
+            # before the final provider-issued message ID exists. The authority
+            # callback must still approve the exact observed source reference.
+            source_matches = (request["source_ref"].startswith(expected)
+                              and len(request["source_ref"]) > len(expected)) if expected.endswith(":") else request["source_ref"] == expected
+            if not source_matches:
                 raise ValueError("resolution_source_mismatch")
             scores = fuji.resolve(prev["proposition_id"], request["outcome"],
                 notes=_canonical({"source_sha256": request["source_sha256"],
