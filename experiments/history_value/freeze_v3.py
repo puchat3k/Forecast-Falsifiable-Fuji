@@ -42,9 +42,18 @@ PROTOCOL = {**v1.PROTOCOL, "schema": "fuji.history-value.protocol.v3", "status":
 
 
 def main():
+    import sys
+    global FROZEN
+    seed, protocol = SEED, PROTOCOL
+    if "--replicate" in sys.argv:  # exact v3 design on a fresh seed; same hypotheses, analysis and decision rule
+        seed = 20261125
+        FROZEN = HERE / "frozen_v3r"
+        protocol = {**PROTOCOL, "seed": seed, "status": "FROZEN before v3-replication scoring",
+                    "replication_of": "v3 (seed 20261124, freeze 7c2deaf); pre-registered: H2 must again be HELPS "
+                                      "for the replication to count as replicated"}
     FROZEN.mkdir(parents=True, exist_ok=True)
-    cases = v1.generate(SEED, COHORTS)
-    for name, data in {"protocol.json": PROTOCOL, "cases.json": cases}.items():
+    cases = v1.generate(seed, COHORTS)
+    for name, data in {"protocol.json": protocol, "cases.json": cases}.items():
         (FROZEN / name).write_text(json.dumps(data, indent=1, sort_keys=True) + "\n")
     root = HERE.parent.parent
     digest = {n: hashlib.sha256((FROZEN / n).read_bytes()).hexdigest() for n in ("protocol.json", "cases.json")}
