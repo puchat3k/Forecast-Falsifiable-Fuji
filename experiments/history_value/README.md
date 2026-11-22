@@ -54,6 +54,17 @@ Adjusted minus unassisted: −0.0033 [−0.0147, +0.0087], **inconclusive**.
 - 2 are `WITHHELD_INCOMPATIBLE`: their horizons (51 and 82 days) are not in the family rules.
 - 1 is `WITHHELD_SPARSE`: there is no labelled history.
 
+## When does it help? (EXPLORATORY, post hoc: `explore.py` → `results/EXPLORATORY.md`)
+These slices come from the already-scored run. They were not pre-registered and do not change the verdict.
+- **The rate is current** (|rate − true base| ≤ 0.10, 116 cases): history **helps**, −0.0199 [−0.0387, −0.0002].
+- **The rate is stale** (> 0.10, 117 cases): history **hurts**, +0.0132 [+0.0009, +0.0263].
+- **Worst case:** a large requested shift on a stale rate hurts badly (+0.161, 7 cases).
+- **More history is not better:** with 50+ records the result is +0.0053 (inconclusive). Long cohorts pool stale records.
+
+So the useful regime is a cohort whose rate is current, and the reader cannot yet tell current from stale. That is the guard to build next.
+
+**Independent cross-check:** frays-platform #310's own Fuji scoring path (`experiments/next-move-benchmark/history-value/score-with-310-harness.mjs`, through `lib/fuji_bridge.py`) reproduces the paired Brier scores exactly: 0.2614, 0.2545 and 0.2581 (n=233).
+
 ## Verdict under the frozen decision rule
 The overall paired interval is not below 0, and one period (drift, after the change) HURTS. So the frozen rule says **do not expose the signal to analysts yet**.
 
