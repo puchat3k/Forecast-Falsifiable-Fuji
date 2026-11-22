@@ -1,0 +1,500 @@
+{
+ "code_drift_since_freeze": [],
+ "data": "SYNTHETIC (seeded generator in freeze.py); validates the method only",
+ "existing_310_slice": [
+  {
+   "applied": false,
+   "brier_unassisted": 0.2025,
+   "case_key": "h3-supplier-outstanding-approval:r2:plain",
+   "fallback": "WITHHELD_INCOMPATIBLE: horizon_days_not_allowed",
+   "horizon_days": 51,
+   "member": "plain",
+   "p_adjusted": 0.55,
+   "p_unassisted": 0.55,
+   "reasons": [
+    "horizon_days_not_allowed"
+   ],
+   "statement": "B's credit committee approves A's account for the EUR 0.37 / 3.8M deal by the end of April",
+   "status": "WITHHELD_INCOMPATIBLE"
+  },
+  {
+   "applied": false,
+   "brier_unassisted": 0.16,
+   "case_key": "h3-supplier-outstanding-approval:r2:core_fuji_ap_nd",
+   "fallback": "WITHHELD_INCOMPATIBLE: horizon_days_not_allowed",
+   "horizon_days": 82,
+   "member": "core_fuji_ap_nd",
+   "p_adjusted": 0.6,
+   "p_unassisted": 0.6,
+   "reasons": [
+    "horizon_days_not_allowed"
+   ],
+   "statement": "B's credit committee approves A's account for a volume-commitment price deal by the end of",
+   "status": "WITHHELD_INCOMPATIBLE"
+  },
+  {
+   "applied": false,
+   "brier_unassisted": 0.3025,
+   "case_key": "c1-saas-renewal-term:r2:core_fuji_ap_nd",
+   "fallback": "WITHHELD_SPARSE: 0 resolved < min_resolved 10",
+   "horizon_days": 30,
+   "member": "core_fuji_ap_nd",
+   "p_adjusted": 0.45,
+   "p_unassisted": 0.45,
+   "reasons": [
+    "0 resolved < min_resolved 10"
+   ],
+   "statement": "The site 1 pilot passes and a renewal at no more than GBP 120,000/yr is agreed by both par",
+   "status": "WITHHELD_SPARSE"
+  }
+ ],
+ "fallback_examples": {
+  "WITHHELD_SPARSE": {
+   "adjusted": 0.2138,
+   "case": "prior_err_0.30-000",
+   "note": "WITHHELD_SPARSE: 0 resolved < min_resolved 10",
+   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=credit_committee, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-01-06T05:26:59.696349Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_SPARSE (0 resolved < min_resolved 10)\nObserved rate: withheld\nCohort: eligible 0 | resolved 0 (0 approved, 0 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)\nNot matched: other_field_values 573, not_locked_by_cutoff 135\nProvenance: ledger sha256 d1bd8f667e95d085 | query sha256 b62e42cc372044a2 | 0 contributing records",
+   "unassisted": 0.2138
+  },
+  "WITHHELD_UNSTABLE": {
+   "adjusted": 0.7651,
+   "case": "drift_prior_err_0.20-034",
+   "note": "WITHHELD_UNSTABLE: recent 15 rate 0.73 vs older 1.00 (z=-2.15)",
+   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=legal, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-05-13T21:01:08.685384Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_UNSTABLE (recent 15 rate 0.73 vs older 1.00 (z=-2.15))\nObserved rate: withheld\nCohort: eligible 30 | resolved 30 (26 approved, 4 not) | unresolved at cutoff 0 (not counted either way) | window still open 4 (not counted)\nNot matched: other_field_values 560, not_locked_by_cutoff 114\nProvenance: ledger sha256 d1bd8f667e95d085 | query sha256 0526c221214d37a2 | 30 contributing records: 0a8fdbcb, 0cdc4a47, 29d7b1ab, 357e362a, 36e4bfaf, 370df3ae, 37cd379e, 397777fa, 3f05e78f, 4ea52654, 56a91980, 63a56651, 693c695e, 79cb30f0, 88891bf5, 9671ef71, 9edf1cbe, a6a9a1e2, a7d324d4, af7b0643, b5107e83, bfa2cc72, c9b21f18, ca994026, d15fca3b, d192d0de, e3358069, f261a21d, f57c4168, fda4e847",
+   "unassisted": 0.7651
+  }
+ },
+ "fallback_unchanged_when_withheld": true,
+ "freeze": {
+  "cases.json": "917c4d9f8d27c1f2004ec06c613206041d16bb2c0ae9c19cc0eab01d099a8754",
+  "experiments/history_value/analyze_v3.py": "6bb95d241752df67358199d352073757dca48fcbbf81cbb057d9194e5b109798",
+  "experiments/history_value/combine.py": "a9f1b0ccee6b0cbb0cd9e29f383759ede7c4da203f10facfc4a2e8431dd18ae6",
+  "forecast_fuji/history.py": "82d8762f6614f99166a00729e42df965780d20584a5965774eee7f88842043b9",
+  "protocol.json": "5a0ed3a4afec8b1fa2119d06b671b487e6c6cca7f3f6e63fc6722cad568df18f"
+ },
+ "fuji_scores_paired": {
+  "adjusted": {
+   "mean_brier": 0.2091,
+   "n": 554
+  },
+  "rate_alone": {
+   "mean_brier": 0.2323,
+   "n": 554
+  },
+  "unassisted": {
+   "mean_brier": 0.2288,
+   "n": 554
+  }
+ },
+ "guards": [
+  "stability"
+ ],
+ "harm_by_group": {
+  "drift_prior_err_0.20": 21,
+  "prior_err_0.00": 38,
+  "prior_err_0.10": 54,
+  "prior_err_0.20": 42,
+  "prior_err_0.30": 46
+ },
+ "harm_top10": [
+  {
+   "adjusted": 0.8752,
+   "anchor_at": "2026-03-12T13:05:04.456030Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.766,
+   "brier_rate_alone": 1.0,
+   "brier_unassisted": 0.2694,
+   "case_key": "drift_prior_err_0.20-017",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 10,
+   "n_unresolved": 0,
+   "rate_alone": 1.0,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.519,
+   "why": "adjusted with n=10, r=1.000, m=0.537, lambda=0.500"
+  },
+  {
+   "adjusted": 0.9174,
+   "anchor_at": "2026-03-16T02:18:54.141713Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.8416,
+   "brier_rate_alone": 1.0,
+   "brier_unassisted": 0.3717,
+   "case_key": "drift_prior_err_0.20-020",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 11,
+   "n_unresolved": 0,
+   "rate_alone": 1.0,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.6097,
+   "why": "adjusted with n=11, r=1.000, m=0.537, lambda=0.524"
+  },
+  {
+   "adjusted": 0.7639,
+   "anchor_at": "2026-04-26T23:57:21.716034Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5835,
+   "brier_rate_alone": 0.7973,
+   "brier_unassisted": 0.1691,
+   "case_key": "drift_prior_err_0.20-029",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 28,
+   "n_unresolved": 0,
+   "rate_alone": 0.8929,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.4112,
+   "why": "adjusted with n=28, r=0.893, m=0.510, lambda=0.737"
+  },
+  {
+   "adjusted": 0.7097,
+   "anchor_at": "2026-03-31T00:46:44.169675Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5037,
+   "brier_rate_alone": 0.8265,
+   "brier_unassisted": 0.1343,
+   "case_key": "drift_prior_err_0.20-024",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 22,
+   "n_unresolved": 0,
+   "rate_alone": 0.9091,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.3665,
+   "why": "adjusted with n=22, r=0.909, m=0.551, lambda=0.688"
+  },
+  {
+   "adjusted": 0.8259,
+   "anchor_at": "2026-09-25T00:52:56.407130Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.6821,
+   "brier_rate_alone": 0.6553,
+   "brier_unassisted": 0.3127,
+   "case_key": "drift_prior_err_0.20-066",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 63,
+   "n_unresolved": 0,
+   "rate_alone": 0.8095,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.5592,
+   "why": "adjusted with n=63, r=0.809, m=0.480, lambda=0.863"
+  },
+  {
+   "adjusted": 0.7533,
+   "anchor_at": "2026-06-16T20:02:51.535553Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5675,
+   "brier_rate_alone": 0.6732,
+   "brier_unassisted": 0.1983,
+   "case_key": "drift_prior_err_0.20-043",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 39,
+   "n_unresolved": 0,
+   "rate_alone": 0.8205,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.4453,
+   "why": "adjusted with n=39, r=0.821, m=0.460, lambda=0.796"
+  },
+  {
+   "adjusted": 0.8133,
+   "anchor_at": "2026-10-27T21:49:07.580589Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.6615,
+   "brier_rate_alone": 0.6445,
+   "brier_unassisted": 0.297,
+   "case_key": "drift_prior_err_0.20-074",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 71,
+   "n_unresolved": 1,
+   "rate_alone": 0.8028,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.545,
+   "why": "adjusted with n=71, r=0.803, m=0.483, lambda=0.877"
+  },
+  {
+   "adjusted": 0.7228,
+   "anchor_at": "2026-06-26T09:23:03.588828Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5224,
+   "brier_rate_alone": 0.6877,
+   "brier_unassisted": 0.1663,
+   "case_key": "drift_prior_err_0.20-045",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 41,
+   "n_unresolved": 0,
+   "rate_alone": 0.8293,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.4078,
+   "why": "adjusted with n=41, r=0.829, m=0.481, lambda=0.804"
+  },
+  {
+   "adjusted": 0.7388,
+   "anchor_at": "2026-11-02T00:56:25.169214Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5458,
+   "brier_rate_alone": 0.6268,
+   "brier_unassisted": 0.205,
+   "case_key": "drift_prior_err_0.20-075",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 72,
+   "n_unresolved": 1,
+   "rate_alone": 0.7917,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.4528,
+   "why": "adjusted with n=72, r=0.792, m=0.484, lambda=0.878"
+  },
+  {
+   "adjusted": 0.8963,
+   "anchor_at": "2026-06-14T08:58:03.935499Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.8034,
+   "brier_rate_alone": 0.6732,
+   "brier_unassisted": 0.4821,
+   "case_key": "drift_prior_err_0.20-042",
+   "cohort": "drift_prior_err_0.20",
+   "cohort_period": "drift_prior_err_0.20",
+   "n_resolved": 39,
+   "n_unresolved": 0,
+   "rate_alone": 0.8205,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.7,
+   "unassisted": 0.6943,
+   "why": "adjusted with n=39, r=0.821, m=0.460, lambda=0.796"
+  }
+ ],
+ "protocol_status": "FROZEN before v3-replication scoring",
+ "shadow": {
+  "actions_enabled": false,
+  "forecast_only": true,
+  "mode": "SHADOW"
+ },
+ "summary": {
+  "ALL": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0298,
+     -0.0092
+    ],
+    "mean": -0.0197,
+    "verdict": "HELPS"
+   },
+   "brier_paired": {
+    "adjusted": 0.2091,
+    "rate_alone": 0.2323,
+    "unassisted": 0.2288
+   },
+   "cases": 708,
+   "coverage": 0.782,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0154,
+   "history_worse_cases": 201,
+   "paired": 554,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.0179,
+     0.0243
+    ],
+    "mean": 0.0035,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 73,
+    "WITHHELD_UNSTABLE": 81
+   }
+  },
+  "drift_prior_err_0.20": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.1113,
+     0.0137
+    ],
+    "mean": -0.051,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.2297,
+    "rate_alone": 0.2407,
+    "unassisted": 0.2807
+   },
+   "cases": 148,
+   "coverage": 0.446,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0227,
+   "history_worse_cases": 21,
+   "paired": 66,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.1326,
+     0.0574
+    ],
+    "mean": -0.04,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 16,
+    "WITHHELD_UNSTABLE": 66
+   }
+  },
+  "prior_err_0.00": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0101,
+     0.0141
+    ],
+    "mean": 0.0019,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.2308,
+    "rate_alone": 0.2369,
+    "unassisted": 0.2289
+   },
+   "cases": 132,
+   "coverage": 0.811,
+   "full_set_adjusted_with_fallback_minus_unassisted": 0.0016,
+   "history_worse_cases": 38,
+   "paired": 107,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.0272,
+     0.0435
+    ],
+    "mean": 0.008,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 14,
+    "WITHHELD_UNSTABLE": 11
+   }
+  },
+  "prior_err_0.10": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.006,
+     0.0046
+    ],
+    "mean": -0.0005,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.2055,
+    "rate_alone": 0.2348,
+    "unassisted": 0.206
+   },
+   "cases": 146,
+   "coverage": 0.884,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0005,
+   "history_worse_cases": 54,
+   "paired": 129,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.004,
+     0.0607
+    ],
+    "mean": 0.0288,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 14,
+    "WITHHELD_UNSTABLE": 3
+   }
+  },
+  "prior_err_0.20": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0445,
+     -0.0096
+    ],
+    "mean": -0.0269,
+    "verdict": "HELPS"
+   },
+   "brier_paired": {
+    "adjusted": 0.1809,
+    "rate_alone": 0.2172,
+    "unassisted": 0.2078
+   },
+   "cases": 147,
+   "coverage": 0.905,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0244,
+   "history_worse_cases": 42,
+   "paired": 133,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.0346,
+     0.0526
+    ],
+    "mean": 0.0095,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 14
+   }
+  },
+  "prior_err_0.30": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0556,
+     -0.013
+    ],
+    "mean": -0.0346,
+    "verdict": "HELPS"
+   },
+   "brier_paired": {
+    "adjusted": 0.2136,
+    "rate_alone": 0.2378,
+    "unassisted": 0.2483
+   },
+   "cases": 135,
+   "coverage": 0.881,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0305,
+   "history_worse_cases": 46,
+   "paired": 119,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.0594,
+     0.0354
+    ],
+    "mean": -0.0105,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 15,
+    "WITHHELD_UNSTABLE": 1
+   }
+  }
+ }
+}

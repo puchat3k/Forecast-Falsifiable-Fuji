@@ -1,0 +1,87 @@
+{
+ "H1_dose_response_by_prior_error": {
+  "drift_prior_err_0.20": {
+   "cases": 66,
+   "ci95": [
+    -0.1113,
+    0.0137
+   ],
+   "mean": -0.051,
+   "verdict": "inconclusive",
+   "worse": 21
+  },
+  "prior_err_0.00": {
+   "cases": 107,
+   "ci95": [
+    -0.0101,
+    0.0141
+   ],
+   "mean": 0.0019,
+   "verdict": "inconclusive",
+   "worse": 38
+  },
+  "prior_err_0.10": {
+   "cases": 129,
+   "ci95": [
+    -0.006,
+    0.0046
+   ],
+   "mean": -0.0005,
+   "verdict": "inconclusive",
+   "worse": 54
+  },
+  "prior_err_0.20": {
+   "cases": 133,
+   "ci95": [
+    -0.0445,
+    -0.0096
+   ],
+   "mean": -0.0269,
+   "verdict": "HELPS",
+   "worse": 42
+  },
+  "prior_err_0.30": {
+   "cases": 119,
+   "ci95": [
+    -0.0556,
+    -0.013
+   ],
+   "mean": -0.0346,
+   "verdict": "HELPS",
+   "worse": 46
+  }
+ },
+ "H2_visible_gap_regime": {
+  "gap < 0.1": {
+   "cases": 186,
+   "ci95": [
+    -0.0062,
+    0.0038
+   ],
+   "mean": -0.0011,
+   "verdict": "inconclusive",
+   "worse": 75
+  },
+  "gap >= 0.1": {
+   "cases": 368,
+   "ci95": [
+    -0.044,
+    -0.014
+   ],
+   "mean": -0.0291,
+   "verdict": "HELPS",
+   "worse": 126
+  }
+ },
+ "coverage": {
+  "adjusted_ran": 554,
+  "all": 708,
+  "gap_regime_ran": 368
+ },
+ "decision": "EXPOSE in shadow pilot, shown only when the guard passes and the visible gap >= 0.10",
+ "fallback_unchanged": true,
+ "withheld": {
+  "WITHHELD_SPARSE": 73,
+  "WITHHELD_UNSTABLE": 81
+ }
+}

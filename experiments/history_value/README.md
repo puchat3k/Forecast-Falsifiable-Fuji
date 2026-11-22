@@ -143,7 +143,41 @@ python3 -m experiments.history_value.analyze_v3
 - **Gap ≥ 0.10:** inconclusive on v1 (+0.0005) and on v2 (−0.0006). In those generators the analyst's base-rate error was smaller (0.15 or less), and much of the gap came from drift.
 - **So the gain depends on the analyst having a large, stable base-rate error.** A real pilot has to measure whether analysts actually do.
 
-## When does history help? Answer across all three rounds
+## v3 replication (`frozen_v3r/`, freeze commit `a7dccf5` before scoring; fresh seed 20261125)
+**Design:** the same design, hypotheses, analysis and decision rule as v3. Pre-registered: the v3 result counts as replicated only if H2 is again HELPS.
+
+```bash
+python3 -m experiments.history_value.run --frozen experiments/history_value/frozen_v3r --results experiments/history_value/results_v3r --guards stability
+python3 -m experiments.history_value.analyze_v3 experiments/history_value/results_v3r
+```
+
+**Overall:**
+
+| Coverage | Unassisted | Rate alone | Adjusted | Adjusted − unassisted [95% CI] |
+|---|---|---|---|---|
+| 554/708 | 0.2288 | 0.2323 | 0.2091 | **−0.0197 [−0.0298, −0.0092], HELPS** |
+
+**H2, by visible gap: replicated.**
+
+| Gap | Result | Verdict |
+|---|---|---|
+| ≥ 0.10 (n=368) | **−0.0291 [−0.0440, −0.0140]** | **HELPS** |
+| < 0.10 (n=186) | −0.0011 | no harm |
+
+**H1, by prior error:**
+
+| Prior error | Result | Verdict |
+|---|---|---|
+| 0.00 | +0.0019 | no harm |
+| 0.10 | −0.0005 | inconclusive |
+| 0.20 | **−0.0269** | HELPS |
+| 0.30 | **−0.0346** | HELPS |
+| drifting | −0.0510 | inconclusive; 81 withheld as UNSTABLE across the run |
+
+- **Fallback:** unchanged on 100% of withheld cases.
+- **H1 vs the original v3:** the predicted pattern (helps at 0.20 and 0.30, no harm at 0) now holds exactly. Across the two seeds, the 0.10 level helped once and was flat once.
+
+## When does history help? Answer across all rounds
 - **Helps:** when the analyst's own past forecasts on the same visible records are systematically off from Fuji's rate (gap ≥ 0.10) **and** the cohort is stable (the guard passes). In v3, the larger the base-rate error, the bigger the gain.
 - **Does nothing:** when the analyst is already calibrated (prior error 0).
 - **Can hurt:** when the rate is stale after a change and no guard is applied (v1).
@@ -151,7 +185,7 @@ python3 -m experiments.history_value.analyze_v3
 
 ## Verdicts under the frozen decision rules
 - **v1 and v2:** unconditional exposure is **not** supported.
-- **v3:** **conditional** exposure is supported: shadow only, evidence only, stability guard on, and shown only when the visible gap is at least 0.10.
+- **v3, and its pre-registered replication:** **conditional** exposure is supported: shadow only, evidence only, stability guard on, and shown only when the visible gap is at least 0.10.
 
 **Recommended shadow pilot design:**
 - The analyst locks an unassisted forecast in Fuji **before** seeing the rate.
