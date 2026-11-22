@@ -20,6 +20,10 @@ RESULTS = Path(__file__).parent / "results"
 
 
 def main():
+    import sys
+    global RESULTS
+    if len(sys.argv) > 1:
+        RESULTS = Path(sys.argv[1])
     rows = [r for r in csv.DictReader((RESULTS / "per_case.csv").open()) if r["applied"] == "True"]
     for r in rows:
         m = re.search(r"r=([\d.]+), m=([\d.]+)", r["why"])

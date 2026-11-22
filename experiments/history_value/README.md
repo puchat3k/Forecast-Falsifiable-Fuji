@@ -65,6 +65,40 @@ So the useful regime is a cohort whose rate is current, and the reader cannot ye
 
 **Independent cross-check:** frays-platform #310's own Fuji scoring path (`experiments/next-move-benchmark/history-value/score-with-310-harness.mjs`, through `lib/fuji_bridge.py`) reproduces the paired Brier scores exactly: 0.2614, 0.2545 and 0.2581 (n=233).
 
+## v2: pre-registered regime test on a fresh seed (`frozen_v2/`, freeze commit `080e00e` before scoring)
+**What v2 tests:**
+- **Guard:** the reader gained an opt-in **stability guard** (`guards=['stability']`, rules in `RULES["stability"]`). It returns `WITHHELD_UNSTABLE` when the most recent 15 resolved records differ from the older ones by at least 0.20 with |z| ≥ 2. It uses only records visible at the cutoff.
+- **Pre-registered hypothesis:** the adjusted forecast helps in the regime where Fuji, with the guard on, returns AVAILABLE.
+- **Data:** a fresh seed, 20261123, that nobody had scored. The guard was designed after seeing v1.
+- **v1 unchanged:** a v1 rerun on the new code is identical, because the guard is opt-in. The code drift is recorded in `results/results.json`.
+
+```bash
+python3 -m experiments.history_value.run --frozen experiments/history_value/frozen_v2 --results experiments/history_value/results_v2_A_no_guard
+python3 -m experiments.history_value.run --frozen experiments/history_value/frozen_v2 --results experiments/history_value/results_v2_B_stability_guard --guards stability
+```
+
+**Results:**
+
+| Arm (seed 20261123) | Coverage | Unassisted | Rate alone | Adjusted | Adjusted − unassisted [95% CI] |
+|---|---|---|---|---|---|
+| A, no guard | 250/370 | 0.2314 | 0.2497 | 0.2273 | −0.0041 [−0.0173, 0.0090], inconclusive |
+| B, stability guard (the pre-registered regime) | 225/370 | 0.2382 | 0.2547 | 0.2354 | **−0.0027 [−0.0170, 0.0110], inconclusive** |
+
+- **Arm B by cohort:** no cohort or period HURTS, and none HELPS. The fallback is unchanged on 100% of withheld cases (UNSTABLE 25, SPARSE 54, CENSORED 66).
+- **The guard is imperfect:**
+  - it caught 13 of the 68 cases after the change;
+  - it also fired on 12 cases before the change, when the rate had not moved (false alarms).
+- **v1 did not fully replicate:** Arm A shows no harm after the drift on this seed (−0.0040, inconclusive).
+  - Its only pre-registered HELPS is the drift cohort before the change (−0.0083 [−0.0155, −0.0017]).
+  - Rate alone is worse than unassisted on this seed (0.2497 vs 0.2314).
+- **The exploratory "current rate" finding:** same direction on the fresh seed (current −0.009, stale +0.003), but not significant.
+
+## When does history help? Answer across both seeds
+- **No pre-registered, analyst-visible regime** was found in which the adjusted forecast reliably beats the unassisted one.
+- **Overall effects are small:** −0.003 to −0.004 Brier, with every overall interval spanning zero.
+- **History hurt** in one condition, on one seed: a stale rate after an approval-rate change.
+- **History may help** when the rate is current (significant on seed 1, same direction on seed 2). The stability guard does not yet isolate that condition well enough.
+
 ## Verdict under the frozen decision rule
 The overall paired interval is not below 0, and one period (drift, after the change) HURTS. So the frozen rule says **do not expose the signal to analysts yet**.
 
