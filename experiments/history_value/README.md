@@ -99,11 +99,12 @@ python3 -m experiments.history_value.run --frozen experiments/history_value/froz
 - **History hurt** in one condition, on one seed: a stale rate after an approval-rate change.
 - **History may help** when the rate is current (significant on seed 1, same direction on seed 2). The stability guard does not yet isolate that condition well enough.
 
-## Verdict under the frozen decision rule
-The overall paired interval is not below 0, and one period (drift, after the change) HURTS. So the frozen rule says **do not expose the signal to analysts yet**.
+## Verdict under the frozen decision rules
+- **v1 (seed 20261122):** the overall interval is not below 0, and the period after the drift HURTS.
+- **v2 (seed 20261123, guard frozen in advance):** the pre-registered regime is inconclusive.
 
-**What would need to change first:**
-1. Add a recency window or change-point check, so a cohort whose recent rate departs from its pooled rate is withheld or reported as unstable.
-2. Re-run on a freshly frozen seed with that guard frozen in advance.
+Both rules say **do not expose the signal to analysts yet**.
 
-**What already works:** the visibility, the censoring guard and the fallback behave as designed.
+**What already works:** the visibility, the censoring guard, the stability guard and the fallback behave as designed. The fallback is unchanged on 100% of withheld cases.
+
+**What it would take to revisit:** real labelled, consented approval history, where the analyst's prior error may be larger than in this generator, or a pre-registered change to the combine rule. Either would need a new freeze.
