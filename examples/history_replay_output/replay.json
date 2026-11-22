@@ -1,0 +1,901 @@
+{
+ "A_usable_cohort_at_2027-03-15": {
+  "actions_enabled": false,
+  "cohort": [
+   {
+    "anchor_at": "2027-01-16T09:00:00Z",
+    "case_id": "140b62f549dd7b602788d0e1020a1af3001ff60cdbec648a57fadca67918918c",
+    "locked_at": "2027-01-16T10:00:00Z",
+    "observed_at": "2027-01-22T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "2b000c203f4fc9383a136f01b5a75de0f5eb800c56fe955d26ccc0f7fe434b08",
+    "recorded_at": "2027-01-22T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-30T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-04T09:00:00Z",
+    "case_id": "65cd60f9b711871f205e75cbaf97f9b978ff6cae5929e5cd51f2fc617af3c3e4",
+    "locked_at": "2027-01-04T10:00:00Z",
+    "observed_at": "2027-01-10T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "2bac33627d549919981f9ba21cf13ad3b6c4af7fbd437c83c0a09e2bd87e10a2",
+    "recorded_at": "2027-01-10T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-18T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-07T09:00:00Z",
+    "case_id": "4454059b546b8467809eec02265f527f1cbccb8b4bc271da94c65eed2ee43805",
+    "locked_at": "2027-01-07T10:00:00Z",
+    "observed_at": "2027-01-13T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "429e1b8663b76371c4d3772844d46152f063ba454ee7b9ccb0a5c9c42145fd3c",
+    "recorded_at": "2027-01-13T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-21T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-19T09:00:00Z",
+    "case_id": "8f6794cfca4b13af98f209462af2b575bb3f106dc6e5d69f0af86dba4f64d1a4",
+    "locked_at": "2027-01-19T10:00:00Z",
+    "observed_at": "2027-01-25T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "6077bdbd78ec8ba4877248d40a44927ad88812c4d58363d614b5ef5814b1a8fb",
+    "recorded_at": "2027-01-25T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-02T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-31T09:00:00Z",
+    "case_id": "1f1241684e6c989caee31e42a6c093083387f69180904c0735c4ed52ac07be26",
+    "locked_at": "2027-01-31T10:00:00Z",
+    "observed_at": "2027-02-06T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "64dfdea22ab362c67c7ee3a40783cc8dd84b072b7befebaa3c215feb7791e2d3",
+    "recorded_at": "2027-02-06T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-14T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-10T09:00:00Z",
+    "case_id": "dba97b9046e17b254b985b9fb8d2bb782b462f8fca3e984a508922545bbecaa5",
+    "locked_at": "2027-01-10T10:00:00Z",
+    "observed_at": "2027-01-16T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "6eaf834670274ce9bb1954e8b31933b012ae129dc77886a1c8cb51821a4e2e91",
+    "recorded_at": "2027-01-16T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-24T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-02-06T09:00:00Z",
+    "case_id": "551169d3f23f549e9e85970bf003bb746578895a2018d50f1c71b09da6919abc",
+    "locked_at": "2027-02-06T10:00:00Z",
+    "observed_at": "2027-02-12T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "a0d7ac18df1b91b9a751dcac7ca7ae686cfde61d339ae603227b0523074c662e",
+    "recorded_at": "2027-02-12T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-20T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-28T09:00:00Z",
+    "case_id": "c6fde912b3127cdebea727a8b2841684ecb39fa34b4383d4ee6b59e5339fce22",
+    "locked_at": "2027-01-28T10:00:00Z",
+    "observed_at": "2027-02-03T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "b0fc76e924faf4d6b73c52c2c879abecdda46fdcffbd0a992daccb7b4728f66b",
+    "recorded_at": "2027-02-03T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-11T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-22T09:00:00Z",
+    "case_id": "0f90c231cbada4914c0a5ea6b6d342a05d20ce4b060bbbd454b769cbc6e1ea06",
+    "locked_at": "2027-01-22T10:00:00Z",
+    "observed_at": "2027-01-28T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "b2e5771ba20656ea85d7195cf280ac2a10c52da4c4d619d3f5d4445bc565ac83",
+    "recorded_at": "2027-01-28T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-05T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-25T09:00:00Z",
+    "case_id": "710004430e1d3a210ba39aa8f42c120087ef5666e1a65cc6cd3e7644701ef3db",
+    "locked_at": "2027-01-25T10:00:00Z",
+    "observed_at": "2027-01-31T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "c493c27dad11878e152e3bb6802ac85942dd1324de388ef63006769fdb126e6b",
+    "recorded_at": "2027-01-31T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-08T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-02-03T09:00:00Z",
+    "case_id": "5ac6ec1a796078c19b9654af8878789f3a32ae72ab9932aef092b1d2b21ae188",
+    "locked_at": "2027-02-03T10:00:00Z",
+    "observed_at": "2027-02-09T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "c56435f1d415c329405a8a366334b9c3e3f2885660f97205ca59f5d7dbe4e554",
+    "recorded_at": "2027-02-09T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-17T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-13T09:00:00Z",
+    "case_id": "af863b1a63d264c7207f3a3ee1c19afb89fe5c4c337f0539fff6b2f03e4b2c5a",
+    "locked_at": "2027-01-13T10:00:00Z",
+    "observed_at": "2027-01-19T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "c653ea3a0e22f895eafa05398e96284abb2b507f8313bebee8f2790ac6fac12b",
+    "recorded_at": "2027-01-19T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-27T09:00:00Z"
+   }
+  ],
+  "counts": {
+   "approved": 9,
+   "eligible": 13,
+   "not_approved": 3,
+   "resolved": 12,
+   "unresolved": 1,
+   "window_open": 1
+  },
+  "excluded": {
+   "not_locked_by_cutoff": 1,
+   "other_classification": 1,
+   "other_family_or_version": 0,
+   "other_field_values": 4,
+   "outcome_after_window": 0,
+   "outcome_time_unverifiable": 0,
+   "own_case": 0,
+   "unlabelled_or_invalid_label": 0
+  },
+  "family_rules": {
+   "allowed": {
+    "approver_role": [
+     "deal_desk",
+     "cfo",
+     "procurement",
+     "credit_committee",
+     "legal"
+    ],
+    "offer_side": [
+     "vendor",
+     "buyer"
+    ]
+   },
+   "anchor": "anchor_at = when the offer was submitted for approval (UTC)",
+   "horizon_days_allowed": [
+    7,
+    14,
+    30
+   ],
+   "match_exact": [
+    "approver_role",
+    "offer_side"
+   ],
+   "outcome_false": "the approver rejected it, or no approval was observed by the end of the window",
+   "outcome_true": "the named approver approved the offer as submitted, or with conditions the offering side accepted, within horizon_days of anchor_at",
+   "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
+   "version": 1
+  },
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
+  "may_change_approval_status": false,
+  "may_select_move": false,
+  "mode": "SHADOW",
+  "other_horizons": {
+   "30": {
+    "eligible": 5,
+    "resolved": 5,
+    "unresolved": 0
+   }
+  },
+  "query": {
+   "classification": "synthetic",
+   "cutoff_at": "2027-03-15T00:00:00Z",
+   "event": {
+    "approver_role": "deal_desk",
+    "family": "offer_approval",
+    "horizon_days": 14,
+    "offer_side": "vendor",
+    "version": 1
+   },
+   "exclude_case_keys": [
+    "new-offer-under-review"
+   ]
+  },
+  "query_sha256": "78d0c5e7c1145a2e580b8e496f97e759cd841e24469aa3f1d0429801e3671f11",
+  "rate": {
+   "denominator": 12,
+   "interval_95": [
+    0.4677,
+    0.9111
+   ],
+   "numerator": 9,
+   "observed": 0.75
+  },
+  "reasons": [],
+  "rules": {
+   "interval": "Wilson score interval, 95%",
+   "match": [
+    "same event family and family version",
+    "identical values for every field in the family's match_exact list",
+    "identical horizon_days (horizons are never pooled; other horizons are reported separately)",
+    "same evidence classification as the query (synthetic, public and private records are never mixed)",
+    "the record is not one of the query's own cases (exclude_case_keys)"
+   ],
+   "max_unresolved_share": 0.25,
+   "min_resolved": 10,
+   "resolved_at_cutoff": [
+    "the resolution's observed_at AND its recorded time (resolved_at) are both at or before the cutoff",
+    "the resolution records an observed_at (records whose outcome time cannot be verified are excluded)",
+    "the observed outcome time is not after the window end (otherwise the label is inconsistent; excluded)",
+    "eligible records that are not resolved at the cutoff are reported as unresolved and are never counted as approved or not approved"
+   ],
+   "version": "fuji.history.v1",
+   "visible_at_cutoff": [
+    "the record's forecast was locked at or before the cutoff",
+    "its window (anchor_at + horizon_days) closed at or before the cutoff; otherwise it is 'window open'"
+   ],
+   "withhold": {
+    "WITHHELD_CENSORED": "unresolved records exceed max_unresolved_share of eligible records (late outcomes may differ systematically)",
+    "WITHHELD_INCOMPATIBLE": "the query is outside the family's rules (unknown family/version, field value or horizon)",
+    "WITHHELD_SPARSE": "fewer than min_resolved resolved records in the cohort"
+   }
+  },
+  "status": "AVAILABLE",
+  "unresolved_records": [
+   {
+    "anchor_at": "2027-02-20T09:00:00Z",
+    "case_id": "5b9209ab6d71d5afd336f27e7fe4eb2b54e31a960b359cdf7618aaa6d3d9d47b",
+    "locked_at": "2027-02-20T10:00:00Z",
+    "proposition_id": "e9960962360037cfc12b9a4105acd74683b262621a507535df89f26b88c902cd",
+    "why_unresolved": "resolution recorded after the cutoff",
+    "window_closes_at": "2027-03-06T09:00:00Z"
+   }
+  ],
+  "use": "EVIDENCE_ONLY",
+  "window_open_records": [
+   {
+    "anchor_at": "2027-03-10T09:00:00Z",
+    "case_id": "992c21dd7c25f86d37cef1370c2a63fdd6f59a3d4c3da362a4bd69a33e8adc41",
+    "locked_at": "2027-03-10T10:00:00Z",
+    "proposition_id": "4f144918ddd41ea063fa43f09968c34be0b61e66887442b66eaa26c64ccc39ab",
+    "window_closes_at": "2027-03-24T09:00:00Z"
+   }
+  ]
+ },
+ "B_same_query_at_2027-04-01": {
+  "actions_enabled": false,
+  "cohort": [
+   {
+    "anchor_at": "2027-01-16T09:00:00Z",
+    "case_id": "140b62f549dd7b602788d0e1020a1af3001ff60cdbec648a57fadca67918918c",
+    "locked_at": "2027-01-16T10:00:00Z",
+    "observed_at": "2027-01-22T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "2b000c203f4fc9383a136f01b5a75de0f5eb800c56fe955d26ccc0f7fe434b08",
+    "recorded_at": "2027-01-22T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-30T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-04T09:00:00Z",
+    "case_id": "65cd60f9b711871f205e75cbaf97f9b978ff6cae5929e5cd51f2fc617af3c3e4",
+    "locked_at": "2027-01-04T10:00:00Z",
+    "observed_at": "2027-01-10T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "2bac33627d549919981f9ba21cf13ad3b6c4af7fbd437c83c0a09e2bd87e10a2",
+    "recorded_at": "2027-01-10T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-18T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-07T09:00:00Z",
+    "case_id": "4454059b546b8467809eec02265f527f1cbccb8b4bc271da94c65eed2ee43805",
+    "locked_at": "2027-01-07T10:00:00Z",
+    "observed_at": "2027-01-13T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "429e1b8663b76371c4d3772844d46152f063ba454ee7b9ccb0a5c9c42145fd3c",
+    "recorded_at": "2027-01-13T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-21T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-03-10T09:00:00Z",
+    "case_id": "992c21dd7c25f86d37cef1370c2a63fdd6f59a3d4c3da362a4bd69a33e8adc41",
+    "locked_at": "2027-03-10T10:00:00Z",
+    "observed_at": "2027-03-18T12:00:00Z",
+    "outcome": false,
+    "proposition_id": "4f144918ddd41ea063fa43f09968c34be0b61e66887442b66eaa26c64ccc39ab",
+    "recorded_at": "2027-03-18T13:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-03-24T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-19T09:00:00Z",
+    "case_id": "8f6794cfca4b13af98f209462af2b575bb3f106dc6e5d69f0af86dba4f64d1a4",
+    "locked_at": "2027-01-19T10:00:00Z",
+    "observed_at": "2027-01-25T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "6077bdbd78ec8ba4877248d40a44927ad88812c4d58363d614b5ef5814b1a8fb",
+    "recorded_at": "2027-01-25T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-02T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-31T09:00:00Z",
+    "case_id": "1f1241684e6c989caee31e42a6c093083387f69180904c0735c4ed52ac07be26",
+    "locked_at": "2027-01-31T10:00:00Z",
+    "observed_at": "2027-02-06T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "64dfdea22ab362c67c7ee3a40783cc8dd84b072b7befebaa3c215feb7791e2d3",
+    "recorded_at": "2027-02-06T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-14T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-10T09:00:00Z",
+    "case_id": "dba97b9046e17b254b985b9fb8d2bb782b462f8fca3e984a508922545bbecaa5",
+    "locked_at": "2027-01-10T10:00:00Z",
+    "observed_at": "2027-01-16T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "6eaf834670274ce9bb1954e8b31933b012ae129dc77886a1c8cb51821a4e2e91",
+    "recorded_at": "2027-01-16T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-24T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-02-06T09:00:00Z",
+    "case_id": "551169d3f23f549e9e85970bf003bb746578895a2018d50f1c71b09da6919abc",
+    "locked_at": "2027-02-06T10:00:00Z",
+    "observed_at": "2027-02-12T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "a0d7ac18df1b91b9a751dcac7ca7ae686cfde61d339ae603227b0523074c662e",
+    "recorded_at": "2027-02-12T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-20T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-28T09:00:00Z",
+    "case_id": "c6fde912b3127cdebea727a8b2841684ecb39fa34b4383d4ee6b59e5339fce22",
+    "locked_at": "2027-01-28T10:00:00Z",
+    "observed_at": "2027-02-03T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "b0fc76e924faf4d6b73c52c2c879abecdda46fdcffbd0a992daccb7b4728f66b",
+    "recorded_at": "2027-02-03T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-11T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-22T09:00:00Z",
+    "case_id": "0f90c231cbada4914c0a5ea6b6d342a05d20ce4b060bbbd454b769cbc6e1ea06",
+    "locked_at": "2027-01-22T10:00:00Z",
+    "observed_at": "2027-01-28T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "b2e5771ba20656ea85d7195cf280ac2a10c52da4c4d619d3f5d4445bc565ac83",
+    "recorded_at": "2027-01-28T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-05T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-25T09:00:00Z",
+    "case_id": "710004430e1d3a210ba39aa8f42c120087ef5666e1a65cc6cd3e7644701ef3db",
+    "locked_at": "2027-01-25T10:00:00Z",
+    "observed_at": "2027-01-31T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "c493c27dad11878e152e3bb6802ac85942dd1324de388ef63006769fdb126e6b",
+    "recorded_at": "2027-01-31T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-08T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-02-03T09:00:00Z",
+    "case_id": "5ac6ec1a796078c19b9654af8878789f3a32ae72ab9932aef092b1d2b21ae188",
+    "locked_at": "2027-02-03T10:00:00Z",
+    "observed_at": "2027-02-09T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "c56435f1d415c329405a8a366334b9c3e3f2885660f97205ca59f5d7dbe4e554",
+    "recorded_at": "2027-02-09T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-17T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-13T09:00:00Z",
+    "case_id": "af863b1a63d264c7207f3a3ee1c19afb89fe5c4c337f0539fff6b2f03e4b2c5a",
+    "locked_at": "2027-01-13T10:00:00Z",
+    "observed_at": "2027-01-19T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "c653ea3a0e22f895eafa05398e96284abb2b507f8313bebee8f2790ac6fac12b",
+    "recorded_at": "2027-01-19T11:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-27T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-02-20T09:00:00Z",
+    "case_id": "5b9209ab6d71d5afd336f27e7fe4eb2b54e31a960b359cdf7618aaa6d3d9d47b",
+    "locked_at": "2027-02-20T10:00:00Z",
+    "observed_at": "2027-03-05T15:00:00Z",
+    "outcome": true,
+    "proposition_id": "e9960962360037cfc12b9a4105acd74683b262621a507535df89f26b88c902cd",
+    "recorded_at": "2027-03-20T10:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-03-06T09:00:00Z"
+   }
+  ],
+  "counts": {
+   "approved": 10,
+   "eligible": 14,
+   "not_approved": 4,
+   "resolved": 14,
+   "unresolved": 0,
+   "window_open": 1
+  },
+  "excluded": {
+   "not_locked_by_cutoff": 0,
+   "other_classification": 1,
+   "other_family_or_version": 0,
+   "other_field_values": 4,
+   "outcome_after_window": 0,
+   "outcome_time_unverifiable": 0,
+   "own_case": 0,
+   "unlabelled_or_invalid_label": 0
+  },
+  "family_rules": {
+   "allowed": {
+    "approver_role": [
+     "deal_desk",
+     "cfo",
+     "procurement",
+     "credit_committee",
+     "legal"
+    ],
+    "offer_side": [
+     "vendor",
+     "buyer"
+    ]
+   },
+   "anchor": "anchor_at = when the offer was submitted for approval (UTC)",
+   "horizon_days_allowed": [
+    7,
+    14,
+    30
+   ],
+   "match_exact": [
+    "approver_role",
+    "offer_side"
+   ],
+   "outcome_false": "the approver rejected it, or no approval was observed by the end of the window",
+   "outcome_true": "the named approver approved the offer as submitted, or with conditions the offering side accepted, within horizon_days of anchor_at",
+   "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
+   "version": 1
+  },
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
+  "may_change_approval_status": false,
+  "may_select_move": false,
+  "mode": "SHADOW",
+  "other_horizons": {
+   "30": {
+    "eligible": 5,
+    "resolved": 5,
+    "unresolved": 0
+   }
+  },
+  "query": {
+   "classification": "synthetic",
+   "cutoff_at": "2027-04-01T00:00:00Z",
+   "event": {
+    "approver_role": "deal_desk",
+    "family": "offer_approval",
+    "horizon_days": 14,
+    "offer_side": "vendor",
+    "version": 1
+   },
+   "exclude_case_keys": [
+    "new-offer-under-review"
+   ]
+  },
+  "query_sha256": "9eaa2113aaddc0b606784fe8bfb259a1ad2860cdf80cc36e751c8ea09d704aec",
+  "rate": {
+   "denominator": 14,
+   "interval_95": [
+    0.4535,
+    0.8828
+   ],
+   "numerator": 10,
+   "observed": 0.7143
+  },
+  "reasons": [],
+  "rules": {
+   "interval": "Wilson score interval, 95%",
+   "match": [
+    "same event family and family version",
+    "identical values for every field in the family's match_exact list",
+    "identical horizon_days (horizons are never pooled; other horizons are reported separately)",
+    "same evidence classification as the query (synthetic, public and private records are never mixed)",
+    "the record is not one of the query's own cases (exclude_case_keys)"
+   ],
+   "max_unresolved_share": 0.25,
+   "min_resolved": 10,
+   "resolved_at_cutoff": [
+    "the resolution's observed_at AND its recorded time (resolved_at) are both at or before the cutoff",
+    "the resolution records an observed_at (records whose outcome time cannot be verified are excluded)",
+    "the observed outcome time is not after the window end (otherwise the label is inconsistent; excluded)",
+    "eligible records that are not resolved at the cutoff are reported as unresolved and are never counted as approved or not approved"
+   ],
+   "version": "fuji.history.v1",
+   "visible_at_cutoff": [
+    "the record's forecast was locked at or before the cutoff",
+    "its window (anchor_at + horizon_days) closed at or before the cutoff; otherwise it is 'window open'"
+   ],
+   "withhold": {
+    "WITHHELD_CENSORED": "unresolved records exceed max_unresolved_share of eligible records (late outcomes may differ systematically)",
+    "WITHHELD_INCOMPATIBLE": "the query is outside the family's rules (unknown family/version, field value or horizon)",
+    "WITHHELD_SPARSE": "fewer than min_resolved resolved records in the cohort"
+   }
+  },
+  "status": "AVAILABLE",
+  "unresolved_records": [],
+  "use": "EVIDENCE_ONLY",
+  "window_open_records": [
+   {
+    "anchor_at": "2027-03-20T09:00:00Z",
+    "case_id": "1f840aeb17050ca53b1113f20385f679f46a0f98ab782d334ccabcf9ded820c2",
+    "locked_at": "2027-03-20T10:00:00Z",
+    "proposition_id": "a263954f182a40e9f08cc63c4dae0264c13fbef7a4fd6e248e9e8a674a1ceccd",
+    "window_closes_at": "2027-04-03T09:00:00Z"
+   }
+  ]
+ },
+ "C_sparse_cohort_cfo": {
+  "actions_enabled": false,
+  "cohort": [
+   {
+    "anchor_at": "2027-02-01T09:00:00Z",
+    "case_id": "3ca12a4041269fc2b778090c9d80b99afb7b0d800d87e742ce12df997d925442",
+    "locked_at": "2027-02-01T10:00:00Z",
+    "observed_at": "2027-02-10T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "3366228a403a9407e0c94b637c7663fedd7e92e2f048ce2ceef2940226d24001",
+    "recorded_at": "2027-02-10T10:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-15T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-18T09:00:00Z",
+    "case_id": "6372cb4a63a4d4b3a521097395e4de3134e725b710bb158de9296cbe8f2a142e",
+    "locked_at": "2027-01-18T10:00:00Z",
+    "observed_at": "2027-01-27T09:00:00Z",
+    "outcome": false,
+    "proposition_id": "657a8f8943a0162e0cb064fc71640dafdb2f9ade226fc62d4e064db1a8d5b4b8",
+    "recorded_at": "2027-01-27T10:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-01T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-25T09:00:00Z",
+    "case_id": "a277e59bf21a074a6864e0d7695051fdc446a0452f6e1f2d8aa9dd77c16fcbc0",
+    "locked_at": "2027-01-25T10:00:00Z",
+    "observed_at": "2027-02-03T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "9cb706da05e460dae850f97b1754e38e4b91ddd4041677fef6a150ca2bfbeb95",
+    "recorded_at": "2027-02-03T10:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-02-08T09:00:00Z"
+   },
+   {
+    "anchor_at": "2027-01-11T09:00:00Z",
+    "case_id": "56923a4ff9a2bb352f71ae779d6f2e2b75389d60407f1629e6e3a81c5c386416",
+    "locked_at": "2027-01-11T10:00:00Z",
+    "observed_at": "2027-01-20T09:00:00Z",
+    "outcome": true,
+    "proposition_id": "e496dab4379e938ab7ce789989d20b07407da85fb7148136e6b7897d3bac8c0f",
+    "recorded_at": "2027-01-20T10:00:00Z",
+    "resolution_source_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+    "window_closes_at": "2027-01-25T09:00:00Z"
+   }
+  ],
+  "counts": {
+   "approved": 3,
+   "eligible": 4,
+   "not_approved": 1,
+   "resolved": 4,
+   "unresolved": 0,
+   "window_open": 0
+  },
+  "excluded": {
+   "not_locked_by_cutoff": 0,
+   "other_classification": 0,
+   "other_family_or_version": 0,
+   "other_field_values": 21,
+   "outcome_after_window": 0,
+   "outcome_time_unverifiable": 0,
+   "own_case": 0,
+   "unlabelled_or_invalid_label": 0
+  },
+  "family_rules": {
+   "allowed": {
+    "approver_role": [
+     "deal_desk",
+     "cfo",
+     "procurement",
+     "credit_committee",
+     "legal"
+    ],
+    "offer_side": [
+     "vendor",
+     "buyer"
+    ]
+   },
+   "anchor": "anchor_at = when the offer was submitted for approval (UTC)",
+   "horizon_days_allowed": [
+    7,
+    14,
+    30
+   ],
+   "match_exact": [
+    "approver_role",
+    "offer_side"
+   ],
+   "outcome_false": "the approver rejected it, or no approval was observed by the end of the window",
+   "outcome_true": "the named approver approved the offer as submitted, or with conditions the offering side accepted, within horizon_days of anchor_at",
+   "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
+   "version": 1
+  },
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
+  "may_change_approval_status": false,
+  "may_select_move": false,
+  "mode": "SHADOW",
+  "other_horizons": {},
+  "query": {
+   "classification": "synthetic",
+   "cutoff_at": "2027-04-01T00:00:00Z",
+   "event": {
+    "approver_role": "cfo",
+    "family": "offer_approval",
+    "horizon_days": 14,
+    "offer_side": "vendor",
+    "version": 1
+   },
+   "exclude_case_keys": [
+    "new-offer-under-review"
+   ]
+  },
+  "query_sha256": "64d346a42bea841952c73acf4b9faf50f75b5879717de8da516cec34328dbc74",
+  "rate": null,
+  "reasons": [
+   "4 resolved < min_resolved 10"
+  ],
+  "rules": {
+   "interval": "Wilson score interval, 95%",
+   "match": [
+    "same event family and family version",
+    "identical values for every field in the family's match_exact list",
+    "identical horizon_days (horizons are never pooled; other horizons are reported separately)",
+    "same evidence classification as the query (synthetic, public and private records are never mixed)",
+    "the record is not one of the query's own cases (exclude_case_keys)"
+   ],
+   "max_unresolved_share": 0.25,
+   "min_resolved": 10,
+   "resolved_at_cutoff": [
+    "the resolution's observed_at AND its recorded time (resolved_at) are both at or before the cutoff",
+    "the resolution records an observed_at (records whose outcome time cannot be verified are excluded)",
+    "the observed outcome time is not after the window end (otherwise the label is inconsistent; excluded)",
+    "eligible records that are not resolved at the cutoff are reported as unresolved and are never counted as approved or not approved"
+   ],
+   "version": "fuji.history.v1",
+   "visible_at_cutoff": [
+    "the record's forecast was locked at or before the cutoff",
+    "its window (anchor_at + horizon_days) closed at or before the cutoff; otherwise it is 'window open'"
+   ],
+   "withhold": {
+    "WITHHELD_CENSORED": "unresolved records exceed max_unresolved_share of eligible records (late outcomes may differ systematically)",
+    "WITHHELD_INCOMPATIBLE": "the query is outside the family's rules (unknown family/version, field value or horizon)",
+    "WITHHELD_SPARSE": "fewer than min_resolved resolved records in the cohort"
+   }
+  },
+  "status": "WITHHELD_SPARSE",
+  "unresolved_records": [],
+  "use": "EVIDENCE_ONLY",
+  "window_open_records": []
+ },
+ "D_incompatible_query_board": {
+  "actions_enabled": false,
+  "cohort": [],
+  "counts": null,
+  "excluded": {},
+  "family_rules": {
+   "allowed": {
+    "approver_role": [
+     "deal_desk",
+     "cfo",
+     "procurement",
+     "credit_committee",
+     "legal"
+    ],
+    "offer_side": [
+     "vendor",
+     "buyer"
+    ]
+   },
+   "anchor": "anchor_at = when the offer was submitted for approval (UTC)",
+   "horizon_days_allowed": [
+    7,
+    14,
+    30
+   ],
+   "match_exact": [
+    "approver_role",
+    "offer_side"
+   ],
+   "outcome_false": "the approver rejected it, or no approval was observed by the end of the window",
+   "outcome_true": "the named approver approved the offer as submitted, or with conditions the offering side accepted, within horizon_days of anchor_at",
+   "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
+   "version": 1
+  },
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
+  "may_change_approval_status": false,
+  "may_select_move": false,
+  "mode": "SHADOW",
+  "other_horizons": {},
+  "query": {
+   "classification": "synthetic",
+   "cutoff_at": "2027-04-01T00:00:00Z",
+   "event": {
+    "approver_role": "board",
+    "family": "offer_approval",
+    "horizon_days": 14,
+    "offer_side": "vendor",
+    "version": 1
+   },
+   "exclude_case_keys": [
+    "new-offer-under-review"
+   ]
+  },
+  "query_sha256": "5612c354c81229fedf520d4229c3e5a12498f9ca35dfcd8bd62539d8b5b6421b",
+  "rate": null,
+  "reasons": [
+   "approver_role_not_allowed"
+  ],
+  "rules": {
+   "interval": "Wilson score interval, 95%",
+   "match": [
+    "same event family and family version",
+    "identical values for every field in the family's match_exact list",
+    "identical horizon_days (horizons are never pooled; other horizons are reported separately)",
+    "same evidence classification as the query (synthetic, public and private records are never mixed)",
+    "the record is not one of the query's own cases (exclude_case_keys)"
+   ],
+   "max_unresolved_share": 0.25,
+   "min_resolved": 10,
+   "resolved_at_cutoff": [
+    "the resolution's observed_at AND its recorded time (resolved_at) are both at or before the cutoff",
+    "the resolution records an observed_at (records whose outcome time cannot be verified are excluded)",
+    "the observed outcome time is not after the window end (otherwise the label is inconsistent; excluded)",
+    "eligible records that are not resolved at the cutoff are reported as unresolved and are never counted as approved or not approved"
+   ],
+   "version": "fuji.history.v1",
+   "visible_at_cutoff": [
+    "the record's forecast was locked at or before the cutoff",
+    "its window (anchor_at + horizon_days) closed at or before the cutoff; otherwise it is 'window open'"
+   ],
+   "withhold": {
+    "WITHHELD_CENSORED": "unresolved records exceed max_unresolved_share of eligible records (late outcomes may differ systematically)",
+    "WITHHELD_INCOMPATIBLE": "the query is outside the family's rules (unknown family/version, field value or horizon)",
+    "WITHHELD_SPARSE": "fewer than min_resolved resolved records in the cohort"
+   }
+  },
+  "status": "WITHHELD_INCOMPATIBLE",
+  "use": "EVIDENCE_ONLY"
+ },
+ "E_existing_unlabelled_records": {
+  "actions_enabled": false,
+  "cohort": [],
+  "counts": {
+   "approved": 0,
+   "eligible": 0,
+   "not_approved": 0,
+   "resolved": 0,
+   "unresolved": 0,
+   "window_open": 0
+  },
+  "excluded": {
+   "not_locked_by_cutoff": 0,
+   "other_classification": 0,
+   "other_family_or_version": 0,
+   "other_field_values": 0,
+   "outcome_after_window": 0,
+   "outcome_time_unverifiable": 0,
+   "own_case": 0,
+   "unlabelled_or_invalid_label": 54
+  },
+  "family_rules": {
+   "allowed": {
+    "approver_role": [
+     "deal_desk",
+     "cfo",
+     "procurement",
+     "credit_committee",
+     "legal"
+    ],
+    "offer_side": [
+     "vendor",
+     "buyer"
+    ]
+   },
+   "anchor": "anchor_at = when the offer was submitted for approval (UTC)",
+   "horizon_days_allowed": [
+    7,
+    14,
+    30
+   ],
+   "match_exact": [
+    "approver_role",
+    "offer_side"
+   ],
+   "outcome_false": "the approver rejected it, or no approval was observed by the end of the window",
+   "outcome_true": "the named approver approved the offer as submitted, or with conditions the offering side accepted, within horizon_days of anchor_at",
+   "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
+   "version": 1
+  },
+  "ledger_sha256": "5976d17475b14879567bfc3a49c1add967e787b98b343b61f46a44e133b46f33",
+  "may_change_approval_status": false,
+  "may_select_move": false,
+  "mode": "SHADOW",
+  "other_horizons": {},
+  "query": {
+   "classification": "synthetic",
+   "cutoff_at": "2027-12-31T00:00:00Z",
+   "event": {
+    "approver_role": "credit_committee",
+    "family": "offer_approval",
+    "horizon_days": 14,
+    "offer_side": "vendor",
+    "version": 1
+   },
+   "exclude_case_keys": [
+    "new-offer-under-review"
+   ]
+  },
+  "query_sha256": "c45992481e437c08cbf5a5f8c836c67f052ddecd005a3f78c81caec88c364aa1",
+  "rate": null,
+  "reasons": [
+   "0 resolved < min_resolved 10"
+  ],
+  "rules": {
+   "interval": "Wilson score interval, 95%",
+   "match": [
+    "same event family and family version",
+    "identical values for every field in the family's match_exact list",
+    "identical horizon_days (horizons are never pooled; other horizons are reported separately)",
+    "same evidence classification as the query (synthetic, public and private records are never mixed)",
+    "the record is not one of the query's own cases (exclude_case_keys)"
+   ],
+   "max_unresolved_share": 0.25,
+   "min_resolved": 10,
+   "resolved_at_cutoff": [
+    "the resolution's observed_at AND its recorded time (resolved_at) are both at or before the cutoff",
+    "the resolution records an observed_at (records whose outcome time cannot be verified are excluded)",
+    "the observed outcome time is not after the window end (otherwise the label is inconsistent; excluded)",
+    "eligible records that are not resolved at the cutoff are reported as unresolved and are never counted as approved or not approved"
+   ],
+   "version": "fuji.history.v1",
+   "visible_at_cutoff": [
+    "the record's forecast was locked at or before the cutoff",
+    "its window (anchor_at + horizon_days) closed at or before the cutoff; otherwise it is 'window open'"
+   ],
+   "withhold": {
+    "WITHHELD_CENSORED": "unresolved records exceed max_unresolved_share of eligible records (late outcomes may differ systematically)",
+    "WITHHELD_INCOMPATIBLE": "the query is outside the family's rules (unknown family/version, field value or horizon)",
+    "WITHHELD_SPARSE": "fewer than min_resolved resolved records in the cohort"
+   }
+  },
+  "status": "WITHHELD_SPARSE",
+  "unresolved_records": [],
+  "use": "EVIDENCE_ONLY",
+  "window_open_records": []
+ }
+}

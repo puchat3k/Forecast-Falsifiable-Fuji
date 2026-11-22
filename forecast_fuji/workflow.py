@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Callable
 
 from .core import Fuji
+from .history import validate_record_event
 
 try:
     import fcntl
@@ -188,6 +189,13 @@ class WorkflowFuji:
         observable = _instant(definition["earliest_observable_at"])
         if not cutoff <= now < observable:
             raise ValueError("cutoff_or_observation_deadline")
+        # Optional event-family label (read by forecast_fuji.history); validated so labels are matchable.
+        event = definition.get("event")
+        if event is not None:
+            if validate_record_event(event):
+                raise ValueError("invalid_event_label:" + ",".join(validate_record_event(event)))
+            if _instant(event["anchor_at"]) > cutoff:
+                raise ValueError("event_anchor_after_cutoff")
         if baseline.get("name") is None or not baseline.get("derivation"):
             raise ValueError("baseline_and_derivation_required")
         bp = baseline.get("probability")
@@ -233,7 +241,8 @@ class WorkflowFuji:
                 definition["statement"], definition["horizon"],
                 definition["resolution_rule"],
                 proposition_id=proposition_id,
-                metadata={"resolution_source": definition["resolution_source"]})
+                metadata={"resolution_source": definition["resolution_source"],
+                          **({"event": event} if event is not None else {})})
             fuji.add_baseline(proposition_id, baseline["name"], bp,
                               derivation=baseline["derivation"])
             for estimate in estimates:
