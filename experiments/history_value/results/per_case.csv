@@ -1,0 +1,361 @@
+case_key,cohort,anchor_at,approved,true_base,status,reasons,n_resolved,n_unresolved,unassisted,rate_alone,adjusted,applied,why,brier_unassisted,brier_rate_alone,brier_adjusted,cohort_period
+unresolved-000,unresolved,2026-01-06T06:00:29.493952Z,True,0.55,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.4588,,0.4588,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.2929,,0.2929,unresolved
+drift-000,drift,2026-01-07T01:01:59.854225Z,True,0.8,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.6501,,0.6501,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.1224,,0.1224,drift:before
+stable-000,stable,2026-01-09T06:38:20.412405Z,False,0.7,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.2794,,0.2794,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.0781,,0.0781,stable
+stable-001,stable,2026-01-10T00:40:26.922538Z,False,0.7,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.3271,,0.3271,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.107,,0.107,stable
+drift-001,drift,2026-01-10T16:32:40.647180Z,True,0.8,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.6587,,0.6587,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.1165,,0.1165,drift:before
+drift-002,drift,2026-01-13T10:45:57.870221Z,False,0.8,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.1269,,0.1269,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.0161,,0.0161,drift:before
+sparse-000,sparse,2026-01-14T00:39:42.961262Z,True,0.85,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.0702,,0.0702,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.8645,,0.8645,sparse
+drift-003,drift,2026-01-14T06:46:15.382788Z,True,0.8,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.1895,,0.1895,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.6569,,0.6569,drift:before
+stable-002,stable,2026-01-14T21:33:32.408033Z,False,0.7,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.1578,,0.1578,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.0249,,0.0249,stable
+unresolved-001,unresolved,2026-01-16T05:47:14.029204Z,False,0.55,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.5168,,0.5168,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.2671,,0.2671,unresolved
+stable-003,stable,2026-01-19T14:39:02.163996Z,False,0.7,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.4604,,0.4604,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.212,,0.212,stable
+drift-004,drift,2026-01-19T16:38:02.804190Z,True,0.8,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.715,,0.715,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.0812,,0.0812,drift:before
+stable-004,stable,2026-01-20T13:31:40.646179Z,True,0.7,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,0,0.3591,,0.3591,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.4108,,0.4108,stable
+stable-005,stable,2026-01-23T18:54:50.042736Z,True,0.7,WITHHELD_SPARSE,0 resolved < min_resolved 10,0,1,0.2653,,0.2653,False,WITHHELD_SPARSE: 0 resolved < min_resolved 10,0.5398,,0.5398,stable
+drift-005,drift,2026-01-23T21:52:21.297481Z,False,0.8,WITHHELD_SPARSE,1 resolved < min_resolved 10,1,0,0.2874,,0.2874,False,WITHHELD_SPARSE: 1 resolved < min_resolved 10,0.0826,,0.0826,drift:before
+drift-006,drift,2026-01-25T09:31:08.696648Z,True,0.8,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,0,0.5054,,0.5054,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.2446,,0.2446,drift:before
+stable-006,stable,2026-01-27T04:56:57.987977Z,False,0.7,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,0,0.6252,,0.6252,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.3909,,0.3909,stable
+drift-007,drift,2026-01-29T08:53:30.533421Z,True,0.8,WITHHELD_SPARSE,4 resolved < min_resolved 10,4,0,0.7222,,0.7222,False,WITHHELD_SPARSE: 4 resolved < min_resolved 10,0.0772,,0.0772,drift:before
+unresolved-002,unresolved,2026-01-29T12:23:13.010066Z,True,0.55,WITHHELD_SPARSE,1 resolved < min_resolved 10,1,0,0.672,,0.672,False,WITHHELD_SPARSE: 1 resolved < min_resolved 10,0.1076,,0.1076,unresolved
+stable-007,stable,2026-01-30T12:18:50.267616Z,True,0.7,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,0,0.5213,,0.5213,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.2292,,0.2292,stable
+stable-008,stable,2026-01-31T05:16:00.764699Z,False,0.7,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,0,0.5988,,0.5988,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.3586,,0.3586,stable
+stable-009,stable,2026-02-01T13:16:06.355492Z,True,0.7,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,0,0.545,,0.545,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.207,,0.207,stable
+stable-010,stable,2026-02-02T03:27:15.362262Z,True,0.7,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,0,0.2993,,0.2993,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.491,,0.491,stable
+stable-011,stable,2026-02-03T03:40:37.804013Z,True,0.7,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,1,0.7664,,0.7664,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.0546,,0.0546,stable
+stable-012,stable,2026-02-04T20:45:35.685364Z,False,0.7,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,0,0.1835,,0.1835,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.0337,,0.0337,stable
+stable-013,stable,2026-02-05T02:12:49.697859Z,False,0.7,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,0,0.3934,,0.3934,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.1548,,0.1548,stable
+unresolved-003,unresolved,2026-02-05T05:42:00.977171Z,True,0.55,WITHHELD_SPARSE,1 resolved < min_resolved 10,1,1,0.6697,,0.6697,False,WITHHELD_SPARSE: 1 resolved < min_resolved 10,0.1091,,0.1091,unresolved
+stable-014,stable,2026-02-10T01:38:33.892852Z,False,0.7,WITHHELD_SPARSE,6 resolved < min_resolved 10,6,0,0.6995,,0.6995,False,WITHHELD_SPARSE: 6 resolved < min_resolved 10,0.4893,,0.4893,stable
+stable-015,stable,2026-02-11T03:33:44.699330Z,True,0.7,WITHHELD_SPARSE,7 resolved < min_resolved 10,7,0,0.3857,,0.3857,False,WITHHELD_SPARSE: 7 resolved < min_resolved 10,0.3774,,0.3774,stable
+drift-008,drift,2026-02-18T20:53:24.069318Z,True,0.8,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,0,0.77,,0.77,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.0529,,0.0529,drift:before
+drift-009,drift,2026-02-19T21:50:42.177960Z,True,0.8,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,0,0.4317,,0.4317,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.323,,0.323,drift:before
+stable-016,stable,2026-02-21T10:43:42.648240Z,True,0.7,AVAILABLE,,14,0,0.4744,0.4286,0.4837,True,"adjusted with n=14, r=0.429, m=0.413, lambda=0.583",0.2763,0.3265,0.2666,stable
+drift-010,drift,2026-02-22T03:59:04.887488Z,True,0.8,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,0,0.6036,,0.6036,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.1571,,0.1571,drift:before
+unresolved-004,unresolved,2026-02-23T09:07:04.219336Z,False,0.55,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,2,0.6343,,0.6343,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.4023,,0.4023,unresolved
+stable-017,stable,2026-02-23T14:08:46.520320Z,True,0.7,AVAILABLE,,14,0,0.8674,0.4286,0.8716,True,"adjusted with n=14, r=0.429, m=0.413, lambda=0.583",0.0176,0.3265,0.0165,stable
+stable-018,stable,2026-02-24T12:41:25.527688Z,True,0.7,AVAILABLE,,14,1,0.4549,0.4286,0.4642,True,"adjusted with n=14, r=0.429, m=0.413, lambda=0.583",0.2971,0.3265,0.2871,stable
+unresolved-005,unresolved,2026-02-25T00:03:09.450927Z,False,0.55,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,2,0.8758,,0.8758,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.767,,0.767,unresolved
+stable-019,stable,2026-02-26T11:36:59.600805Z,False,0.7,AVAILABLE,,16,0,0.1915,0.4375,0.1947,True,"adjusted with n=16, r=0.438, m=0.429, lambda=0.615",0.0367,0.1914,0.0379,stable
+stable-020,stable,2026-02-27T04:32:28.166018Z,True,0.7,AVAILABLE,,16,0,0.4238,0.4375,0.4289,True,"adjusted with n=16, r=0.438, m=0.429, lambda=0.615",0.332,0.3164,0.3262,stable
+drift-011,drift,2026-03-01T08:51:03.709581Z,False,0.8,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,0,0.4798,,0.4798,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.2302,,0.2302,drift:before
+drift-012,drift,2026-03-04T03:19:58.918510Z,True,0.8,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,0,0.8248,,0.8248,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.0307,,0.0307,drift:before
+drift-013,drift,2026-03-05T01:37:31.975412Z,True,0.8,WITHHELD_SPARSE,9 resolved < min_resolved 10,9,0,0.4343,,0.4343,False,WITHHELD_SPARSE: 9 resolved < min_resolved 10,0.32,,0.32,drift:before
+sparse-001,sparse,2026-03-05T13:25:36.154700Z,False,0.85,WITHHELD_SPARSE,1 resolved < min_resolved 10,1,0,0.4858,,0.4858,False,WITHHELD_SPARSE: 1 resolved < min_resolved 10,0.236,,0.236,sparse
+sparse-002,sparse,2026-03-10T02:57:03.980266Z,True,0.85,WITHHELD_SPARSE,1 resolved < min_resolved 10,1,0,0.6426,,0.6426,False,WITHHELD_SPARSE: 1 resolved < min_resolved 10,0.1277,,0.1277,sparse
+stable-021,stable,2026-03-10T09:55:27.335668Z,True,0.7,AVAILABLE,,18,0,0.5455,0.5,0.5734,True,"adjusted with n=18, r=0.500, m=0.456, lambda=0.643",0.2066,0.25,0.182,stable
+unresolved-006,unresolved,2026-03-12T15:24:27.503134Z,True,0.55,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,4,0.6766,,0.6766,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.1046,,0.1046,unresolved
+stable-022,stable,2026-03-15T05:44:04.323375Z,True,0.7,AVAILABLE,,21,0,0.8447,0.5238,0.8717,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.0241,0.2268,0.0165,stable
+stable-023,stable,2026-03-16T16:07:18.703038Z,True,0.7,AVAILABLE,,21,0,0.3007,0.5238,0.3495,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.489,0.2268,0.4232,stable
+stable-024,stable,2026-03-17T04:06:18.168295Z,False,0.7,AVAILABLE,,21,0,0.5848,0.5238,0.6377,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.342,0.2744,0.4067,stable
+unresolved-007,unresolved,2026-03-18T22:15:49.006513Z,True,0.55,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,4,0.2855,,0.2855,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.5105,,0.5105,unresolved
+stable-025,stable,2026-03-20T01:03:48.962383Z,False,0.7,AVAILABLE,,21,0,0.478,0.5238,0.5336,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.2285,0.2744,0.2847,stable
+stable-026,stable,2026-03-20T03:19:53.883097Z,True,0.7,AVAILABLE,,21,0,0.1362,0.5238,0.1646,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.7462,0.2268,0.6979,stable
+stable-027,stable,2026-03-20T14:53:31.080311Z,True,0.7,AVAILABLE,,21,0,0.7553,0.5238,0.7941,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.0599,0.2268,0.0424,stable
+unresolved-008,unresolved,2026-03-22T02:00:44.559582Z,True,0.55,WITHHELD_SPARSE,2 resolved < min_resolved 10,2,4,0.515,,0.515,False,WITHHELD_SPARSE: 2 resolved < min_resolved 10,0.2352,,0.2352,unresolved
+stable-028,stable,2026-03-23T17:31:07.245853Z,True,0.7,AVAILABLE,,21,0,0.6907,0.5238,0.7362,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.0957,0.2268,0.0696,stable
+stable-029,stable,2026-03-24T01:08:30.829460Z,False,0.7,AVAILABLE,,21,0,0.5707,0.5238,0.6242,True,"adjusted with n=21, r=0.524, m=0.442, lambda=0.677",0.3257,0.2744,0.3896,stable
+stable-030,stable,2026-03-24T14:41:07.974816Z,False,0.7,AVAILABLE,,22,0,0.2348,0.5455,0.2873,True,"adjusted with n=22, r=0.545, m=0.447, lambda=0.688",0.0551,0.2976,0.0825,stable
+stable-031,stable,2026-03-26T01:29:39.902438Z,False,0.7,AVAILABLE,,22,0,0.707,0.5455,0.7602,True,"adjusted with n=22, r=0.545, m=0.447, lambda=0.688",0.4998,0.2976,0.5779,stable
+stable-032,stable,2026-03-28T09:03:53.894923Z,False,0.7,AVAILABLE,,22,0,0.6128,0.5455,0.6753,True,"adjusted with n=22, r=0.545, m=0.447, lambda=0.688",0.3755,0.2976,0.456,stable
+drift-014,drift,2026-03-29T12:33:51.536091Z,True,0.8,AVAILABLE,,14,0,0.7554,0.7857,0.8604,True,"adjusted with n=14, r=0.786, m=0.529, lambda=0.583",0.0598,0.0459,0.0195,drift:before
+stable-033,stable,2026-03-30T00:08:17.929893Z,True,0.7,AVAILABLE,,23,0,0.6955,0.5652,0.7521,True,"adjusted with n=23, r=0.565, m=0.464, lambda=0.697",0.0927,0.1891,0.0615,stable
+unresolved-009,unresolved,2026-04-01T05:18:40.295566Z,True,0.55,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,4,0.483,,0.483,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.2673,,0.2673,unresolved
+unresolved-010,unresolved,2026-04-03T18:18:53.792107Z,True,0.55,WITHHELD_SPARSE,4 resolved < min_resolved 10,4,4,0.5531,,0.5531,False,WITHHELD_SPARSE: 4 resolved < min_resolved 10,0.1997,,0.1997,unresolved
+stable-034,stable,2026-04-04T09:38:56.201851Z,False,0.7,AVAILABLE,,28,0,0.7153,0.5714,0.7767,True,"adjusted with n=28, r=0.571, m=0.462, lambda=0.737",0.5117,0.3265,0.6033,stable
+stable-035,stable,2026-04-07T07:16:18.258972Z,True,0.7,AVAILABLE,,30,0,0.6752,0.5667,0.7339,True,"adjusted with n=30, r=0.567, m=0.473, lambda=0.750",0.1055,0.1877,0.0708,stable
+unresolved-011,unresolved,2026-04-07T16:19:08.341790Z,False,0.55,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,4,0.455,,0.455,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.207,,0.207,unresolved
+drift-015,drift,2026-04-11T12:18:37.688236Z,True,0.8,AVAILABLE,,14,0,0.4093,0.7857,0.5804,True,"adjusted with n=14, r=0.786, m=0.529, lambda=0.583",0.3489,0.0459,0.1761,drift:before
+unresolved-012,unresolved,2026-04-12T14:39:01.725909Z,False,0.55,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,4,0.4308,,0.4308,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.1856,,0.1856,unresolved
+drift-016,drift,2026-04-18T11:06:12.199349Z,True,0.8,AVAILABLE,,14,1,0.5256,0.7857,0.6886,True,"adjusted with n=14, r=0.786, m=0.529, lambda=0.583",0.2251,0.0459,0.097,drift:before
+unresolved-013,unresolved,2026-04-19T15:02:19.905929Z,True,0.55,WITHHELD_SPARSE,7 resolved < min_resolved 10,7,4,0.2219,,0.2219,False,WITHHELD_SPARSE: 7 resolved < min_resolved 10,0.6054,,0.6054,unresolved
+drift-017,drift,2026-04-20T22:56:42.875344Z,True,0.8,AVAILABLE,,14,1,0.5116,0.7857,0.6765,True,"adjusted with n=14, r=0.786, m=0.529, lambda=0.583",0.2385,0.0459,0.1047,drift:before
+stable-036,stable,2026-04-21T11:28:10.883481Z,False,0.7,AVAILABLE,,36,0,0.8387,0.5278,0.8521,True,"adjusted with n=36, r=0.528, m=0.495, lambda=0.783",0.7034,0.2786,0.7261,stable
+drift-018,drift,2026-04-22T19:09:56.533206Z,True,0.8,AVAILABLE,,14,1,0.742,0.7857,0.8517,True,"adjusted with n=14, r=0.786, m=0.529, lambda=0.583",0.0666,0.0459,0.022,drift:before
+drift-019,drift,2026-04-22T21:19:38.141415Z,True,0.8,AVAILABLE,,14,1,0.5376,0.7857,0.6989,True,"adjusted with n=14, r=0.786, m=0.529, lambda=0.583",0.2138,0.0459,0.0907,drift:before
+stable-037,stable,2026-04-26T19:19:39.774044Z,False,0.7,AVAILABLE,,36,0,0.5355,0.5278,0.5608,True,"adjusted with n=36, r=0.528, m=0.495, lambda=0.783",0.2868,0.2786,0.3145,stable
+stable-038,stable,2026-04-27T13:58:52.750272Z,False,0.7,AVAILABLE,,36,0,0.3326,0.5278,0.3557,True,"adjusted with n=36, r=0.528, m=0.495, lambda=0.783",0.1106,0.2786,0.1265,stable
+unresolved-014,unresolved,2026-04-28T21:10:50.041240Z,False,0.55,WITHHELD_SPARSE,7 resolved < min_resolved 10,7,6,0.4138,,0.4138,False,WITHHELD_SPARSE: 7 resolved < min_resolved 10,0.1712,,0.1712,unresolved
+unresolved-015,unresolved,2026-04-30T16:34:48.966374Z,False,0.55,WITHHELD_SPARSE,7 resolved < min_resolved 10,7,6,0.6253,,0.6253,False,WITHHELD_SPARSE: 7 resolved < min_resolved 10,0.391,,0.391,unresolved
+drift-020,drift,2026-05-01T09:29:20.190477Z,True,0.8,AVAILABLE,,15,1,0.413,0.8,0.6061,True,"adjusted with n=15, r=0.800, m=0.521, lambda=0.600",0.3446,0.04,0.1552,drift:before
+unresolved-016,unresolved,2026-05-01T14:17:40.839842Z,True,0.55,WITHHELD_SPARSE,7 resolved < min_resolved 10,7,6,0.5346,,0.5346,False,WITHHELD_SPARSE: 7 resolved < min_resolved 10,0.2166,,0.2166,unresolved
+unresolved-017,unresolved,2026-05-01T19:42:25.898126Z,True,0.55,WITHHELD_SPARSE,7 resolved < min_resolved 10,7,6,0.3532,,0.3532,False,WITHHELD_SPARSE: 7 resolved < min_resolved 10,0.4184,,0.4184,unresolved
+unresolved-018,unresolved,2026-05-05T11:06:47.570775Z,True,0.55,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,6,0.5701,,0.5701,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.1848,,0.1848,unresolved
+unresolved-019,unresolved,2026-05-06T06:41:04.486673Z,False,0.55,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,6,0.5688,,0.5688,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.3235,,0.3235,unresolved
+unresolved-020,unresolved,2026-05-08T20:29:49.248474Z,False,0.55,WITHHELD_SPARSE,8 resolved < min_resolved 10,8,6,0.1318,,0.1318,False,WITHHELD_SPARSE: 8 resolved < min_resolved 10,0.0174,,0.0174,unresolved
+stable-039,stable,2026-05-09T18:41:05.339469Z,True,0.7,AVAILABLE,,37,0,0.4182,0.5135,0.4251,True,"adjusted with n=37, r=0.513, m=0.504, lambda=0.787",0.3385,0.2367,0.3305,stable
+stable-040,stable,2026-05-11T01:21:00.061765Z,True,0.7,AVAILABLE,,38,0,0.4144,0.5,0.4103,True,"adjusted with n=38, r=0.500, m=0.505, lambda=0.792",0.3429,0.25,0.3477,stable
+stable-041,stable,2026-05-14T12:03:55.662519Z,True,0.7,AVAILABLE,,39,0,0.6428,0.4872,0.6328,True,"adjusted with n=39, r=0.487, m=0.501, lambda=0.796",0.1276,0.263,0.1348,stable
+unresolved-021,unresolved,2026-05-15T23:50:32.273849Z,False,0.55,WITHHELD_CENSORED,unresolved share 8/18 > 0.25,10,8,0.4062,,0.4062,False,WITHHELD_CENSORED: unresolved share 8/18 > 0.25,0.165,,0.165,unresolved
+drift-021,drift,2026-05-22T17:23:10.554519Z,False,0.8,AVAILABLE,,21,0,0.7757,0.8571,0.9131,True,"adjusted with n=21, r=0.857, m=0.538, lambda=0.677",0.6017,0.7346,0.8338,drift:before
+stable-042,stable,2026-05-24T01:47:02.167265Z,True,0.7,AVAILABLE,,40,0,0.5405,0.5,0.5415,True,"adjusted with n=40, r=0.500, m=0.499, lambda=0.800",0.2111,0.25,0.2102,stable
+drift-022,drift,2026-05-27T01:29:34.534907Z,True,0.8,AVAILABLE,,21,0,0.73,0.8571,0.8914,True,"adjusted with n=21, r=0.857, m=0.538, lambda=0.677",0.0729,0.0204,0.0118,drift:before
+stable-043,stable,2026-05-29T16:06:34.737890Z,False,0.7,AVAILABLE,,41,1,0.4156,0.5122,0.4234,True,"adjusted with n=41, r=0.512, m=0.502, lambda=0.804",0.1727,0.2623,0.1793,stable
+stable-044,stable,2026-05-31T12:36:45.680778Z,True,0.7,AVAILABLE,,41,1,0.2778,0.5122,0.2842,True,"adjusted with n=41, r=0.512, m=0.502, lambda=0.804",0.5216,0.2379,0.5124,stable
+stable-045,stable,2026-06-01T09:35:20.662574Z,False,0.7,AVAILABLE,,41,1,0.4878,0.5122,0.4958,True,"adjusted with n=41, r=0.512, m=0.502, lambda=0.804",0.2379,0.2623,0.2458,stable
+unresolved-022,unresolved,2026-06-01T09:43:34.752659Z,True,0.55,WITHHELD_CENSORED,unresolved share 11/22 > 0.25,11,11,0.7554,,0.7554,False,WITHHELD_CENSORED: unresolved share 11/22 > 0.25,0.0598,,0.0598,unresolved
+stable-046,stable,2026-06-01T10:30:15.295648Z,True,0.7,AVAILABLE,,41,1,0.7204,0.5122,0.7268,True,"adjusted with n=41, r=0.512, m=0.502, lambda=0.804",0.0782,0.2379,0.0746,stable
+drift-023,drift,2026-06-05T06:53:41.236939Z,True,0.8,AVAILABLE,,21,0,0.4354,0.8571,0.7008,True,"adjusted with n=21, r=0.857, m=0.538, lambda=0.677",0.3188,0.0204,0.0895,drift:before
+drift-024,drift,2026-06-06T01:33:11.477625Z,True,0.8,AVAILABLE,,22,0,0.7746,0.8182,0.8942,True,"adjusted with n=22, r=0.818, m=0.549, lambda=0.688",0.0508,0.0331,0.0112,drift:before
+unresolved-023,unresolved,2026-06-10T21:48:54.700264Z,False,0.55,WITHHELD_CENSORED,unresolved share 11/22 > 0.25,11,11,0.1483,,0.1483,False,WITHHELD_CENSORED: unresolved share 11/22 > 0.25,0.022,,0.022,unresolved
+drift-025,drift,2026-06-12T22:02:25.441016Z,True,0.8,AVAILABLE,,23,0,0.7313,0.8261,0.8731,True,"adjusted with n=23, r=0.826, m=0.557, lambda=0.697",0.0722,0.0302,0.0161,drift:before
+drift-026,drift,2026-06-13T03:57:32.113778Z,True,0.8,AVAILABLE,,23,0,0.7535,0.8261,0.8855,True,"adjusted with n=23, r=0.826, m=0.557, lambda=0.697",0.0608,0.0302,0.0131,drift:before
+stable-047,stable,2026-06-16T02:29:42.521863Z,False,0.7,AVAILABLE,,44,3,0.4557,0.5,0.4598,True,"adjusted with n=44, r=0.500, m=0.495, lambda=0.815",0.2077,0.25,0.2114,stable
+unresolved-024,unresolved,2026-06-18T17:19:35.702175Z,False,0.55,WITHHELD_CENSORED,unresolved share 10/23 > 0.25,13,10,0.4427,,0.4427,False,WITHHELD_CENSORED: unresolved share 10/23 > 0.25,0.196,,0.196,unresolved
+stable-048,stable,2026-06-22T02:37:06.465515Z,True,0.7,AVAILABLE,,45,2,0.4506,0.5111,0.4652,True,"adjusted with n=45, r=0.511, m=0.493, lambda=0.818",0.3018,0.239,0.286,stable
+stable-049,stable,2026-06-24T10:15:07.258940Z,True,0.7,AVAILABLE,,45,2,0.5344,0.5111,0.549,True,"adjusted with n=45, r=0.511, m=0.493, lambda=0.818",0.2168,0.239,0.2034,stable
+drift-027,drift,2026-06-25T02:03:50.121445Z,False,0.8,AVAILABLE,,25,0,0.7954,0.84,0.9144,True,"adjusted with n=25, r=0.840, m=0.560, lambda=0.714",0.6327,0.7056,0.8361,drift:before
+stable-050,stable,2026-06-27T17:01:19.953989Z,False,0.7,AVAILABLE,,45,2,0.3042,0.5111,0.3168,True,"adjusted with n=45, r=0.511, m=0.493, lambda=0.818",0.0925,0.2612,0.1004,stable
+drift-028,drift,2026-06-28T00:06:15.243822Z,True,0.8,AVAILABLE,,27,0,0.6154,0.8519,0.8219,True,"adjusted with n=27, r=0.852, m=0.574, lambda=0.730",0.1479,0.0219,0.0317,drift:before
+stable-051,stable,2026-06-28T06:32:23.011702Z,True,0.7,AVAILABLE,,45,2,0.5337,0.5111,0.5483,True,"adjusted with n=45, r=0.511, m=0.493, lambda=0.818",0.2174,0.239,0.204,stable
+stable-052,stable,2026-06-30T06:13:12.690956Z,True,0.7,AVAILABLE,,45,3,0.7024,0.5111,0.7146,True,"adjusted with n=45, r=0.511, m=0.493, lambda=0.818",0.0886,0.239,0.0815,stable
+drift-029,drift,2026-07-04T05:50:51.678121Z,True,0.8,AVAILABLE,,27,0,0.8672,0.8519,0.9496,True,"adjusted with n=27, r=0.852, m=0.574, lambda=0.730",0.0176,0.0219,0.0025,drift:before
+unresolved-025,unresolved,2026-07-04T23:11:13.647903Z,False,0.55,WITHHELD_CENSORED,unresolved share 12/25 > 0.25,13,12,0.411,,0.411,False,WITHHELD_CENSORED: unresolved share 12/25 > 0.25,0.1689,,0.1689,unresolved
+stable-053,stable,2026-07-06T21:30:49.524863Z,True,0.7,AVAILABLE,,47,2,0.6328,0.5106,0.6474,True,"adjusted with n=47, r=0.511, m=0.491, lambda=0.825",0.1348,0.2395,0.1243,stable
+stable-054,stable,2026-07-09T10:39:26.850984Z,True,0.7,AVAILABLE,,47,3,0.915,0.5106,0.9198,True,"adjusted with n=47, r=0.511, m=0.491, lambda=0.825",0.0072,0.2395,0.0064,stable
+unresolved-026,unresolved,2026-07-12T09:29:55.766970Z,False,0.55,WITHHELD_CENSORED,unresolved share 12/25 > 0.25,13,12,0.326,,0.326,False,WITHHELD_CENSORED: unresolved share 12/25 > 0.25,0.1063,,0.1063,unresolved
+stable-055,stable,2026-07-13T01:57:06.247393Z,True,0.7,AVAILABLE,,49,3,0.6543,0.5102,0.6705,True,"adjusted with n=49, r=0.510, m=0.488, lambda=0.831",0.1195,0.2399,0.1086,stable
+drift-030,drift,2026-07-17T06:49:37.118602Z,True,0.8,AVAILABLE,,29,0,0.6944,0.8276,0.8505,True,"adjusted with n=29, r=0.828, m=0.583, lambda=0.744",0.0934,0.0297,0.0224,drift:before
+unresolved-027,unresolved,2026-07-17T20:38:30.619288Z,False,0.55,WITHHELD_CENSORED,unresolved share 12/25 > 0.25,13,12,0.4452,,0.4452,False,WITHHELD_CENSORED: unresolved share 12/25 > 0.25,0.1982,,0.1982,unresolved
+drift-031,drift,2026-07-18T03:27:40.242882Z,True,0.8,AVAILABLE,,29,0,0.9586,0.8276,0.983,True,"adjusted with n=29, r=0.828, m=0.583, lambda=0.744",0.0017,0.0297,0.0003,drift:before
+stable-056,stable,2026-07-18T18:09:39.740128Z,True,0.7,AVAILABLE,,49,4,0.2499,0.5102,0.2637,True,"adjusted with n=49, r=0.510, m=0.488, lambda=0.831",0.5627,0.2399,0.5421,stable
+stable-057,stable,2026-07-20T13:02:49.038896Z,True,0.7,AVAILABLE,,49,4,0.6378,0.5102,0.6543,True,"adjusted with n=49, r=0.510, m=0.488, lambda=0.831",0.1312,0.2399,0.1195,stable
+drift-032,drift,2026-07-23T01:35:24.297871Z,True,0.8,AVAILABLE,,30,0,0.8389,0.8333,0.9293,True,"adjusted with n=30, r=0.833, m=0.592, lambda=0.750",0.026,0.0278,0.005,drift:before
+drift-033,drift,2026-07-23T03:56:07.644787Z,True,0.8,AVAILABLE,,30,0,0.8636,0.8333,0.9411,True,"adjusted with n=30, r=0.833, m=0.592, lambda=0.750",0.0186,0.0278,0.0035,drift:before
+unresolved-028,unresolved,2026-07-25T01:57:03.946271Z,False,0.55,WITHHELD_CENSORED,unresolved share 13/26 > 0.25,13,13,0.6258,,0.6258,False,WITHHELD_CENSORED: unresolved share 13/26 > 0.25,0.3916,,0.3916,unresolved
+stable-058,stable,2026-07-26T16:04:13.624906Z,False,0.7,AVAILABLE,,52,3,0.5355,0.5385,0.5671,True,"adjusted with n=52, r=0.538, m=0.500, lambda=0.839",0.2868,0.29,0.3216,stable
+stable-059,stable,2026-07-27T22:36:24.090444Z,False,0.7,AVAILABLE,,53,3,0.325,0.5472,0.3583,True,"adjusted with n=53, r=0.547, m=0.503, lambda=0.841",0.1056,0.2994,0.1284,stable
+unresolved-029,unresolved,2026-08-01T09:54:46.096256Z,False,0.55,WITHHELD_CENSORED,unresolved share 15/28 > 0.25,13,15,0.5724,,0.5724,False,WITHHELD_CENSORED: unresolved share 15/28 > 0.25,0.3276,,0.3276,unresolved
+drift-034,drift,2026-08-02T16:07:16.423427Z,True,0.8,AVAILABLE,,32,0,0.8321,0.8438,0.9279,True,"adjusted with n=32, r=0.844, m=0.607, lambda=0.762",0.0282,0.0244,0.0052,drift:before
+unresolved-030,unresolved,2026-08-04T18:55:55.374860Z,False,0.55,WITHHELD_CENSORED,unresolved share 14/28 > 0.25,14,14,0.1493,,0.1493,False,WITHHELD_CENSORED: unresolved share 14/28 > 0.25,0.0223,,0.0223,unresolved
+unresolved-031,unresolved,2026-08-08T20:49:26.068905Z,True,0.55,WITHHELD_CENSORED,unresolved share 14/29 > 0.25,15,14,0.3839,,0.3839,False,WITHHELD_CENSORED: unresolved share 14/29 > 0.25,0.3796,,0.3796,unresolved
+stable-060,stable,2026-08-10T04:44:17.637612Z,False,0.7,AVAILABLE,,58,1,0.6634,0.569,0.7043,True,"adjusted with n=58, r=0.569, m=0.514, lambda=0.853",0.4401,0.3238,0.496,stable
+drift-035,drift,2026-08-10T13:26:23.927947Z,False,0.8,AVAILABLE,,34,0,0.8096,0.8529,0.9185,True,"adjusted with n=34, r=0.853, m=0.621, lambda=0.773",0.6555,0.7274,0.8436,drift:before
+drift-036,drift,2026-08-11T05:08:27.727859Z,True,0.8,AVAILABLE,,34,0,0.3335,0.8529,0.5702,True,"adjusted with n=34, r=0.853, m=0.621, lambda=0.773",0.4442,0.0216,0.1847,drift:before
+stable-061,stable,2026-08-11T17:25:58.891326Z,True,0.7,AVAILABLE,,58,2,0.5127,0.569,0.5598,True,"adjusted with n=58, r=0.569, m=0.514, lambda=0.853",0.2375,0.1858,0.1938,stable
+unresolved-032,unresolved,2026-08-12T08:30:47.734149Z,True,0.55,WITHHELD_CENSORED,unresolved share 13/29 > 0.25,16,13,0.5297,,0.5297,False,WITHHELD_CENSORED: unresolved share 13/29 > 0.25,0.2212,,0.2212,unresolved
+stable-062,stable,2026-08-13T04:55:41.099886Z,True,0.7,AVAILABLE,,59,1,0.4167,0.5593,0.4578,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.3402,0.1942,0.294,stable
+drift-037,drift,2026-08-13T11:51:28.561197Z,False,0.8,AVAILABLE,,34,0,0.6589,0.8529,0.8367,True,"adjusted with n=34, r=0.853, m=0.621, lambda=0.773",0.4341,0.7274,0.7001,drift:before
+drift-038,drift,2026-08-14T11:35:26.111972Z,True,0.8,AVAILABLE,,34,0,0.8551,0.8529,0.9399,True,"adjusted with n=34, r=0.853, m=0.621, lambda=0.773",0.021,0.0216,0.0036,drift:before
+stable-063,stable,2026-08-14T20:17:19.758773Z,True,0.7,AVAILABLE,,59,1,0.2299,0.5593,0.2608,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.5931,0.1942,0.5464,stable
+sparse-003,sparse,2026-08-15T16:05:32.290475Z,True,0.85,WITHHELD_SPARSE,3 resolved < min_resolved 10,3,0,0.7284,,0.7284,False,WITHHELD_SPARSE: 3 resolved < min_resolved 10,0.0738,,0.0738,sparse
+stable-064,stable,2026-08-17T19:27:06.076858Z,True,0.7,AVAILABLE,,59,1,0.8491,0.5593,0.8693,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.0228,0.1942,0.0171,stable
+stable-065,stable,2026-08-18T23:02:41.006016Z,False,0.7,AVAILABLE,,59,1,0.5807,0.5593,0.6208,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.3372,0.3128,0.3854,stable
+stable-066,stable,2026-08-19T03:21:42.209383Z,True,0.7,AVAILABLE,,59,1,0.6873,0.5593,0.7221,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.0978,0.1942,0.0772,stable
+drift-039,drift,2026-08-19T05:06:22.626509Z,False,0.8,AVAILABLE,,35,0,0.8891,0.8571,0.9556,True,"adjusted with n=35, r=0.857, m=0.627, lambda=0.778",0.7905,0.7346,0.9132,drift:before
+stable-067,stable,2026-08-19T06:30:36.461362Z,True,0.7,AVAILABLE,,59,1,0.6985,0.5593,0.7325,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.0909,0.1942,0.0716,stable
+drift-040,drift,2026-08-19T08:43:35.932525Z,True,0.8,AVAILABLE,,35,0,0.6688,0.8571,0.8443,True,"adjusted with n=35, r=0.857, m=0.627, lambda=0.778",0.1097,0.0204,0.0242,drift:before
+drift-041,drift,2026-08-21T16:25:58.424817Z,True,0.8,AVAILABLE,,35,0,0.8527,0.8571,0.9396,True,"adjusted with n=35, r=0.857, m=0.627, lambda=0.778",0.0217,0.0204,0.0036,drift:before
+unresolved-033,unresolved,2026-08-23T15:28:24.902119Z,False,0.55,WITHHELD_CENSORED,unresolved share 15/32 > 0.25,17,15,0.3211,,0.3211,False,WITHHELD_CENSORED: unresolved share 15/32 > 0.25,0.1031,,0.1031,unresolved
+stable-068,stable,2026-08-23T19:32:00.539526Z,True,0.7,AVAILABLE,,59,1,0.2558,0.5593,0.2889,True,"adjusted with n=59, r=0.559, m=0.511, lambda=0.855",0.5538,0.1942,0.5057,stable
+unresolved-034,unresolved,2026-08-24T06:07:02.785278Z,False,0.55,WITHHELD_CENSORED,unresolved share 15/32 > 0.25,17,15,0.5021,,0.5021,False,WITHHELD_CENSORED: unresolved share 15/32 > 0.25,0.2521,,0.2521,unresolved
+drift-042,drift,2026-08-24T15:03:40.988091Z,True,0.8,AVAILABLE,,35,1,0.9399,0.8571,0.9767,True,"adjusted with n=35, r=0.857, m=0.627, lambda=0.778",0.0036,0.0204,0.0005,drift:before
+drift-043,drift,2026-08-24T18:40:08.561950Z,True,0.8,AVAILABLE,,35,1,0.9454,0.8571,0.9789,True,"adjusted with n=35, r=0.857, m=0.627, lambda=0.778",0.003,0.0204,0.0004,drift:before
+drift-044,drift,2026-08-24T21:30:03.663744Z,True,0.8,AVAILABLE,,35,1,0.6405,0.8571,0.8271,True,"adjusted with n=35, r=0.857, m=0.627, lambda=0.778",0.1292,0.0204,0.0299,drift:before
+stable-069,stable,2026-08-26T09:11:22.232004Z,True,0.7,AVAILABLE,,61,1,0.815,0.5574,0.8369,True,"adjusted with n=61, r=0.557, m=0.513, lambda=0.859",0.0342,0.1959,0.0266,stable
+sparse-004,sparse,2026-08-26T18:41:28.538472Z,True,0.85,WITHHELD_SPARSE,4 resolved < min_resolved 10,4,0,0.5519,,0.5519,False,WITHHELD_SPARSE: 4 resolved < min_resolved 10,0.2008,,0.2008,sparse
+unresolved-035,unresolved,2026-08-27T19:42:06.636018Z,True,0.55,WITHHELD_CENSORED,unresolved share 15/33 > 0.25,18,15,0.8389,,0.8389,False,WITHHELD_CENSORED: unresolved share 15/33 > 0.25,0.026,,0.026,unresolved
+drift-045,drift,2026-08-27T21:00:02.658581Z,True,0.8,AVAILABLE,,38,0,0.8761,0.8158,0.9387,True,"adjusted with n=38, r=0.816, m=0.625, lambda=0.792",0.0154,0.0339,0.0038,drift:before
+unresolved-036,unresolved,2026-08-30T03:30:59.511711Z,True,0.55,WITHHELD_CENSORED,unresolved share 15/33 > 0.25,18,15,0.445,,0.445,False,WITHHELD_CENSORED: unresolved share 15/33 > 0.25,0.308,,0.308,unresolved
+drift-046,drift,2026-08-30T09:13:48.574570Z,True,0.8,AVAILABLE,,39,0,0.8159,0.8205,0.9064,True,"adjusted with n=39, r=0.821, m=0.631, lambda=0.796",0.0339,0.0322,0.0088,drift:before
+drift-047,drift,2026-08-30T16:05:02.741744Z,True,0.8,AVAILABLE,,39,0,0.1544,0.8205,0.2852,True,"adjusted with n=39, r=0.821, m=0.631, lambda=0.796",0.715,0.0322,0.5109,drift:before
+stable-070,stable,2026-08-31T05:27:52.445420Z,True,0.7,AVAILABLE,,63,1,0.4773,0.5714,0.533,True,"adjusted with n=63, r=0.571, m=0.507, lambda=0.863",0.2732,0.1837,0.2181,stable
+drift-048,drift,2026-09-07T18:09:44.238013Z,True,0.8,AVAILABLE,,43,0,0.8034,0.814,0.8911,True,"adjusted with n=43, r=0.814, m=0.650, lambda=0.811",0.0387,0.0346,0.0119,drift:before
+drift-049,drift,2026-09-08T07:22:25.206970Z,True,0.8,AVAILABLE,,44,1,0.5508,0.8182,0.7109,True,"adjusted with n=44, r=0.818, m=0.657, lambda=0.815",0.2018,0.0331,0.0836,drift:before
+drift-050,drift,2026-09-08T22:53:09.594557Z,True,0.8,AVAILABLE,,44,1,0.7809,0.8182,0.8772,True,"adjusted with n=44, r=0.818, m=0.657, lambda=0.815",0.048,0.0331,0.0151,drift:before
+stable-071,stable,2026-09-10T00:44:22.038292Z,True,0.7,AVAILABLE,,68,2,0.7013,0.5882,0.7471,True,"adjusted with n=68, r=0.588, m=0.523, lambda=0.872",0.0892,0.1696,0.064,stable
+stable-072,stable,2026-09-10T10:32:44.214246Z,True,0.7,AVAILABLE,,68,2,0.9198,0.5882,0.9352,True,"adjusted with n=68, r=0.588, m=0.523, lambda=0.872",0.0064,0.1696,0.0042,stable
+drift-051,drift,2026-09-14T04:44:10.084807Z,True,0.8,AVAILABLE,,47,1,0.5985,0.8298,0.7647,True,"adjusted with n=47, r=0.830, m=0.654, lambda=0.825",0.1612,0.029,0.0554,drift:before
+drift-052,drift,2026-09-16T07:29:16.778852Z,True,0.8,AVAILABLE,,47,1,0.3854,0.8298,0.5776,True,"adjusted with n=47, r=0.830, m=0.654, lambda=0.825",0.3777,0.029,0.1784,drift:before
+unresolved-037,unresolved,2026-09-17T21:22:17.544455Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/37 > 0.25,21,16,0.2374,,0.2374,False,WITHHELD_CENSORED: unresolved share 16/37 > 0.25,0.5816,,0.5816,unresolved
+stable-073,stable,2026-09-20T16:51:41.985963Z,False,0.7,AVAILABLE,,70,1,0.3156,0.6,0.3811,True,"adjusted with n=70, r=0.600, m=0.519, lambda=0.875",0.0996,0.36,0.1452,stable
+stable-074,stable,2026-09-21T09:13:14.533529Z,True,0.7,AVAILABLE,,70,1,0.3705,0.6,0.4401,True,"adjusted with n=70, r=0.600, m=0.519, lambda=0.875",0.3963,0.16,0.3135,stable
+unresolved-038,unresolved,2026-09-23T08:46:37.996883Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/37 > 0.25,21,16,0.615,,0.615,False,WITHHELD_CENSORED: unresolved share 16/37 > 0.25,0.1482,,0.1482,unresolved
+unresolved-039,unresolved,2026-09-25T18:01:12.254618Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/37 > 0.25,21,16,0.4611,,0.4611,False,WITHHELD_CENSORED: unresolved share 16/37 > 0.25,0.2904,,0.2904,unresolved
+drift-053,drift,2026-09-26T05:12:43.342313Z,False,0.8,AVAILABLE,,51,0,0.5883,0.8431,0.7716,True,"adjusted with n=51, r=0.843, m=0.658, lambda=0.836",0.3461,0.7108,0.5954,drift:before
+stable-075,stable,2026-10-02T05:49:42.623057Z,True,0.7,AVAILABLE,,72,1,0.5319,0.6111,0.6059,True,"adjusted with n=72, r=0.611, m=0.527, lambda=0.878",0.2191,0.1512,0.1553,stable
+stable-076,stable,2026-10-03T02:20:22.347637Z,True,0.7,AVAILABLE,,72,1,0.4097,0.6111,0.4843,True,"adjusted with n=72, r=0.611, m=0.527, lambda=0.878",0.3485,0.1512,0.2659,stable
+drift-054,drift,2026-10-04T19:07:07.725460Z,True,0.35,AVAILABLE,,53,0,0.9486,0.8491,0.979,True,"adjusted with n=53, r=0.849, m=0.651, lambda=0.841",0.0026,0.0228,0.0004,drift:after
+stable-077,stable,2026-10-04T19:07:37.020407Z,True,0.7,AVAILABLE,,72,2,0.7067,0.6111,0.7653,True,"adjusted with n=72, r=0.611, m=0.527, lambda=0.878",0.086,0.1512,0.0551,stable
+drift-055,drift,2026-10-05T18:44:04.547072Z,True,0.35,AVAILABLE,,53,0,0.5681,0.8491,0.7689,True,"adjusted with n=53, r=0.849, m=0.651, lambda=0.841",0.1865,0.0228,0.0534,drift:after
+drift-056,drift,2026-10-06T10:11:47.081091Z,False,0.35,AVAILABLE,,53,0,0.6626,0.8491,0.8324,True,"adjusted with n=53, r=0.849, m=0.651, lambda=0.841",0.439,0.721,0.6929,drift:after
+stable-078,stable,2026-10-07T04:14:26.260509Z,True,0.7,AVAILABLE,,74,1,0.1731,0.6081,0.222,True,"adjusted with n=74, r=0.608, m=0.522, lambda=0.881",0.6838,0.1536,0.6053,stable
+drift-057,drift,2026-10-08T00:06:55.985842Z,False,0.35,AVAILABLE,,53,0,0.6455,0.8491,0.8216,True,"adjusted with n=53, r=0.849, m=0.651, lambda=0.841",0.4167,0.721,0.675,drift:after
+sparse-005,sparse,2026-10-08T00:11:14.795450Z,True,0.85,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,0,0.6912,,0.6912,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.0954,,0.0954,sparse
+stable-079,stable,2026-10-08T04:14:53.754574Z,True,0.7,AVAILABLE,,74,1,0.6545,0.6081,0.7209,True,"adjusted with n=74, r=0.608, m=0.522, lambda=0.881",0.1194,0.1536,0.0779,stable
+drift-058,drift,2026-10-09T13:54:48.880684Z,False,0.35,AVAILABLE,,53,0,0.5669,0.8491,0.768,True,"adjusted with n=53, r=0.849, m=0.651, lambda=0.841",0.3214,0.721,0.5898,drift:after
+stable-080,stable,2026-10-09T23:23:14.894379Z,True,0.7,AVAILABLE,,74,1,0.4718,0.6081,0.5491,True,"adjusted with n=74, r=0.608, m=0.522, lambda=0.881",0.279,0.1536,0.2033,stable
+unresolved-040,unresolved,2026-10-10T07:41:04.897497Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/40 > 0.25,24,16,0.94,,0.94,False,WITHHELD_CENSORED: unresolved share 16/40 > 0.25,0.0036,,0.0036,unresolved
+stable-081,stable,2026-10-11T07:44:59.946588Z,True,0.7,AVAILABLE,,74,1,0.6621,0.6081,0.7276,True,"adjusted with n=74, r=0.608, m=0.522, lambda=0.881",0.1142,0.1536,0.0742,stable
+unresolved-041,unresolved,2026-10-12T15:06:46.360356Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/40 > 0.25,24,16,0.3119,,0.3119,False,WITHHELD_CENSORED: unresolved share 16/40 > 0.25,0.4735,,0.4735,unresolved
+unresolved-042,unresolved,2026-10-12T15:55:19.138357Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/40 > 0.25,24,16,0.3054,,0.3054,False,WITHHELD_CENSORED: unresolved share 16/40 > 0.25,0.4825,,0.4825,unresolved
+unresolved-043,unresolved,2026-10-14T16:34:42.224251Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/40 > 0.25,24,16,0.6407,,0.6407,False,WITHHELD_CENSORED: unresolved share 16/40 > 0.25,0.1291,,0.1291,unresolved
+drift-059,drift,2026-10-15T15:08:45.789073Z,False,0.35,AVAILABLE,,54,0,0.5925,0.8333,0.7702,True,"adjusted with n=54, r=0.833, m=0.650, lambda=0.844",0.3511,0.6944,0.5932,drift:after
+drift-060,drift,2026-10-16T07:34:55.776759Z,False,0.35,AVAILABLE,,54,0,0.5963,0.8333,0.7729,True,"adjusted with n=54, r=0.833, m=0.650, lambda=0.844",0.3556,0.6944,0.5974,drift:after
+unresolved-044,unresolved,2026-10-17T09:27:19.449770Z,True,0.55,WITHHELD_CENSORED,unresolved share 16/40 > 0.25,24,16,0.3276,,0.3276,False,WITHHELD_CENSORED: unresolved share 16/40 > 0.25,0.4521,,0.4521,unresolved
+unresolved-045,unresolved,2026-10-18T02:26:58.459413Z,False,0.55,WITHHELD_CENSORED,unresolved share 16/40 > 0.25,24,16,0.3857,,0.3857,False,WITHHELD_CENSORED: unresolved share 16/40 > 0.25,0.1488,,0.1488,unresolved
+stable-082,stable,2026-10-23T23:09:56.012175Z,False,0.7,AVAILABLE,,80,0,0.4205,0.6375,0.5302,True,"adjusted with n=80, r=0.637, m=0.517, lambda=0.889",0.1768,0.4064,0.2811,stable
+unresolved-046,unresolved,2026-10-28T08:40:31.581974Z,True,0.55,WITHHELD_CENSORED,unresolved share 17/43 > 0.25,26,17,0.6447,,0.6447,False,WITHHELD_CENSORED: unresolved share 17/43 > 0.25,0.1262,,0.1262,unresolved
+sparse-006,sparse,2026-10-29T06:32:38.025646Z,True,0.85,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,1,0.8094,,0.8094,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.0363,,0.0363,sparse
+sparse-007,sparse,2026-10-29T06:58:57.865544Z,True,0.85,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,1,0.3483,,0.3483,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.4247,,0.4247,sparse
+unresolved-047,unresolved,2026-10-31T04:17:54.546572Z,False,0.55,WITHHELD_CENSORED,unresolved share 17/44 > 0.25,27,17,0.3528,,0.3528,False,WITHHELD_CENSORED: unresolved share 17/44 > 0.25,0.1245,,0.1245,unresolved
+drift-061,drift,2026-10-31T14:01:14.933613Z,True,0.35,AVAILABLE,,60,1,0.366,0.7833,0.5039,True,"adjusted with n=60, r=0.783, m=0.652, lambda=0.857",0.402,0.047,0.2461,drift:after
+sparse-008,sparse,2026-11-01T03:16:22.459057Z,True,0.85,WITHHELD_SPARSE,5 resolved < min_resolved 10,5,1,0.5235,,0.5235,False,WITHHELD_SPARSE: 5 resolved < min_resolved 10,0.2271,,0.2271,sparse
+stable-083,stable,2026-11-07T22:19:56.522310Z,True,0.7,AVAILABLE,,82,1,0.6251,0.6463,0.7279,True,"adjusted with n=82, r=0.646, m=0.518, lambda=0.891",0.1406,0.1251,0.074,stable
+drift-062,drift,2026-11-08T08:59:58.348251Z,True,0.35,AVAILABLE,,61,0,0.8909,0.7705,0.9313,True,"adjusted with n=61, r=0.770, m=0.651, lambda=0.859",0.0119,0.0527,0.0047,drift:after
+unresolved-048,unresolved,2026-11-09T06:13:21.707184Z,False,0.55,WITHHELD_CENSORED,unresolved share 18/46 > 0.25,28,18,0.6236,,0.6236,False,WITHHELD_CENSORED: unresolved share 18/46 > 0.25,0.3889,,0.3889,unresolved
+stable-084,stable,2026-11-09T08:56:27.213386Z,False,0.7,AVAILABLE,,83,0,0.8655,0.6386,0.9096,True,"adjusted with n=83, r=0.639, m=0.517, lambda=0.892",0.7491,0.4078,0.8274,stable
+unresolved-049,unresolved,2026-11-10T12:44:06.787336Z,True,0.55,WITHHELD_CENSORED,unresolved share 18/46 > 0.25,28,18,0.7818,,0.7818,False,WITHHELD_CENSORED: unresolved share 18/46 > 0.25,0.0476,,0.0476,unresolved
+stable-085,stable,2026-11-11T06:23:02.602529Z,False,0.7,AVAILABLE,,83,0,0.4127,0.6386,0.5237,True,"adjusted with n=83, r=0.639, m=0.517, lambda=0.892",0.1703,0.4078,0.2743,stable
+unresolved-050,unresolved,2026-11-11T19:17:32.398021Z,False,0.55,WITHHELD_CENSORED,unresolved share 18/47 > 0.25,29,18,0.5719,,0.5719,False,WITHHELD_CENSORED: unresolved share 18/47 > 0.25,0.3271,,0.3271,unresolved
+drift-063,drift,2026-11-12T05:04:17.017186Z,False,0.35,AVAILABLE,,61,0,0.6373,0.7705,0.7446,True,"adjusted with n=61, r=0.770, m=0.651, lambda=0.859",0.4062,0.5937,0.5544,drift:after
+stable-086,stable,2026-11-12T05:48:28.535828Z,False,0.7,AVAILABLE,,83,0,0.2558,0.6386,0.3497,True,"adjusted with n=83, r=0.639, m=0.517, lambda=0.892",0.0654,0.4078,0.1223,stable
+drift-064,drift,2026-11-12T20:37:37.452169Z,False,0.35,AVAILABLE,,61,0,0.4286,0.7705,0.5545,True,"adjusted with n=61, r=0.770, m=0.651, lambda=0.859",0.1837,0.5937,0.3075,drift:after
+unresolved-051,unresolved,2026-11-13T00:28:08.945325Z,False,0.55,WITHHELD_CENSORED,unresolved share 18/47 > 0.25,29,18,0.5006,,0.5006,False,WITHHELD_CENSORED: unresolved share 18/47 > 0.25,0.2506,,0.2506,unresolved
+stable-087,stable,2026-11-13T20:08:11.474884Z,True,0.7,AVAILABLE,,83,0,0.5355,0.6386,0.6433,True,"adjusted with n=83, r=0.639, m=0.517, lambda=0.892",0.2158,0.1306,0.1272,stable
+unresolved-052,unresolved,2026-11-14T00:10:24.627915Z,True,0.55,WITHHELD_CENSORED,unresolved share 18/47 > 0.25,29,18,0.4287,,0.4287,False,WITHHELD_CENSORED: unresolved share 18/47 > 0.25,0.3264,,0.3264,unresolved
+unresolved-053,unresolved,2026-11-18T15:13:05.786194Z,True,0.55,WITHHELD_CENSORED,unresolved share 19/48 > 0.25,29,19,0.6192,,0.6192,False,WITHHELD_CENSORED: unresolved share 19/48 > 0.25,0.145,,0.145,unresolved
+unresolved-054,unresolved,2026-11-19T01:11:42.409985Z,False,0.55,WITHHELD_CENSORED,unresolved share 19/48 > 0.25,29,19,0.196,,0.196,False,WITHHELD_CENSORED: unresolved share 19/48 > 0.25,0.0384,,0.0384,unresolved
+drift-065,drift,2026-11-20T03:05:51.896447Z,False,0.35,AVAILABLE,,61,1,0.6138,0.7705,0.7251,True,"adjusted with n=61, r=0.770, m=0.651, lambda=0.859",0.3768,0.5937,0.5258,drift:after
+unresolved-055,unresolved,2026-11-20T04:10:27.129910Z,True,0.55,WITHHELD_CENSORED,unresolved share 19/48 > 0.25,29,19,0.1996,,0.1996,False,WITHHELD_CENSORED: unresolved share 19/48 > 0.25,0.6406,,0.6406,unresolved
+stable-088,stable,2026-11-23T00:31:36.654613Z,True,0.7,AVAILABLE,,84,0,0.6218,0.6429,0.7226,True,"adjusted with n=84, r=0.643, m=0.518, lambda=0.894",0.143,0.1275,0.077,stable
+drift-066,drift,2026-11-24T13:31:14.322315Z,False,0.35,AVAILABLE,,62,1,0.8689,0.7742,0.917,True,"adjusted with n=62, r=0.774, m=0.654, lambda=0.861",0.755,0.5994,0.8409,drift:after
+stable-089,stable,2026-11-28T22:58:15.408605Z,True,0.7,AVAILABLE,,88,0,0.4425,0.625,0.5405,True,"adjusted with n=88, r=0.625, m=0.518, lambda=0.898",0.3108,0.1406,0.2111,stable
+drift-067,drift,2026-11-29T22:11:37.026502Z,False,0.35,AVAILABLE,,64,1,0.4824,0.75,0.5846,True,"adjusted with n=64, r=0.750, m=0.651, lambda=0.865",0.2327,0.5625,0.3418,drift:after
+drift-068,drift,2026-11-30T01:46:22.392184Z,True,0.35,AVAILABLE,,64,1,0.5635,0.75,0.6609,True,"adjusted with n=64, r=0.750, m=0.651, lambda=0.865",0.1905,0.0625,0.115,drift:after
+stable-090,stable,2026-12-02T14:23:34.061095Z,True,0.7,AVAILABLE,,88,0,0.658,0.625,0.7403,True,"adjusted with n=88, r=0.625, m=0.518, lambda=0.898",0.117,0.1406,0.0674,stable
+stable-091,stable,2026-12-03T00:05:51.008452Z,False,0.7,AVAILABLE,,88,0,0.4382,0.625,0.5362,True,"adjusted with n=88, r=0.625, m=0.518, lambda=0.898",0.192,0.3906,0.2875,stable
+unresolved-056,unresolved,2026-12-03T11:41:00.668289Z,True,0.55,WITHHELD_CENSORED,unresolved share 23/55 > 0.25,32,23,0.5026,,0.5026,False,WITHHELD_CENSORED: unresolved share 23/55 > 0.25,0.2474,,0.2474,unresolved
+stable-092,stable,2026-12-06T01:25:46.026283Z,True,0.7,AVAILABLE,,88,0,0.3662,0.625,0.4613,True,"adjusted with n=88, r=0.625, m=0.518, lambda=0.898",0.4017,0.1406,0.2902,stable
+drift-069,drift,2026-12-07T04:20:40.394193Z,False,0.35,AVAILABLE,,65,1,0.5042,0.7385,0.5938,True,"adjusted with n=65, r=0.739, m=0.650, lambda=0.867",0.2542,0.5454,0.3526,drift:after
+drift-070,drift,2026-12-11T10:56:33.497440Z,False,0.35,AVAILABLE,,66,1,0.5592,0.7273,0.6316,True,"adjusted with n=66, r=0.727, m=0.653, lambda=0.868",0.3127,0.529,0.3989,drift:after
+stable-093,stable,2026-12-11T18:49:33.251539Z,True,0.7,AVAILABLE,,89,0,0.5139,0.6292,0.6133,True,"adjusted with n=89, r=0.629, m=0.519, lambda=0.899",0.2363,0.1375,0.1495,stable
+stable-094,stable,2026-12-16T11:41:41.194903Z,False,0.7,AVAILABLE,,90,0,0.3135,0.6333,0.4113,True,"adjusted with n=90, r=0.633, m=0.518, lambda=0.900",0.0983,0.4011,0.1692,stable
+stable-095,stable,2026-12-16T12:27:34.145644Z,False,0.7,AVAILABLE,,90,0,0.4113,0.6333,0.5166,True,"adjusted with n=90, r=0.633, m=0.518, lambda=0.900",0.1692,0.4011,0.2669,stable
+drift-071,drift,2026-12-17T19:40:06.441901Z,False,0.35,AVAILABLE,,68,1,0.602,0.7206,0.6685,True,"adjusted with n=68, r=0.721, m=0.650, lambda=0.872",0.3624,0.5193,0.4469,drift:after
+stable-096,stable,2026-12-19T11:23:08.113026Z,True,0.7,AVAILABLE,,92,0,0.4023,0.6304,0.5042,True,"adjusted with n=92, r=0.630, m=0.519, lambda=0.902",0.3572,0.1366,0.2458,stable
+unresolved-057,unresolved,2026-12-19T16:34:27.283962Z,True,0.55,WITHHELD_CENSORED,unresolved share 21/57 > 0.25,36,21,0.6835,,0.6835,False,WITHHELD_CENSORED: unresolved share 21/57 > 0.25,0.1002,,0.1002,unresolved
+unresolved-058,unresolved,2026-12-20T14:39:44.997495Z,True,0.55,WITHHELD_CENSORED,unresolved share 21/57 > 0.25,36,21,0.6012,,0.6012,False,WITHHELD_CENSORED: unresolved share 21/57 > 0.25,0.159,,0.159,unresolved
+drift-072,drift,2026-12-23T17:59:12.952641Z,True,0.35,AVAILABLE,,69,1,0.83,0.7101,0.8626,True,"adjusted with n=69, r=0.710, m=0.647, lambda=0.873",0.0289,0.084,0.0189,drift:after
+drift-073,drift,2026-12-24T19:25:31.700963Z,False,0.35,AVAILABLE,,69,1,0.5969,0.7101,0.6556,True,"adjusted with n=69, r=0.710, m=0.647, lambda=0.873",0.3563,0.5042,0.4298,drift:after
+stable-097,stable,2026-12-26T11:46:57.813162Z,False,0.7,AVAILABLE,,94,0,0.1604,0.6383,0.2306,True,"adjusted with n=94, r=0.638, m=0.517, lambda=0.904",0.0257,0.4074,0.0532,stable
+drift-074,drift,2026-12-27T06:49:32.149180Z,False,0.35,AVAILABLE,,71,0,0.74,0.7042,0.7847,True,"adjusted with n=71, r=0.704, m=0.642, lambda=0.877",0.5476,0.4959,0.6158,drift:after
+sparse-009,sparse,2026-12-27T16:35:07.729045Z,True,0.85,WITHHELD_SPARSE,9 resolved < min_resolved 10,9,0,0.7603,,0.7603,False,WITHHELD_SPARSE: 9 resolved < min_resolved 10,0.0575,,0.0575,sparse
+sparse-010,sparse,2026-12-29T03:28:58.982101Z,True,0.85,WITHHELD_SPARSE,9 resolved < min_resolved 10,9,0,0.3516,,0.3516,False,WITHHELD_SPARSE: 9 resolved < min_resolved 10,0.4204,,0.4204,sparse
+stable-098,stable,2026-12-29T12:45:50.258799Z,True,0.7,AVAILABLE,,94,0,0.6387,0.6383,0.735,True,"adjusted with n=94, r=0.638, m=0.517, lambda=0.904",0.1305,0.1308,0.0702,stable
+stable-099,stable,2026-12-29T17:05:27.500069Z,True,0.7,AVAILABLE,,94,0,0.4038,0.6383,0.5151,True,"adjusted with n=94, r=0.638, m=0.517, lambda=0.904",0.3555,0.1308,0.2351,stable
+stable-100,stable,2026-12-30T01:29:31.527124Z,True,0.7,AVAILABLE,,94,0,0.8136,0.6383,0.8726,True,"adjusted with n=94, r=0.638, m=0.517, lambda=0.904",0.0347,0.1308,0.0162,stable
+unresolved-059,unresolved,2026-12-30T11:40:44.058380Z,False,0.55,WITHHELD_CENSORED,unresolved share 20/57 > 0.25,37,20,0.6185,,0.6185,False,WITHHELD_CENSORED: unresolved share 20/57 > 0.25,0.3825,,0.3825,unresolved
+stable-101,stable,2026-12-31T02:47:10.470801Z,False,0.7,AVAILABLE,,96,0,0.6801,0.625,0.7623,True,"adjusted with n=96, r=0.625, m=0.514, lambda=0.906",0.4625,0.3906,0.5811,stable
+stable-102,stable,2026-12-31T08:33:16.522268Z,True,0.7,AVAILABLE,,96,0,0.2278,0.625,0.308,True,"adjusted with n=96, r=0.625, m=0.514, lambda=0.906",0.5963,0.1406,0.4789,stable
+drift-075,drift,2027-01-01T03:08:40.542218Z,False,0.35,AVAILABLE,,71,1,0.5823,0.7042,0.6409,True,"adjusted with n=71, r=0.704, m=0.642, lambda=0.877",0.3391,0.4959,0.4108,drift:after
+drift-076,drift,2027-01-02T14:32:25.344039Z,True,0.35,AVAILABLE,,72,0,0.5193,0.6944,0.571,True,"adjusted with n=72, r=0.694, m=0.642, lambda=0.878",0.2311,0.0934,0.184,drift:after
+stable-103,stable,2027-01-02T23:20:50.392952Z,True,0.7,AVAILABLE,,97,0,0.318,0.6289,0.4177,True,"adjusted with n=97, r=0.629, m=0.513, lambda=0.907",0.4651,0.1377,0.3391,stable
+stable-104,stable,2027-01-04T06:31:31.067334Z,True,0.7,AVAILABLE,,97,0,0.3182,0.6289,0.4179,True,"adjusted with n=97, r=0.629, m=0.513, lambda=0.907",0.4649,0.1377,0.3388,stable
+stable-105,stable,2027-01-04T13:25:34.010114Z,False,0.7,AVAILABLE,,97,0,0.2857,0.6289,0.3809,True,"adjusted with n=97, r=0.629, m=0.513, lambda=0.907",0.0816,0.3955,0.1451,stable
+unresolved-060,unresolved,2027-01-06T03:53:30.525345Z,True,0.55,WITHHELD_CENSORED,unresolved share 20/59 > 0.25,39,20,0.4166,,0.4166,False,WITHHELD_CENSORED: unresolved share 20/59 > 0.25,0.3404,,0.3404,unresolved
+drift-077,drift,2027-01-06T22:01:03.113513Z,False,0.35,AVAILABLE,,73,0,0.8156,0.6986,0.846,True,"adjusted with n=73, r=0.699, m=0.644, lambda=0.880",0.6652,0.488,0.7157,drift:after
+stable-106,stable,2027-01-07T11:58:14.662399Z,False,0.7,AVAILABLE,,97,0,0.612,0.6289,0.7082,True,"adjusted with n=97, r=0.629, m=0.513, lambda=0.907",0.3745,0.3955,0.5015,stable
+stable-107,stable,2027-01-07T21:05:39.862216Z,True,0.7,AVAILABLE,,97,0,0.5158,0.6289,0.621,True,"adjusted with n=97, r=0.629, m=0.513, lambda=0.907",0.2344,0.1377,0.1436,stable
+drift-078,drift,2027-01-07T23:22:18.934707Z,False,0.35,AVAILABLE,,73,1,0.2903,0.6986,0.3369,True,"adjusted with n=73, r=0.699, m=0.644, lambda=0.880",0.0843,0.488,0.1135,drift:after
+unresolved-061,unresolved,2027-01-12T00:16:03.298646Z,True,0.55,WITHHELD_CENSORED,unresolved share 20/59 > 0.25,39,20,0.7458,,0.7458,False,WITHHELD_CENSORED: unresolved share 20/59 > 0.25,0.0646,,0.0646,unresolved
+drift-079,drift,2027-01-12T09:01:11.590004Z,False,0.35,AVAILABLE,,75,0,0.6107,0.68,0.6431,True,"adjusted with n=75, r=0.680, m=0.645, lambda=0.882",0.373,0.4624,0.4136,drift:after
+stable-108,stable,2027-01-13T01:25:19.994694Z,False,0.7,AVAILABLE,,100,0,0.7725,0.63,0.8417,True,"adjusted with n=100, r=0.630, m=0.510, lambda=0.909",0.5968,0.3969,0.7085,stable
+stable-109,stable,2027-01-15T20:01:12.241825Z,False,0.7,AVAILABLE,,102,1,0.5002,0.6275,0.6043,True,"adjusted with n=102, r=0.627, m=0.514, lambda=0.911",0.2502,0.3938,0.3652,stable
+stable-110,stable,2027-01-16T22:58:57.735601Z,True,0.7,AVAILABLE,,102,1,0.4785,0.6275,0.5834,True,"adjusted with n=102, r=0.627, m=0.514, lambda=0.911",0.272,0.1388,0.1736,stable
+stable-111,stable,2027-01-18T12:39:02.416470Z,True,0.7,AVAILABLE,,104,1,0.4903,0.6346,0.605,True,"adjusted with n=104, r=0.635, m=0.511, lambda=0.912",0.2598,0.1335,0.156,stable
+drift-080,drift,2027-01-21T00:55:19.817268Z,False,0.35,AVAILABLE,,78,0,0.596,0.6667,0.6166,True,"adjusted with n=78, r=0.667, m=0.645, lambda=0.886",0.3552,0.4445,0.3802,drift:after
+drift-081,drift,2027-01-25T10:00:21.767660Z,True,0.35,AVAILABLE,,79,0,0.7345,0.6582,0.7479,True,"adjusted with n=79, r=0.658, m=0.640, lambda=0.888",0.0705,0.1168,0.0636,drift:after
+stable-112,stable,2027-01-26T10:05:59.619523Z,True,0.7,AVAILABLE,,107,1,0.7439,0.6262,0.8181,True,"adjusted with n=107, r=0.626, m=0.509, lambda=0.915",0.0656,0.1397,0.0331,stable
+drift-082,drift,2027-01-26T20:19:52.785378Z,False,0.35,AVAILABLE,,80,0,0.6383,0.65,0.6473,True,"adjusted with n=80, r=0.650, m=0.640, lambda=0.889",0.4074,0.4225,0.419,drift:after
+stable-113,stable,2027-01-27T16:35:32.753889Z,True,0.7,AVAILABLE,,108,1,0.2924,0.6204,0.3828,True,"adjusted with n=108, r=0.620, m=0.512, lambda=0.915",0.5007,0.1441,0.3809,stable
+unresolved-062,unresolved,2027-01-28T12:43:14.993284Z,True,0.55,WITHHELD_CENSORED,unresolved share 22/62 > 0.25,40,22,0.9341,,0.9341,False,WITHHELD_CENSORED: unresolved share 22/62 > 0.25,0.0043,,0.0043,unresolved
+drift-083,drift,2027-02-03T06:33:45.307438Z,True,0.35,AVAILABLE,,80,0,0.7591,0.65,0.7662,True,"adjusted with n=80, r=0.650, m=0.640, lambda=0.889",0.058,0.1225,0.0547,drift:after
+unresolved-063,unresolved,2027-02-03T11:45:36.539579Z,False,0.55,WITHHELD_CENSORED,unresolved share 22/62 > 0.25,40,22,0.2725,,0.2725,False,WITHHELD_CENSORED: unresolved share 22/62 > 0.25,0.0743,,0.0743,unresolved
+stable-114,stable,2027-02-08T22:13:08.930400Z,True,0.7,AVAILABLE,,110,2,0.6758,0.6273,0.7631,True,"adjusted with n=110, r=0.627, m=0.511, lambda=0.917",0.1051,0.1389,0.0561,stable
+stable-115,stable,2027-02-09T01:41:20.720731Z,False,0.7,AVAILABLE,,110,2,0.2803,0.6273,0.3758,True,"adjusted with n=110, r=0.627, m=0.511, lambda=0.917",0.0786,0.3935,0.1412,stable
+unresolved-064,unresolved,2027-02-09T07:32:38.968044Z,True,0.55,WITHHELD_CENSORED,unresolved share 22/62 > 0.25,40,22,0.8222,,0.8222,False,WITHHELD_CENSORED: unresolved share 22/62 > 0.25,0.0316,,0.0316,unresolved
+unresolved-065,unresolved,2027-02-09T09:11:14.851850Z,False,0.55,WITHHELD_CENSORED,unresolved share 22/62 > 0.25,40,22,0.2504,,0.2504,False,WITHHELD_CENSORED: unresolved share 22/62 > 0.25,0.0627,,0.0627,unresolved
+unresolved-066,unresolved,2027-02-12T13:52:31.775847Z,False,0.55,WITHHELD_CENSORED,unresolved share 22/63 > 0.25,41,22,0.3773,,0.3773,False,WITHHELD_CENSORED: unresolved share 22/63 > 0.25,0.1424,,0.1424,unresolved
+unresolved-067,unresolved,2027-02-15T16:54:01.163131Z,True,0.55,WITHHELD_CENSORED,unresolved share 22/63 > 0.25,41,22,0.1379,,0.1379,False,WITHHELD_CENSORED: unresolved share 22/63 > 0.25,0.7432,,0.7432,unresolved
+stable-116,stable,2027-02-16T06:47:41.818886Z,False,0.7,AVAILABLE,,112,2,0.3146,0.6339,0.4214,True,"adjusted with n=112, r=0.634, m=0.512, lambda=0.918",0.099,0.4018,0.1776,stable
+stable-117,stable,2027-02-17T22:26:58.038123Z,False,0.7,AVAILABLE,,112,2,0.4821,0.6339,0.5963,True,"adjusted with n=112, r=0.634, m=0.512, lambda=0.918",0.2324,0.4018,0.3556,stable
+stable-118,stable,2027-02-19T08:46:04.609433Z,True,0.7,AVAILABLE,,112,2,0.8265,0.6339,0.8832,True,"adjusted with n=112, r=0.634, m=0.512, lambda=0.918",0.0301,0.134,0.0136,stable
+stable-119,stable,2027-02-19T13:17:28.361877Z,True,0.7,AVAILABLE,,112,2,0.081,0.6339,0.1227,True,"adjusted with n=112, r=0.634, m=0.512, lambda=0.918",0.8446,0.134,0.7697,stable
+drift-084,drift,2027-02-20T11:28:00.234324Z,False,0.35,AVAILABLE,,84,0,0.9561,0.6429,0.9563,True,"adjusted with n=84, r=0.643, m=0.642, lambda=0.894",0.9141,0.4133,0.9145,drift:after
+drift-085,drift,2027-02-22T23:15:36.047694Z,False,0.35,AVAILABLE,,84,0,0.4274,0.6429,0.4284,True,"adjusted with n=84, r=0.643, m=0.642, lambda=0.894",0.1827,0.4133,0.1835,drift:after
+stable-120,stable,2027-02-23T13:34:58.870037Z,False,0.7,AVAILABLE,,113,3,0.773,0.6372,0.8449,True,"adjusted with n=113, r=0.637, m=0.513, lambda=0.919",0.5975,0.406,0.7139,stable
+unresolved-068,unresolved,2027-02-26T21:48:45.228627Z,True,0.55,WITHHELD_CENSORED,unresolved share 25/67 > 0.25,42,25,0.631,,0.631,False,WITHHELD_CENSORED: unresolved share 25/67 > 0.25,0.1362,,0.1362,unresolved
+stable-121,stable,2027-02-27T01:49:16.972921Z,True,0.7,AVAILABLE,,114,2,0.2233,0.6316,0.3119,True,"adjusted with n=114, r=0.632, m=0.511, lambda=0.919",0.6033,0.1357,0.4735,stable
+stable-122,stable,2027-03-03T09:07:18.802608Z,False,0.7,AVAILABLE,,116,1,0.6578,0.6207,0.7452,True,"adjusted with n=116, r=0.621, m=0.509, lambda=0.921",0.4327,0.3853,0.5553,stable
+stable-123,stable,2027-03-05T08:18:09.839388Z,False,0.7,AVAILABLE,,117,1,0.5781,0.6239,0.6806,True,"adjusted with n=117, r=0.624, m=0.507, lambda=0.921",0.3342,0.3893,0.4632,stable
+stable-124,stable,2027-03-05T18:02:36.564813Z,False,0.7,AVAILABLE,,119,1,0.8036,0.6303,0.8675,True,"adjusted with n=119, r=0.630, m=0.506, lambda=0.922",0.6458,0.3973,0.7526,stable
+stable-125,stable,2027-03-10T10:19:07.363415Z,False,0.7,AVAILABLE,,120,1,0.7401,0.625,0.8158,True,"adjusted with n=120, r=0.625, m=0.508, lambda=0.923",0.5477,0.3906,0.6655,stable
+unresolved-069,unresolved,2027-03-11T03:51:23.858795Z,False,0.55,WITHHELD_CENSORED,unresolved share 24/68 > 0.25,44,24,0.249,,0.249,False,WITHHELD_CENSORED: unresolved share 24/68 > 0.25,0.062,,0.062,unresolved
+stable-126,stable,2027-03-12T14:38:16.950718Z,True,0.7,AVAILABLE,,120,1,0.4368,0.625,0.5467,True,"adjusted with n=120, r=0.625, m=0.508, lambda=0.923",0.3172,0.1406,0.2055,stable
+stable-127,stable,2027-03-14T08:44:19.780313Z,False,0.7,AVAILABLE,,121,1,0.3942,0.6281,0.5083,True,"adjusted with n=121, r=0.628, m=0.506, lambda=0.924",0.1554,0.3945,0.2584,stable
+unresolved-070,unresolved,2027-03-14T15:52:52.765135Z,True,0.55,WITHHELD_CENSORED,unresolved share 24/69 > 0.25,45,24,0.3337,,0.3337,False,WITHHELD_CENSORED: unresolved share 24/69 > 0.25,0.444,,0.444,unresolved
+unresolved-071,unresolved,2027-03-17T05:40:50.768584Z,False,0.55,WITHHELD_CENSORED,unresolved share 24/69 > 0.25,45,24,0.5461,,0.5461,False,WITHHELD_CENSORED: unresolved share 24/69 > 0.25,0.2982,,0.2982,unresolved
+stable-128,stable,2027-03-20T05:57:29.340469Z,True,0.7,AVAILABLE,,124,1,0.5607,0.6129,0.653,True,"adjusted with n=124, r=0.613, m=0.510, lambda=0.925",0.193,0.1498,0.1204,stable
+drift-086,drift,2027-03-23T06:25:35.244692Z,False,0.35,AVAILABLE,,86,0,0.3909,0.6279,0.3771,True,"adjusted with n=86, r=0.628, m=0.643, lambda=0.896",0.1528,0.3943,0.1422,drift:after
+stable-129,stable,2027-03-23T11:30:56.065330Z,False,0.7,AVAILABLE,,124,1,0.4975,0.6129,0.5935,True,"adjusted with n=124, r=0.613, m=0.510, lambda=0.925",0.2475,0.3756,0.3522,stable
+drift-087,drift,2027-03-24T15:50:49.754685Z,True,0.35,AVAILABLE,,86,0,0.4196,0.6279,0.4054,True,"adjusted with n=86, r=0.628, m=0.643, lambda=0.896",0.3369,0.1385,0.3535,drift:after
+drift-088,drift,2027-03-24T21:29:02.146884Z,True,0.35,AVAILABLE,,86,0,0.2856,0.6279,0.2738,True,"adjusted with n=86, r=0.628, m=0.643, lambda=0.896",0.5104,0.1385,0.5274,drift:after
+unresolved-072,unresolved,2027-03-25T09:37:30.044092Z,True,0.55,WITHHELD_CENSORED,unresolved share 25/70 > 0.25,45,25,0.6107,,0.6107,False,WITHHELD_CENSORED: unresolved share 25/70 > 0.25,0.1516,,0.1516,unresolved
+drift-089,drift,2027-03-26T02:29:30.390427Z,False,0.35,AVAILABLE,,86,0,0.7146,0.6279,0.7025,True,"adjusted with n=86, r=0.628, m=0.643, lambda=0.896",0.5107,0.3943,0.4935,drift:after
+drift-090,drift,2027-03-30T09:42:14.461918Z,False,0.35,AVAILABLE,,86,0,0.7758,0.6279,0.7655,True,"adjusted with n=86, r=0.628, m=0.643, lambda=0.896",0.6019,0.3943,0.586,drift:after
+stable-130,stable,2027-03-31T00:07:53.798018Z,False,0.7,AVAILABLE,,127,1,0.3218,0.6063,0.4053,True,"adjusted with n=127, r=0.606, m=0.510, lambda=0.927",0.1036,0.3676,0.1643,stable
+drift-091,drift,2027-04-01T07:00:43.235744Z,False,0.35,AVAILABLE,,86,0,0.8217,0.6279,0.813,True,"adjusted with n=86, r=0.628, m=0.643, lambda=0.896",0.6752,0.3943,0.661,drift:after
+drift-092,drift,2027-04-07T12:36:43.171231Z,False,0.35,AVAILABLE,,87,0,0.1307,0.6207,0.1224,True,"adjusted with n=87, r=0.621, m=0.640, lambda=0.897",0.0171,0.3853,0.015,drift:after
+drift-093,drift,2027-04-09T18:39:47.317357Z,False,0.35,AVAILABLE,,90,0,0.4025,0.6222,0.3911,True,"adjusted with n=90, r=0.622, m=0.635, lambda=0.900",0.162,0.3871,0.153,drift:after
+stable-131,stable,2027-04-10T01:09:12.803395Z,False,0.7,AVAILABLE,,129,1,0.3637,0.6047,0.4492,True,"adjusted with n=129, r=0.605, m=0.511, lambda=0.928",0.1323,0.3657,0.2018,stable
+sparse-011,sparse,2027-04-10T16:52:41.942259Z,False,0.85,AVAILABLE,,11,0,0.4362,0.9091,0.7029,True,"adjusted with n=11, r=0.909, m=0.542, lambda=0.524",0.1903,0.8265,0.4941,sparse
+drift-094,drift,2027-04-12T00:42:41.405987Z,False,0.35,AVAILABLE,,90,0,0.651,0.6222,0.6401,True,"adjusted with n=90, r=0.622, m=0.635, lambda=0.900",0.4238,0.3871,0.4097,drift:after
+drift-095,drift,2027-04-12T18:32:36.725577Z,False,0.35,AVAILABLE,,90,0,0.5494,0.6222,0.5376,True,"adjusted with n=90, r=0.622, m=0.635, lambda=0.900",0.3018,0.3871,0.289,drift:after
+stable-132,stable,2027-04-13T21:16:27.828221Z,True,0.7,AVAILABLE,,129,1,0.6335,0.6047,0.7115,True,"adjusted with n=129, r=0.605, m=0.511, lambda=0.928",0.1343,0.1563,0.0832,stable
+stable-133,stable,2027-04-17T07:34:59.162024Z,True,0.7,AVAILABLE,,130,1,0.3756,0.6,0.4587,True,"adjusted with n=130, r=0.600, m=0.509, lambda=0.929",0.3899,0.16,0.293,stable
+stable-134,stable,2027-04-18T12:04:53.965514Z,False,0.7,AVAILABLE,,130,1,0.1325,0.6,0.1771,True,"adjusted with n=130, r=0.600, m=0.509, lambda=0.929",0.0176,0.36,0.0314,stable
+stable-135,stable,2027-04-19T00:27:05.569820Z,True,0.7,AVAILABLE,,130,1,0.7591,0.6,0.8161,True,"adjusted with n=130, r=0.600, m=0.509, lambda=0.929",0.058,0.16,0.0338,stable
+unresolved-073,unresolved,2027-04-20T14:39:03.442761Z,False,0.55,WITHHELD_CENSORED,unresolved share 26/73 > 0.25,47,26,0.5321,,0.5321,False,WITHHELD_CENSORED: unresolved share 26/73 > 0.25,0.2831,,0.2831,unresolved
+sparse-012,sparse,2027-04-25T02:53:51.942228Z,True,0.85,AVAILABLE,,12,0,0.7366,0.8333,0.8622,True,"adjusted with n=12, r=0.833, m=0.533, lambda=0.545",0.0694,0.0278,0.019,sparse
+stable-136,stable,2027-04-26T16:04:54.903880Z,True,0.7,AVAILABLE,,132,0,0.3371,0.5909,0.4101,True,"adjusted with n=132, r=0.591, m=0.508, lambda=0.930",0.4394,0.1674,0.348,stable
+stable-137,stable,2027-04-28T17:16:26.899784Z,True,0.7,AVAILABLE,,133,0,0.932,0.594,0.9497,True,"adjusted with n=133, r=0.594, m=0.509, lambda=0.930",0.0046,0.1648,0.0025,stable
+drift-096,drift,2027-04-28T18:52:07.483363Z,False,0.35,AVAILABLE,,96,0,0.7858,0.5833,0.7547,True,"adjusted with n=96, r=0.583, m=0.630, lambda=0.906",0.6175,0.3402,0.5696,drift:after
+drift-097,drift,2027-04-28T21:04:33.837925Z,False,0.35,AVAILABLE,,96,0,0.5935,0.5833,0.5505,True,"adjusted with n=96, r=0.583, m=0.630, lambda=0.906",0.3522,0.3402,0.3031,drift:after
+drift-098,drift,2027-05-01T10:59:43.457943Z,False,0.35,AVAILABLE,,96,0,0.4337,0.5833,0.3911,True,"adjusted with n=96, r=0.583, m=0.630, lambda=0.906",0.1881,0.3402,0.153,drift:after
+stable-138,stable,2027-05-03T07:23:18.782258Z,True,0.7,AVAILABLE,,135,1,0.421,0.6,0.5057,True,"adjusted with n=135, r=0.600, m=0.510, lambda=0.931",0.3352,0.16,0.2443,stable
+stable-139,stable,2027-05-04T07:22:35.719527Z,True,0.7,AVAILABLE,,135,1,0.7564,0.6,0.8138,True,"adjusted with n=135, r=0.600, m=0.510, lambda=0.931",0.0593,0.16,0.0347,stable
+sparse-013,sparse,2027-05-04T12:15:53.721560Z,True,0.85,AVAILABLE,,13,0,0.6418,0.8462,0.8078,True,"adjusted with n=13, r=0.846, m=0.549, lambda=0.565",0.1283,0.0237,0.0369,sparse
+drift-099,drift,2027-05-07T22:27:13.251487Z,False,0.35,AVAILABLE,,96,0,0.333,0.5833,0.2951,True,"adjusted with n=96, r=0.583, m=0.630, lambda=0.906",0.1109,0.3402,0.0871,drift:after
+unresolved-074,unresolved,2027-05-08T18:42:07.800945Z,False,0.55,WITHHELD_CENSORED,unresolved share 27/74 > 0.25,47,27,0.8129,,0.8129,False,WITHHELD_CENSORED: unresolved share 27/74 > 0.25,0.6608,,0.6608,unresolved
+drift-100,drift,2027-05-09T18:36:11.842826Z,False,0.35,AVAILABLE,,96,0,0.2739,0.5833,0.2403,True,"adjusted with n=96, r=0.583, m=0.630, lambda=0.906",0.075,0.3402,0.0577,drift:after
+unresolved-075,unresolved,2027-05-10T06:21:30.766326Z,False,0.55,WITHHELD_CENSORED,unresolved share 27/74 > 0.25,47,27,0.5373,,0.5373,False,WITHHELD_CENSORED: unresolved share 27/74 > 0.25,0.2887,,0.2887,unresolved
+stable-140,stable,2027-05-14T05:08:45.635169Z,True,0.7,AVAILABLE,,137,1,0.4361,0.6058,0.5252,True,"adjusted with n=137, r=0.606, m=0.511, lambda=0.932",0.318,0.1554,0.2254,stable
+stable-141,stable,2027-05-17T10:53:53.273676Z,True,0.7,AVAILABLE,,138,1,0.3546,0.6087,0.4435,True,"adjusted with n=138, r=0.609, m=0.511, lambda=0.932",0.4165,0.1531,0.3097,stable
+stable-142,stable,2027-05-18T06:50:49.222754Z,True,0.7,AVAILABLE,,138,1,0.7182,0.6087,0.7871,True,"adjusted with n=138, r=0.609, m=0.511, lambda=0.932",0.0794,0.1531,0.0453,stable
+unresolved-076,unresolved,2027-05-24T15:43:45.363545Z,False,0.55,WITHHELD_CENSORED,unresolved share 29/76 > 0.25,47,29,0.369,,0.369,False,WITHHELD_CENSORED: unresolved share 29/76 > 0.25,0.1362,,0.1362,unresolved
+unresolved-077,unresolved,2027-05-24T20:40:33.455685Z,False,0.55,WITHHELD_CENSORED,unresolved share 29/76 > 0.25,47,29,0.4631,,0.4631,False,WITHHELD_CENSORED: unresolved share 29/76 > 0.25,0.2145,,0.2145,unresolved
+unresolved-078,unresolved,2027-05-27T13:42:53.691990Z,True,0.55,WITHHELD_CENSORED,unresolved share 29/76 > 0.25,47,29,0.1647,,0.1647,False,WITHHELD_CENSORED: unresolved share 29/76 > 0.25,0.6977,,0.6977,unresolved
+stable-143,stable,2027-05-29T03:01:36.854397Z,True,0.7,AVAILABLE,,141,0,0.7355,0.6099,0.803,True,"adjusted with n=141, r=0.610, m=0.509, lambda=0.934",0.07,0.1522,0.0388,stable
+unresolved-079,unresolved,2027-05-31T04:24:49.360690Z,False,0.55,WITHHELD_CENSORED,unresolved share 29/76 > 0.25,47,29,0.1089,,0.1089,False,WITHHELD_CENSORED: unresolved share 29/76 > 0.25,0.0119,,0.0119,unresolved
+drift-101,drift,2027-06-04T18:22:15.886325Z,False,0.35,AVAILABLE,,101,0,0.356,0.5545,0.2998,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.1267,0.3075,0.0899,drift:after
+drift-102,drift,2027-06-05T21:58:32.638923Z,True,0.35,AVAILABLE,,101,0,0.8621,0.5545,0.8288,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.019,0.1985,0.0293,drift:after
+drift-103,drift,2027-06-06T14:51:36.943651Z,True,0.35,AVAILABLE,,101,0,0.9055,0.5545,0.8812,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.0089,0.1985,0.0141,drift:after
+sparse-014,sparse,2027-06-07T07:21:48.037606Z,True,0.85,AVAILABLE,,14,0,0.5626,0.8571,0.7625,True,"adjusted with n=14, r=0.857, m=0.556, lambda=0.583",0.1913,0.0204,0.0564,sparse
+unresolved-080,unresolved,2027-06-07T13:27:08.731191Z,False,0.55,WITHHELD_CENSORED,unresolved share 29/76 > 0.25,47,29,0.4711,,0.4711,False,WITHHELD_CENSORED: unresolved share 29/76 > 0.25,0.2219,,0.2219,unresolved
+unresolved-081,unresolved,2027-06-07T22:32:08.994406Z,False,0.55,WITHHELD_CENSORED,unresolved share 31/78 > 0.25,47,31,0.1165,,0.1165,False,WITHHELD_CENSORED: unresolved share 31/78 > 0.25,0.0136,,0.0136,unresolved
+drift-104,drift,2027-06-08T02:07:26.728415Z,False,0.35,AVAILABLE,,101,0,0.8958,0.5545,0.8694,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.8025,0.3075,0.7559,drift:after
+drift-105,drift,2027-06-08T13:59:49.856800Z,True,0.35,AVAILABLE,,101,0,0.7279,0.5545,0.6745,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.074,0.1985,0.106,drift:after
+stable-144,stable,2027-06-10T22:33:27.451576Z,True,0.7,AVAILABLE,,143,0,0.1787,0.6154,0.2456,True,"adjusted with n=143, r=0.615, m=0.510, lambda=0.935",0.6745,0.1479,0.5691,stable
+unresolved-082,unresolved,2027-06-11T19:32:13.630763Z,True,0.55,WITHHELD_CENSORED,unresolved share 31/79 > 0.25,48,31,0.8259,,0.8259,False,WITHHELD_CENSORED: unresolved share 31/79 > 0.25,0.0303,,0.0303,unresolved
+drift-106,drift,2027-06-12T10:26:45.908990Z,True,0.35,AVAILABLE,,101,0,0.878,0.5545,0.8479,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.0149,0.1985,0.0231,drift:after
+stable-145,stable,2027-06-15T08:36:56.483247Z,True,0.7,AVAILABLE,,144,0,0.6745,0.6181,0.7571,True,"adjusted with n=144, r=0.618, m=0.511, lambda=0.935",0.106,0.1458,0.059,stable
+unresolved-083,unresolved,2027-06-16T15:00:29.592480Z,False,0.55,WITHHELD_CENSORED,unresolved share 32/80 > 0.25,48,32,0.789,,0.789,False,WITHHELD_CENSORED: unresolved share 32/80 > 0.25,0.6225,,0.6225,unresolved
+drift-107,drift,2027-06-18T14:35:28.665079Z,False,0.35,AVAILABLE,,101,0,0.8748,0.5545,0.844,True,"adjusted with n=101, r=0.554, m=0.622, lambda=0.910",0.7653,0.3075,0.7123,drift:after
+drift-108,drift,2027-06-18T21:24:43.350383Z,False,0.35,AVAILABLE,,102,0,0.3768,0.549,0.3167,True,"adjusted with n=102, r=0.549, m=0.620, lambda=0.911",0.142,0.3014,0.1003,drift:after
+unresolved-084,unresolved,2027-06-20T06:58:00.340251Z,True,0.55,WITHHELD_CENSORED,unresolved share 32/80 > 0.25,48,32,0.196,,0.196,False,WITHHELD_CENSORED: unresolved share 32/80 > 0.25,0.6464,,0.6464,unresolved
+drift-109,drift,2027-06-21T03:53:11.588781Z,False,0.35,AVAILABLE,,104,0,0.423,0.5577,0.3625,True,"adjusted with n=104, r=0.558, m=0.625, lambda=0.912",0.1789,0.311,0.1314,drift:after
+unresolved-085,unresolved,2027-06-21T06:24:05.053161Z,True,0.55,WITHHELD_CENSORED,unresolved share 31/80 > 0.25,49,31,0.5011,,0.5011,False,WITHHELD_CENSORED: unresolved share 31/80 > 0.25,0.2489,,0.2489,unresolved
+drift-110,drift,2027-06-21T17:45:41.169254Z,False,0.35,AVAILABLE,,104,0,0.4918,0.5577,0.4288,True,"adjusted with n=104, r=0.558, m=0.625, lambda=0.912",0.2419,0.311,0.1839,drift:after
+drift-111,drift,2027-06-23T00:15:11.303913Z,True,0.35,AVAILABLE,,106,0,0.7737,0.5566,0.7225,True,"adjusted with n=106, r=0.557, m=0.628, lambda=0.914",0.0512,0.1966,0.077,drift:after
+stable-146,stable,2027-06-29T17:12:22.725072Z,False,0.7,AVAILABLE,,146,0,0.889,0.6233,0.9251,True,"adjusted with n=146, r=0.623, m=0.510, lambda=0.936",0.7903,0.3885,0.8558,stable
