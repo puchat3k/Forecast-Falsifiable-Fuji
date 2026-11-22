@@ -61,10 +61,15 @@ RULES = {
     "withhold": {
         "WITHHELD_INCOMPATIBLE": "the query is outside the family's rules (unknown family/version, field value or horizon)",
         "WITHHELD_SPARSE": "fewer than min_resolved resolved records in the cohort",
+        "WITHHELD_UNSTABLE": "only with query guards=['stability']: the most recent stability.window resolved records "
+                             "differ from the older ones by >= stability.min_gap AND |z| >= stability.min_z "
+                             "(two-proportion test); the pooled rate is likely stale",
         "WITHHELD_CENSORED": "unresolved records exceed max_unresolved_share of eligible records "
                              "(late outcomes may differ systematically)",
     },
     "min_resolved": 10,
+    "stability": {"window": 15, "min_gap": 0.20, "min_z": 2.0,
+                  "applies": "opt-in per query (guards=['stability']); needs >= 2*window resolved records"},
     "max_unresolved_share": 0.25,
     "interval": "Wilson score interval, 95%",
 }
@@ -171,11 +176,14 @@ def reference_rate(db_path, query, *, principal_id: str, purpose: str,
     if classification not in {"private", "public", "synthetic"}:
         raise ValueError("classification_required")
     exclude = set(query.get("exclude_case_keys") or [])
+    guards = sorted(set(query.get("guards") or []))
+    if any(g not in {"stability"} for g in guards):
+        raise ValueError("unknown_guard")
 
     sha = _file_sha256(db_path)
     base = {**EVIDENCE_ONLY, "rules": RULES, "family_rules": FAMILIES.get(family),
             "query": {"event": event, "cutoff_at": _iso(cutoff), "classification": classification,
-                      "exclude_case_keys": sorted(exclude)},
+                      "exclude_case_keys": sorted(exclude), "guards": guards},
             "query_sha256": hashlib.sha256(_canonical(query).encode()).hexdigest(),
             "ledger_sha256": sha}
     problems = validate_event(event)
@@ -281,12 +289,27 @@ def reference_rate(db_path, query, *, principal_id: str, purpose: str,
         reasons.append(f"unresolved share {n_unres}/{eligible} > {RULES['max_unresolved_share']}")
     else:
         status = "AVAILABLE"
+    stability = None
+    st = RULES["stability"]
+    if "stability" in guards and n_res >= 2 * st["window"]:
+        ordered = sorted(cohort, key=lambda x: x["anchor_at"])
+        recent, older = ordered[-st["window"]:], ordered[:-st["window"]]
+        pr = sum(x["outcome"] for x in recent) / len(recent)
+        po = sum(x["outcome"] for x in older) / len(older)
+        pp = k / n_res
+        se = math.sqrt(pp * (1 - pp) * (1 / len(recent) + 1 / len(older))) if 0 < pp < 1 else 0.0
+        z = (pr - po) / se if se else 0.0
+        stability = {"recent_rate": round(pr, 4), "older_rate": round(po, 4), "recent_n": len(recent),
+                     "older_n": len(older), "z": round(z, 3)}
+        if status == "AVAILABLE" and abs(pr - po) >= st["min_gap"] and abs(z) >= st["min_z"]:
+            status = "WITHHELD_UNSTABLE"
+            reasons.append(f"recent {len(recent)} rate {pr:.2f} vs older {po:.2f} (z={z:.2f})")
     rate = None
     if status == "AVAILABLE":
         rate = {"observed": round(k / n_res, 4), "numerator": k, "denominator": n_res, "interval_95": _wilson(k, n_res)}
     return {**base, "status": status, "reasons": reasons, "rate": rate, "counts": counts,
             "cohort": cohort, "unresolved_records": unresolved, "window_open_records": window_open,
-            "other_horizons": other_h, "excluded": excluded}
+            "other_horizons": other_h, "excluded": excluded, "stability": stability}
 
 
 def _z(value):

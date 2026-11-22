@@ -105,8 +105,8 @@ def iso(dt):
     return dt.isoformat().replace("+00:00", "Z") if dt else None
 
 
-def generate():
-    rng = random.Random(SEED)
+def generate(seed=SEED):
+    rng = random.Random(seed)
     cases = []
     for name, c in COHORTS.items():
         t = START + timedelta(days=rng.uniform(0, c["mean_gap_days"]))

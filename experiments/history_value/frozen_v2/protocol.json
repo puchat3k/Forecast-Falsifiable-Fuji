@@ -1,0 +1,132 @@
+{
+ "arms": {
+  "A_no_guard": "reference_rate(guards=[])",
+  "B_stability_guard": "reference_rate(guards=['stability'])",
+  "stability_rule": {
+   "applies": "opt-in per query (guards=['stability']); needs >= 2*window resolved records",
+   "min_gap": 0.2,
+   "min_z": 2.0,
+   "window": 15
+  }
+ },
+ "cohorts": {
+  "drift": {
+   "analyst_prior": 0.65,
+   "approver_role": "procurement",
+   "base": [
+    [
+     "2026-01-01",
+     0.8
+    ],
+    [
+     "2026-10-01",
+     0.35
+    ]
+   ],
+   "horizon_days": 14,
+   "late": {
+    "approved": 0.05,
+    "not_approved": 0.05
+   },
+   "mean_gap_days": 5,
+   "never": {
+    "approved": 0.0,
+    "not_approved": 0.0
+   }
+  },
+  "sparse": {
+   "analyst_prior": 0.6,
+   "approver_role": "legal",
+   "base": [
+    [
+     "2026-01-01",
+     0.85
+    ]
+   ],
+   "horizon_days": 7,
+   "late": {
+    "approved": 0.05,
+    "not_approved": 0.05
+   },
+   "mean_gap_days": 45,
+   "never": {
+    "approved": 0.0,
+    "not_approved": 0.0
+   }
+  },
+  "stable": {
+   "analyst_prior": 0.55,
+   "approver_role": "deal_desk",
+   "base": [
+    [
+     "2026-01-01",
+     0.7
+    ]
+   ],
+   "horizon_days": 14,
+   "late": {
+    "approved": 0.05,
+    "not_approved": 0.05
+   },
+   "mean_gap_days": 4,
+   "never": {
+    "approved": 0.0,
+    "not_approved": 0.0
+   }
+  },
+  "unresolved": {
+   "analyst_prior": 0.5,
+   "approver_role": "cfo",
+   "base": [
+    [
+     "2026-01-01",
+     0.55
+    ]
+   ],
+   "horizon_days": 14,
+   "late": {
+    "approved": 0.1,
+    "not_approved": 0.3
+   },
+   "mean_gap_days": 6,
+   "never": {
+    "approved": 0.1,
+    "not_approved": 0.6
+   }
+  }
+ },
+ "cutoff_rule": "Each case is forecast at its own decision time: cutoff = anchor_at (when the offer was submitted for approval). History = forecast_fuji.history.reference_rate(cutoff=anchor_at, own case excluded); the reader admits only records locked, window-closed, observed AND recorded by the cutoff.",
+ "data": "SYNTHETIC (seeded generator in freeze.py); validates the method only",
+ "decision_rule": [
+  "Arm B HELPS in its regime if the 95% interval of mean (adjusted - unassisted) over its paired cases is entirely below 0; HURTS if entirely above 0; otherwise inconclusive. The same verdicts are reported per cohort/period (drift split at 2026-10-01).",
+  "Recommend exposing the signal to analysts in a shadow pilot (evidence only, with the stability guard on) if Arm B HELPS overall AND no cohort/period HURTS AND every withheld case (including WITHHELD_UNSTABLE) falls back unchanged. Otherwise do not recommend it.",
+  "Arm A is reported for comparison and replication; it does not decide the recommendation.",
+  "Synthetic results never count as evidence of customer-case improvement."
+ ],
+ "existing_system_slice": "Reuse of frozen predictions from frays-platform #310 round 2 (tests/fixtures/next_move_round2_fuji.sqlite): every proposition whose statement mentions approval is put through the same reader and combine rule with its own case cutoff; scored with its #310 resolution. Reported separately; never pooled with the synthetic cases.",
+ "generator": {
+  "analyst_noise_sd": 0.6,
+  "analyst_slope": 1.0,
+  "case_sd": 0.8,
+  "outcome": "Bernoulli(sigmoid(logit(base(anchor)) + case_effect))",
+  "unassisted_forecast": "sigmoid(logit(analyst_prior) + slope*(case_effect + noise)), frozen per case"
+ },
+ "mode": "SHADOW, forecast-only: no approval status, no move, no action",
+ "regime_hypothesis": "The adjusted forecast improves on the unassisted forecast in the regime where Fuji returns AVAILABLE with the stability guard on (enough resolved history, not censored, recent records consistent with older ones). Every input to this regime is visible to an analyst at the cutoff.",
+ "schema": "fuji.history-value.protocol.v2",
+ "scoring": {
+  "coverage": "share of ALL cases where the rate is AVAILABLE (= adjusted forecast actually adjusts), with Fuji's withhold reasons counted",
+  "full_set": "adjusted-with-fallback vs unassisted over ALL cases (fallback cases contribute 0 difference)",
+  "harm": "cases where adjusted Brier > unassisted Brier, counted and listed; drift cohort split at 2026-10-01",
+  "metric": "Brier (p - outcome)^2; lower is better; computed by Fuji core resolve() and cross-checked",
+  "paired_set": "cases where all three variants exist (rate AVAILABLE)",
+  "uncertainty": "case-resampling bootstrap, 4000 draws, seed 7, 95% percentile interval of mean paired difference"
+ },
+ "seed": 20261123,
+ "status": "FROZEN before v2 scoring",
+ "variants": {
+  "adjusted": "when AVAILABLE: logit(p_adj) = logit(p_u) + lam*(logit(r) - logit(m)), lam = n/(n+10), r = k/n, m = mean p_u over the SAME contributing records (the analyst's own visible bias), r and m clipped to [0.02, 0.98]; when WITHHELD: fallback p_adj = p_u (unchanged)",
+  "rate_alone": "Fuji's observed rate k/n when status is AVAILABLE; no forecast otherwise",
+  "unassisted": "the frozen unassisted forecast p_u"
+ }
+}

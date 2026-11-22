@@ -29,7 +29,7 @@ Status: WITHHELD_SPARSE (0 resolved < min_resolved 10)
 Observed rate: withheld
 Cohort: eligible 0 | resolved 0 (0 approved, 0 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)
 Not matched: other_field_values 274, not_locked_by_cutoff 86
-Provenance: ledger sha256 aceb12538dc1d5a1 | query sha256 4561ecbf86ec9fa1 | 0 contributing records
+Provenance: ledger sha256 61a0e20476b1b490 | query sha256 424c21fba65c6e5d | 0 contributing records
 ```
 
 **WITHHELD_CENSORED** — case `unresolved-021`: adjusted forecast = unassisted 0.4062 (unchanged). Reason: WITHHELD_CENSORED: unresolved share 8/18 > 0.25
@@ -51,7 +51,7 @@ Cohort: eligible 18 | resolved 10 (10 approved, 0 not) | unresolved at cutoff 8 
   unresolved: e4556eb5cd59 window closed 2026-01-30T05:47:14.029204Z: no resolution recorded
   unresolved: f9bc77adc163 window closed 2026-04-21T16:19:08.341790Z: no resolution recorded
 Not matched: other_field_values 274, not_locked_by_cutoff 65
-Provenance: ledger sha256 aceb12538dc1d5a1 | query sha256 cd7648f10534a549 | 10 contributing records: 395d0e8e, 5fe2d97e, 8a21f51c, 8e08cdfb, 94a55a6c, a44b11a4, bf8ce2af, c445aef6, c9d89400, fe99213b
+Provenance: ledger sha256 61a0e20476b1b490 | query sha256 4833cab53e821bde | 10 contributing records: 395d0e8e, 5fe2d97e, 8a21f51c, 8e08cdfb, 94a55a6c, a44b11a4, bf8ce2af, c445aef6, c9d89400, fe99213b
 ```
 
 ## Where history made the forecast worse

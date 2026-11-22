@@ -1,4 +1,11 @@
 {
+ "code_drift_since_freeze": [
+  {
+   "current_sha256": "82d8762f6614f99166a00729e42df965780d20584a5965774eee7f88842043b9",
+   "file": "forecast_fuji/history.py",
+   "frozen_sha256": "314dc60a96b906456f2eac75d399aa5f11845767bdfd2de069333b9f606c4cad"
+  }
+ ],
  "data": "SYNTHETIC (seeded generator in freeze.py); validates the method only",
  "existing_310_slice": [
   {
@@ -52,14 +59,14 @@
    "adjusted": 0.4062,
    "case": "unresolved-021",
    "note": "WITHHELD_CENSORED: unresolved share 8/18 > 0.25",
-   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-05-15T23:50:32.273849Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_CENSORED (unresolved share 8/18 > 0.25)\nObserved rate: withheld\nCohort: eligible 18 | resolved 10 (10 approved, 0 not) | unresolved at cutoff 8 (not counted either way) | window still open 3 (not counted)\n  unresolved: 1444b54eb8bb window closed 2026-03-09T09:07:04.219336Z: no resolution recorded\n  unresolved: 54c9f0e0e04d window closed 2026-02-19T05:42:00.977171Z: no resolution recorded\n  unresolved: 6437d9edd6d7 window closed 2026-04-26T14:39:01.725909Z: no resolution recorded\n  unresolved: 726af759d904 window closed 2026-03-11T00:03:09.450927Z: no resolution recorded\n  unresolved: 926296230b28 window closed 2026-05-12T21:10:50.041240Z: resolution recorded after the cutoff\n  unresolved: b5c8b8d3e36a window closed 2026-05-14T16:34:48.966374Z: no resolution recorded\n  unresolved: e4556eb5cd59 window closed 2026-01-30T05:47:14.029204Z: no resolution recorded\n  unresolved: f9bc77adc163 window closed 2026-04-21T16:19:08.341790Z: no resolution recorded\nNot matched: other_field_values 274, not_locked_by_cutoff 65\nProvenance: ledger sha256 aceb12538dc1d5a1 | query sha256 cd7648f10534a549 | 10 contributing records: 395d0e8e, 5fe2d97e, 8a21f51c, 8e08cdfb, 94a55a6c, a44b11a4, bf8ce2af, c445aef6, c9d89400, fe99213b",
+   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-05-15T23:50:32.273849Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_CENSORED (unresolved share 8/18 > 0.25)\nObserved rate: withheld\nCohort: eligible 18 | resolved 10 (10 approved, 0 not) | unresolved at cutoff 8 (not counted either way) | window still open 3 (not counted)\n  unresolved: 1444b54eb8bb window closed 2026-03-09T09:07:04.219336Z: no resolution recorded\n  unresolved: 54c9f0e0e04d window closed 2026-02-19T05:42:00.977171Z: no resolution recorded\n  unresolved: 6437d9edd6d7 window closed 2026-04-26T14:39:01.725909Z: no resolution recorded\n  unresolved: 726af759d904 window closed 2026-03-11T00:03:09.450927Z: no resolution recorded\n  unresolved: 926296230b28 window closed 2026-05-12T21:10:50.041240Z: resolution recorded after the cutoff\n  unresolved: b5c8b8d3e36a window closed 2026-05-14T16:34:48.966374Z: no resolution recorded\n  unresolved: e4556eb5cd59 window closed 2026-01-30T05:47:14.029204Z: no resolution recorded\n  unresolved: f9bc77adc163 window closed 2026-04-21T16:19:08.341790Z: no resolution recorded\nNot matched: other_field_values 274, not_locked_by_cutoff 65\nProvenance: ledger sha256 61a0e20476b1b490 | query sha256 4833cab53e821bde | 10 contributing records: 395d0e8e, 5fe2d97e, 8a21f51c, 8e08cdfb, 94a55a6c, a44b11a4, bf8ce2af, c445aef6, c9d89400, fe99213b",
    "unassisted": 0.4062
   },
   "WITHHELD_SPARSE": {
    "adjusted": 0.4588,
    "case": "unresolved-000",
    "note": "WITHHELD_SPARSE: 0 resolved < min_resolved 10",
-   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-01-06T06:00:29.493952Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_SPARSE (0 resolved < min_resolved 10)\nObserved rate: withheld\nCohort: eligible 0 | resolved 0 (0 approved, 0 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)\nNot matched: other_field_values 274, not_locked_by_cutoff 86\nProvenance: ledger sha256 aceb12538dc1d5a1 | query sha256 4561ecbf86ec9fa1 | 0 contributing records",
+   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-01-06T06:00:29.493952Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_SPARSE (0 resolved < min_resolved 10)\nObserved rate: withheld\nCohort: eligible 0 | resolved 0 (0 approved, 0 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)\nNot matched: other_field_values 274, not_locked_by_cutoff 86\nProvenance: ledger sha256 61a0e20476b1b490 | query sha256 424c21fba65c6e5d | 0 contributing records",
    "unassisted": 0.4588
   }
  },
@@ -84,6 +91,7 @@
    "n": 233
   }
  },
+ "guards": [],
  "harm_by_group": {
   "drift:after": 30,
   "drift:before": 6,

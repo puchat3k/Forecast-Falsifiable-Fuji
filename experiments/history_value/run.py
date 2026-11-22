@@ -40,12 +40,19 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def verify_freeze():
+CODE_DRIFT = []
+
+
+def verify_freeze(allow_code_drift=False):
+    """Frozen data files must match exactly. Frozen code may differ only if explicitly allowed; drift is recorded."""
     want = json.loads((FROZEN / "FREEZE.json").read_text())
     for name, digest in want.items():
-        path = FROZEN / name if (FROZEN / name).exists() else ROOT / name
+        is_data = (FROZEN / name).exists()
+        path = FROZEN / name if is_data else ROOT / name
         if sha(path) != digest:
-            raise SystemExit(f"FROZEN INPUT CHANGED: {name}")
+            if is_data or not allow_code_drift:
+                raise SystemExit(f"FROZEN INPUT CHANGED: {name}")
+            CODE_DRIFT.append({"file": name, "frozen_sha256": digest, "current_sha256": sha(path)})
     return want
 
 
@@ -95,8 +102,11 @@ def build_ledger(path, cases):
                                 "source_sha256": "1" * 64, "observed_at": c["observed_at"], "verified_by": "replay"})
 
 
+GUARDS = []
+
+
 def query(c):
-    return {"event": {"family": "offer_approval", "version": 1, "approver_role": c["approver_role"],
+    return {"guards": GUARDS, "event": {"family": "offer_approval", "version": 1, "approver_role": c["approver_role"],
                       "offer_side": c["offer_side"], "horizon_days": c["horizon_days"]},
             "cutoff_at": c["anchor_at"], "classification": "synthetic", "exclude_case_keys": [c["case_key"]]}
 
@@ -163,7 +173,16 @@ def existing_slice():
 
 
 def main():
-    freeze = verify_freeze()
+    import argparse
+    global FROZEN, RESULTS, GUARDS
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--frozen", default=str(FROZEN))
+    ap.add_argument("--results", default=str(RESULTS))
+    ap.add_argument("--guards", default="")
+    ap.add_argument("--allow-code-drift", action="store_true")
+    a = ap.parse_args()
+    FROZEN, RESULTS, GUARDS = Path(a.frozen), Path(a.results), [g for g in a.guards.split(",") if g]
+    freeze = verify_freeze(a.allow_code_drift)
     protocol = json.loads((FROZEN / "protocol.json").read_text())
     cases = json.loads((FROZEN / "cases.json").read_text())
     p_by_pid = {pid(c["case_key"]): c["p_unassisted"] for c in cases}
@@ -223,7 +242,7 @@ def main():
     harm = sorted((r for r in rows if r["applied"] and r["brier_adjusted"] > r["brier_unassisted"]),
                   key=lambda r: r["brier_unassisted"] - r["brier_adjusted"])
     existing = existing_slice()
-    out = {"protocol_status": protocol["status"], "freeze": freeze, "data": protocol["data"], "summary": summary,
+    out = {"protocol_status": protocol["status"], "freeze": freeze, "guards": GUARDS, "code_drift_since_freeze": CODE_DRIFT, "data": protocol["data"], "summary": summary,
            "fuji_scores_paired": {k: {"mean_brier": round(v[0], 4), "n": v[1]} for k, v in fuji.items()},
            "fallback_unchanged_when_withheld": fallback_ok, "fallback_examples": fallback_example,
            "harm_top10": harm[:10], "harm_by_group": dict(Counter(r["cohort_period"] for r in harm)),
