@@ -99,12 +99,66 @@ python3 -m experiments.history_value.run --frozen experiments/history_value/froz
 - **History hurt** in one condition, on one seed: a stale rate after an approval-rate change.
 - **History may help** when the rate is current (significant on seed 1, same direction on seed 2). The stability guard does not yet isolate that condition well enough.
 
-## Verdict under the frozen decision rules
-- **v1 (seed 20261122):** the overall interval is not below 0, and the period after the drift HURTS.
-- **v2 (seed 20261123, guard frozen in advance):** the pre-registered regime is inconclusive.
+## v3: pre-registered "when" test (`frozen_v3/`, freeze commit `7c2deaf` before scoring; fresh seed 20261124)
+**Design:**
+- **What varies on purpose:** how wrong the unassisted forecaster's base rate is. Prior error is 0, 0.10, 0.20 or 0.30 below a true 0.70, each in its own stable cohort. There is also one drifting cohort with prior error 0.20.
+- **Reader:** the stability guard is on.
+- **Hypotheses:**
+  - **H1 (dose-response):** history helps at prior error 0.20 and 0.30, and does not hurt at 0.
+  - **H2 (regime an analyst can see):** history helps where the visible gap |Fuji rate − the analyst's own mean forecast on the same visible records| is at least 0.10. Cases with a gap below 0.10 do not hurt.
+- **Frozen:** the analysis script (`analyze_v3.py`) and the decision rule.
 
-Both rules say **do not expose the signal to analysts yet**.
+```bash
+python3 -m experiments.history_value.run --frozen experiments/history_value/frozen_v3 --results experiments/history_value/results_v3 --guards stability
+python3 -m experiments.history_value.analyze_v3
+```
 
-**What already works:** the visibility, the censoring guard, the stability guard and the fallback behave as designed. The fallback is unchanged on 100% of withheld cases.
+**Overall:**
 
-**What it would take to revisit:** real labelled, consented approval history, where the analyst's prior error may be larger than in this generator, or a pre-registered change to the combine rule. Either would need a new freeze.
+| Coverage | Unassisted | Rate alone | Adjusted | Adjusted − unassisted [95% CI] |
+|---|---|---|---|---|
+| 560/657 (85%) | 0.2468 | 0.2311 | 0.2297 | **−0.0171 [−0.0250, −0.0089], HELPS** |
+
+**H1, by prior error** (adjusted − unassisted):
+
+| Prior error | Result | Verdict |
+|---|---|---|
+| 0.00 | +0.0020 [−0.0040, +0.0076] | no harm |
+| 0.10 | **−0.0170 [−0.0288, −0.0047]** | HELPS |
+| 0.20 | −0.0144 [−0.0304, +0.0022] | inconclusive (**the prediction missed here**) |
+| 0.30 | **−0.0544 [−0.0812, −0.0268]** | HELPS |
+| drifting, 0.20 | +0.0002 | no harm; the guard withheld 32 |
+
+**H2, by visible gap:**
+
+| Gap | Result | Verdict |
+|---|---|---|
+| ≥ 0.10 (n=345) | **−0.0254 [−0.0383, −0.0126]** | **HELPS** |
+| < 0.10 (n=215) | −0.0037 [−0.0084, +0.0010] | no harm |
+
+- **Fallback:** unchanged on 100% of withheld cases (SPARSE 64, UNSTABLE 33).
+- **Pre-registered decision:** **EXPOSE in a shadow pilot, shown only when the guard passes and the visible gap ≥ 0.10.**
+
+**Consistency check** (the same frozen gap rule applied to the earlier data; done after the v3 result, so it is not independent):
+- **Gap ≥ 0.10:** inconclusive on v1 (+0.0005) and on v2 (−0.0006). In those generators the analyst's base-rate error was smaller (0.15 or less), and much of the gap came from drift.
+- **So the gain depends on the analyst having a large, stable base-rate error.** A real pilot has to measure whether analysts actually do.
+
+## When does history help? Answer across all three rounds
+- **Helps:** when the analyst's own past forecasts on the same visible records are systematically off from Fuji's rate (gap ≥ 0.10) **and** the cohort is stable (the guard passes). In v3, the larger the base-rate error, the bigger the gain.
+- **Does nothing:** when the analyst is already calibrated (prior error 0).
+- **Can hurt:** when the rate is stale after a change and no guard is applied (v1).
+- **Unproven:** whether real analysts show the large, stable error this regime needs.
+
+## Verdicts under the frozen decision rules
+- **v1 and v2:** unconditional exposure is **not** supported.
+- **v3:** **conditional** exposure is supported: shadow only, evidence only, stability guard on, and shown only when the visible gap is at least 0.10.
+
+**Recommended shadow pilot design:**
+- The analyst locks an unassisted forecast in Fuji **before** seeing the rate.
+- Then the gated rate is shown, and an adjusted forecast is locked.
+- Both are scored on resolution, so the pilot measures itself.
+- **Stop condition:** if, on 30+ resolved gated cases, the 95% interval of adjusted − unassisted is entirely above 0.
+
+**Still unproven:** benefit on customer cases. These are synthetic results.
+
+**What works:** visibility, the censoring, sparse and stability guards, and the unchanged fallback.
