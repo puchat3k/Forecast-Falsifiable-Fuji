@@ -1,0 +1,55 @@
+### A_usable_cohort_at_2027-03-15
+HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)
+Question: Was the offer approved by the named approver within horizon_days of being submitted for approval?
+Event: family=offer_approval, version=1, approver_role=deal_desk, offer_side=vendor, horizon_days=14
+Decision cutoff: 2027-03-15T00:00:00Z | classification: synthetic | rules: fuji.history.v1
+Status: AVAILABLE
+Observed rate: 9/12 approved = 0.75 (95% interval 0.47-0.91)
+Cohort: eligible 13 | resolved 12 (9 approved, 3 not) | unresolved at cutoff 1 (not counted either way) | window still open 1 (not counted)
+  unresolved: e99609623600 window closed 2027-03-06T09:00:00Z: resolution recorded after the cutoff
+Other horizons (not pooled): 30 days: 5 resolved, 0 unresolved
+Not matched: other_field_values 4, other_classification 1, not_locked_by_cutoff 1
+Provenance: ledger sha256 c7b886922db2d228 | query sha256 78d0c5e7c1145a2e | 12 contributing records: 2b000c20, 2bac3362, 429e1b86, 6077bdbd, 64dfdea2, 6eaf8346, a0d7ac18, b0fc76e9, b2e5771b, c493c27d, c56435f1, c653ea3a
+
+### B_same_query_at_2027-04-01
+HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)
+Question: Was the offer approved by the named approver within horizon_days of being submitted for approval?
+Event: family=offer_approval, version=1, approver_role=deal_desk, offer_side=vendor, horizon_days=14
+Decision cutoff: 2027-04-01T00:00:00Z | classification: synthetic | rules: fuji.history.v1
+Status: AVAILABLE
+Observed rate: 10/14 approved = 0.71 (95% interval 0.45-0.88)
+Cohort: eligible 14 | resolved 14 (10 approved, 4 not) | unresolved at cutoff 0 (not counted either way) | window still open 1 (not counted)
+Other horizons (not pooled): 30 days: 5 resolved, 0 unresolved
+Not matched: other_field_values 4, other_classification 1
+Provenance: ledger sha256 c7b886922db2d228 | query sha256 9eaa2113aaddc0b6 | 14 contributing records: 2b000c20, 2bac3362, 429e1b86, 4f144918, 6077bdbd, 64dfdea2, 6eaf8346, a0d7ac18, b0fc76e9, b2e5771b, c493c27d, c56435f1, c653ea3a, e9960962
+
+### C_sparse_cohort_cfo
+HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)
+Question: Was the offer approved by the named approver within horizon_days of being submitted for approval?
+Event: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14
+Decision cutoff: 2027-04-01T00:00:00Z | classification: synthetic | rules: fuji.history.v1
+Status: WITHHELD_SPARSE (4 resolved < min_resolved 10)
+Observed rate: withheld
+Cohort: eligible 4 | resolved 4 (3 approved, 1 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)
+Not matched: other_field_values 21
+Provenance: ledger sha256 c7b886922db2d228 | query sha256 64d346a42bea8419 | 4 contributing records: 3366228a, 657a8f89, 9cb706da, e496dab4
+
+### D_incompatible_query_board
+HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)
+Question: Was the offer approved by the named approver within horizon_days of being submitted for approval?
+Event: family=offer_approval, version=1, approver_role=board, offer_side=vendor, horizon_days=14
+Decision cutoff: 2027-04-01T00:00:00Z | classification: synthetic | rules: fuji.history.v1
+Status: WITHHELD_INCOMPATIBLE (approver_role_not_allowed)
+Observed rate: withheld
+Provenance: ledger sha256 c7b886922db2d228 | query sha256 5612c354c81229fe | 0 contributing records
+
+### E_existing_unlabelled_records
+HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)
+Question: Was the offer approved by the named approver within horizon_days of being submitted for approval?
+Event: family=offer_approval, version=1, approver_role=credit_committee, offer_side=vendor, horizon_days=14
+Decision cutoff: 2027-12-31T00:00:00Z | classification: synthetic | rules: fuji.history.v1
+Status: WITHHELD_SPARSE (0 resolved < min_resolved 10)
+Observed rate: withheld
+Cohort: eligible 0 | resolved 0 (0 approved, 0 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)
+Not matched: unlabelled_or_invalid_label 54
+Provenance: ledger sha256 5976d17475b14879 | query sha256 c45992481e437c08 | 0 contributing records
