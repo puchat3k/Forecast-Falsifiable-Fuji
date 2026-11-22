@@ -131,6 +131,16 @@ def run(out_dir=None, legacy_db=None):
     if legacy_db:
         scenarios["E_existing_unlabelled_records"] = ask(query("credit_committee", "2027-12-31T00:00:00Z"), Path(legacy_db))
     texts = {k: render(v) for k, v in scenarios.items()}
+    # Shadow / evidence-only guarantees, shown alongside the analyst text.
+    flags = {k: {f: v[f] for f in ("use", "mode", "actions_enabled", "may_change_approval_status", "may_select_move")}
+             for k, v in scenarios.items()}
+    texts["F_evidence_only_flags"] = "\n".join(f"{k}: {json.dumps(f, sort_keys=True)}" for k, f in flags.items())
+    try:  # an unauthorized principal must not read history at all
+        reference_rate(db, query("deal_desk", Q1), principal_id="other-analyst", purpose="history_replay",
+                       authorize=_allow)
+        texts["G_unauthorized_read"] = "UNEXPECTED: read allowed"
+    except PermissionError as e:
+        texts["G_unauthorized_read"] = f"other-analyst -> PermissionError: {e} (no counts, no rate returned)"
     if out_dir:
         out = Path(out_dir)
         out.mkdir(parents=True, exist_ok=True)

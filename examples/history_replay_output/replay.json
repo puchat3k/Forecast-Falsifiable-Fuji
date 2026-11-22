@@ -182,7 +182,7 @@
    "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
    "version": 1
   },
-  "ledger_sha256": "c7b886922db2d2286c8a7fe5ecc1200a0703d3e2b7b869def5e8c07c373a2e68",
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
   "may_change_approval_status": false,
   "may_select_move": false,
   "mode": "SHADOW",
@@ -473,7 +473,7 @@
    "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
    "version": 1
   },
-  "ledger_sha256": "c7b886922db2d2286c8a7fe5ecc1200a0703d3e2b7b869def5e8c07c373a2e68",
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
   "may_change_approval_status": false,
   "may_select_move": false,
   "mode": "SHADOW",
@@ -645,7 +645,7 @@
    "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
    "version": 1
   },
-  "ledger_sha256": "c7b886922db2d2286c8a7fe5ecc1200a0703d3e2b7b869def5e8c07c373a2e68",
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
   "may_change_approval_status": false,
   "may_select_move": false,
   "mode": "SHADOW",
@@ -736,7 +736,7 @@
    "question": "Was the offer approved by the named approver within horizon_days of being submitted for approval?",
    "version": 1
   },
-  "ledger_sha256": "c7b886922db2d2286c8a7fe5ecc1200a0703d3e2b7b869def5e8c07c373a2e68",
+  "ledger_sha256": "398b55f180fb31270c0f2f197ae82970a7fc3d40c8d587d61febf336ad69fc23",
   "may_change_approval_status": false,
   "may_select_move": false,
   "mode": "SHADOW",
