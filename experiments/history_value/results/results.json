@@ -1,0 +1,491 @@
+{
+ "code_drift_since_freeze": [
+  {
+   "current_sha256": "82d8762f6614f99166a00729e42df965780d20584a5965774eee7f88842043b9",
+   "file": "forecast_fuji/history.py",
+   "frozen_sha256": "314dc60a96b906456f2eac75d399aa5f11845767bdfd2de069333b9f606c4cad"
+  }
+ ],
+ "data": "SYNTHETIC (seeded generator in freeze.py); validates the method only",
+ "existing_310_slice": [
+  {
+   "applied": false,
+   "brier_unassisted": 0.2025,
+   "case_key": "h3-supplier-outstanding-approval:r2:plain",
+   "fallback": "WITHHELD_INCOMPATIBLE: horizon_days_not_allowed",
+   "horizon_days": 51,
+   "member": "plain",
+   "p_adjusted": 0.55,
+   "p_unassisted": 0.55,
+   "reasons": [
+    "horizon_days_not_allowed"
+   ],
+   "statement": "B's credit committee approves A's account for the EUR 0.37 / 3.8M deal by the end of April",
+   "status": "WITHHELD_INCOMPATIBLE"
+  },
+  {
+   "applied": false,
+   "brier_unassisted": 0.16,
+   "case_key": "h3-supplier-outstanding-approval:r2:core_fuji_ap_nd",
+   "fallback": "WITHHELD_INCOMPATIBLE: horizon_days_not_allowed",
+   "horizon_days": 82,
+   "member": "core_fuji_ap_nd",
+   "p_adjusted": 0.6,
+   "p_unassisted": 0.6,
+   "reasons": [
+    "horizon_days_not_allowed"
+   ],
+   "statement": "B's credit committee approves A's account for a volume-commitment price deal by the end of",
+   "status": "WITHHELD_INCOMPATIBLE"
+  },
+  {
+   "applied": false,
+   "brier_unassisted": 0.3025,
+   "case_key": "c1-saas-renewal-term:r2:core_fuji_ap_nd",
+   "fallback": "WITHHELD_SPARSE: 0 resolved < min_resolved 10",
+   "horizon_days": 30,
+   "member": "core_fuji_ap_nd",
+   "p_adjusted": 0.45,
+   "p_unassisted": 0.45,
+   "reasons": [
+    "0 resolved < min_resolved 10"
+   ],
+   "statement": "The site 1 pilot passes and a renewal at no more than GBP 120,000/yr is agreed by both par",
+   "status": "WITHHELD_SPARSE"
+  }
+ ],
+ "fallback_examples": {
+  "WITHHELD_CENSORED": {
+   "adjusted": 0.4062,
+   "case": "unresolved-021",
+   "note": "WITHHELD_CENSORED: unresolved share 8/18 > 0.25",
+   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-05-15T23:50:32.273849Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_CENSORED (unresolved share 8/18 > 0.25)\nObserved rate: withheld\nCohort: eligible 18 | resolved 10 (10 approved, 0 not) | unresolved at cutoff 8 (not counted either way) | window still open 3 (not counted)\n  unresolved: 1444b54eb8bb window closed 2026-03-09T09:07:04.219336Z: no resolution recorded\n  unresolved: 54c9f0e0e04d window closed 2026-02-19T05:42:00.977171Z: no resolution recorded\n  unresolved: 6437d9edd6d7 window closed 2026-04-26T14:39:01.725909Z: no resolution recorded\n  unresolved: 726af759d904 window closed 2026-03-11T00:03:09.450927Z: no resolution recorded\n  unresolved: 926296230b28 window closed 2026-05-12T21:10:50.041240Z: resolution recorded after the cutoff\n  unresolved: b5c8b8d3e36a window closed 2026-05-14T16:34:48.966374Z: no resolution recorded\n  unresolved: e4556eb5cd59 window closed 2026-01-30T05:47:14.029204Z: no resolution recorded\n  unresolved: f9bc77adc163 window closed 2026-04-21T16:19:08.341790Z: no resolution recorded\nNot matched: other_field_values 274, not_locked_by_cutoff 65\nProvenance: ledger sha256 61a0e20476b1b490 | query sha256 4833cab53e821bde | 10 contributing records: 395d0e8e, 5fe2d97e, 8a21f51c, 8e08cdfb, 94a55a6c, a44b11a4, bf8ce2af, c445aef6, c9d89400, fe99213b",
+   "unassisted": 0.4062
+  },
+  "WITHHELD_SPARSE": {
+   "adjusted": 0.4588,
+   "case": "unresolved-000",
+   "note": "WITHHELD_SPARSE: 0 resolved < min_resolved 10",
+   "text": "HISTORICAL REFERENCE RATE: evidence only (does not change approval status or choose a move)\nQuestion: Was the offer approved by the named approver within horizon_days of being submitted for approval?\nEvent: family=offer_approval, version=1, approver_role=cfo, offer_side=vendor, horizon_days=14\nDecision cutoff: 2026-01-06T06:00:29.493952Z | classification: synthetic | rules: fuji.history.v1\nStatus: WITHHELD_SPARSE (0 resolved < min_resolved 10)\nObserved rate: withheld\nCohort: eligible 0 | resolved 0 (0 approved, 0 not) | unresolved at cutoff 0 (not counted either way) | window still open 0 (not counted)\nNot matched: other_field_values 274, not_locked_by_cutoff 86\nProvenance: ledger sha256 61a0e20476b1b490 | query sha256 424c21fba65c6e5d | 0 contributing records",
+   "unassisted": 0.4588
+  }
+ },
+ "fallback_unchanged_when_withheld": true,
+ "freeze": {
+  "cases.json": "77e45d845008b41bdbe5267246303d62d589ed0b2f08142e3de7f427a8cf7094",
+  "experiments/history_value/combine.py": "a9f1b0ccee6b0cbb0cd9e29f383759ede7c4da203f10facfc4a2e8431dd18ae6",
+  "forecast_fuji/history.py": "314dc60a96b906456f2eac75d399aa5f11845767bdfd2de069333b9f606c4cad",
+  "protocol.json": "858396cd463ef83f678df7769253375c2f7ffa8f40b262ec485a3d6d1278d089"
+ },
+ "fuji_scores_paired": {
+  "adjusted": {
+   "mean_brier": 0.2581,
+   "n": 233
+  },
+  "rate_alone": {
+   "mean_brier": 0.2545,
+   "n": 233
+  },
+  "unassisted": {
+   "mean_brier": 0.2614,
+   "n": 233
+  }
+ },
+ "guards": [],
+ "harm_by_group": {
+  "drift:after": 30,
+  "drift:before": 6,
+  "sparse": 1,
+  "stable": 49
+ },
+ "harm_top10": [
+  {
+   "adjusted": 0.7029,
+   "anchor_at": "2027-04-10T16:52:41.942259Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.4941,
+   "brier_rate_alone": 0.8265,
+   "brier_unassisted": 0.1903,
+   "case_key": "sparse-011",
+   "cohort": "sparse",
+   "cohort_period": "sparse",
+   "n_resolved": 11,
+   "n_unresolved": 0,
+   "rate_alone": 0.9091,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.85,
+   "unassisted": 0.4362,
+   "why": "adjusted with n=11, r=0.909, m=0.542, lambda=0.524"
+  },
+  {
+   "adjusted": 0.768,
+   "anchor_at": "2026-10-09T13:54:48.880684Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5898,
+   "brier_rate_alone": 0.721,
+   "brier_unassisted": 0.3214,
+   "case_key": "drift-058",
+   "cohort": "drift",
+   "cohort_period": "drift:after",
+   "n_resolved": 53,
+   "n_unresolved": 0,
+   "rate_alone": 0.8491,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.5669,
+   "why": "adjusted with n=53, r=0.849, m=0.651, lambda=0.841"
+  },
+  {
+   "adjusted": 0.8367,
+   "anchor_at": "2026-08-13T11:51:28.561197Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.7001,
+   "brier_rate_alone": 0.7274,
+   "brier_unassisted": 0.4341,
+   "case_key": "drift-037",
+   "cohort": "drift",
+   "cohort_period": "drift:before",
+   "n_resolved": 34,
+   "n_unresolved": 0,
+   "rate_alone": 0.8529,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.8,
+   "unassisted": 0.6589,
+   "why": "adjusted with n=34, r=0.853, m=0.621, lambda=0.773"
+  },
+  {
+   "adjusted": 0.8216,
+   "anchor_at": "2026-10-08T00:06:55.985842Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.675,
+   "brier_rate_alone": 0.721,
+   "brier_unassisted": 0.4167,
+   "case_key": "drift-057",
+   "cohort": "drift",
+   "cohort_period": "drift:after",
+   "n_resolved": 53,
+   "n_unresolved": 0,
+   "rate_alone": 0.8491,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.6455,
+   "why": "adjusted with n=53, r=0.849, m=0.651, lambda=0.841"
+  },
+  {
+   "adjusted": 0.8324,
+   "anchor_at": "2026-10-06T10:11:47.081091Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.6929,
+   "brier_rate_alone": 0.721,
+   "brier_unassisted": 0.439,
+   "case_key": "drift-056",
+   "cohort": "drift",
+   "cohort_period": "drift:after",
+   "n_resolved": 53,
+   "n_unresolved": 0,
+   "rate_alone": 0.8491,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.6626,
+   "why": "adjusted with n=53, r=0.849, m=0.651, lambda=0.841"
+  },
+  {
+   "adjusted": 0.7716,
+   "anchor_at": "2026-09-26T05:12:43.342313Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5954,
+   "brier_rate_alone": 0.7108,
+   "brier_unassisted": 0.3461,
+   "case_key": "drift-053",
+   "cohort": "drift",
+   "cohort_period": "drift:before",
+   "n_resolved": 51,
+   "n_unresolved": 0,
+   "rate_alone": 0.8431,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.8,
+   "unassisted": 0.5883,
+   "why": "adjusted with n=51, r=0.843, m=0.658, lambda=0.836"
+  },
+  {
+   "adjusted": 0.7702,
+   "anchor_at": "2026-10-15T15:08:45.789073Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5932,
+   "brier_rate_alone": 0.6944,
+   "brier_unassisted": 0.3511,
+   "case_key": "drift-059",
+   "cohort": "drift",
+   "cohort_period": "drift:after",
+   "n_resolved": 54,
+   "n_unresolved": 0,
+   "rate_alone": 0.8333,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.5925,
+   "why": "adjusted with n=54, r=0.833, m=0.650, lambda=0.844"
+  },
+  {
+   "adjusted": 0.7729,
+   "anchor_at": "2026-10-16T07:34:55.776759Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.5974,
+   "brier_rate_alone": 0.6944,
+   "brier_unassisted": 0.3556,
+   "case_key": "drift-060",
+   "cohort": "drift",
+   "cohort_period": "drift:after",
+   "n_resolved": 54,
+   "n_unresolved": 0,
+   "rate_alone": 0.8333,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.35,
+   "unassisted": 0.5963,
+   "why": "adjusted with n=54, r=0.833, m=0.650, lambda=0.844"
+  },
+  {
+   "adjusted": 0.9131,
+   "anchor_at": "2026-05-22T17:23:10.554519Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.8338,
+   "brier_rate_alone": 0.7346,
+   "brier_unassisted": 0.6017,
+   "case_key": "drift-021",
+   "cohort": "drift",
+   "cohort_period": "drift:before",
+   "n_resolved": 21,
+   "n_unresolved": 0,
+   "rate_alone": 0.8571,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.8,
+   "unassisted": 0.7757,
+   "why": "adjusted with n=21, r=0.857, m=0.538, lambda=0.677"
+  },
+  {
+   "adjusted": 0.9144,
+   "anchor_at": "2026-06-25T02:03:50.121445Z",
+   "applied": true,
+   "approved": false,
+   "brier_adjusted": 0.8361,
+   "brier_rate_alone": 0.7056,
+   "brier_unassisted": 0.6327,
+   "case_key": "drift-027",
+   "cohort": "drift",
+   "cohort_period": "drift:before",
+   "n_resolved": 25,
+   "n_unresolved": 0,
+   "rate_alone": 0.84,
+   "reasons": "",
+   "status": "AVAILABLE",
+   "true_base": 0.8,
+   "unassisted": 0.7954,
+   "why": "adjusted with n=25, r=0.840, m=0.560, lambda=0.714"
+  }
+ ],
+ "protocol_status": "FROZEN before scoring",
+ "shadow": {
+  "actions_enabled": false,
+  "forecast_only": true,
+  "mode": "SHADOW"
+ },
+ "summary": {
+  "ALL": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0147,
+     0.0087
+    ],
+    "mean": -0.0033,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.2581,
+    "rate_alone": 0.2545,
+    "unassisted": 0.2614
+   },
+   "cases": 360,
+   "coverage": 0.647,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0021,
+   "history_worse_cases": 86,
+   "paired": 233,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.0353,
+     0.0219
+    ],
+    "mean": -0.0069,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_CENSORED": 65,
+    "WITHHELD_SPARSE": 62
+   }
+  },
+  "drift:after": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     0.0057,
+     0.0518
+    ],
+    "mean": 0.0283,
+    "verdict": "HURTS"
+   },
+   "brier_paired": {
+    "adjusted": 0.3324,
+    "rate_alone": 0.3669,
+    "unassisted": 0.3041
+   },
+   "cases": 58,
+   "coverage": 1.0,
+   "full_set_adjusted_with_fallback_minus_unassisted": 0.0283,
+   "history_worse_cases": 30,
+   "paired": 58,
+   "rate_minus_unassisted": {
+    "ci95": [
+     0.0,
+     0.1205
+    ],
+    "mean": 0.0628,
+    "verdict": "inconclusive"
+   },
+   "withheld": {}
+  },
+  "drift:before": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0753,
+     0.0028
+    ],
+    "mean": -0.0369,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.1679,
+    "rate_alone": 0.1344,
+    "unassisted": 0.2048
+   },
+   "cases": 54,
+   "coverage": 0.741,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0273,
+   "history_worse_cases": 6,
+   "paired": 40,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.1286,
+     -0.0171
+    ],
+    "mean": -0.0704,
+    "verdict": "HELPS"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 14
+   }
+  },
+  "sparse": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.1138,
+     0.205
+    ],
+    "mean": 0.0068,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.1516,
+    "rate_alone": 0.2246,
+    "unassisted": 0.1448
+   },
+   "cases": 15,
+   "coverage": 0.267,
+   "full_set_adjusted_with_fallback_minus_unassisted": 0.0018,
+   "history_worse_cases": 1,
+   "paired": 4,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.1386,
+     0.451
+    ],
+    "mean": 0.0798,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 11
+   }
+  },
+  "stable": {
+   "adjusted_minus_unassisted": {
+    "ci95": [
+     -0.0195,
+     0.0043
+    ],
+    "mean": -0.0073,
+    "verdict": "inconclusive"
+   },
+   "brier_paired": {
+    "adjusted": 0.256,
+    "rate_alone": 0.2423,
+    "unassisted": 0.2633
+   },
+   "cases": 147,
+   "coverage": 0.891,
+   "full_set_adjusted_with_fallback_minus_unassisted": -0.0065,
+   "history_worse_cases": 49,
+   "paired": 131,
+   "rate_minus_unassisted": {
+    "ci95": [
+     -0.0602,
+     0.0139
+    ],
+    "mean": -0.021,
+    "verdict": "inconclusive"
+   },
+   "withheld": {
+    "WITHHELD_SPARSE": 16
+   }
+  },
+  "unresolved": {
+   "adjusted_minus_unassisted": {
+    "ci95": null,
+    "mean": null,
+    "verdict": "no paired cases"
+   },
+   "brier_paired": {
+    "adjusted": null,
+    "rate_alone": null,
+    "unassisted": null
+   },
+   "cases": 86,
+   "coverage": 0.0,
+   "full_set_adjusted_with_fallback_minus_unassisted": 0.0,
+   "history_worse_cases": 0,
+   "paired": 0,
+   "rate_minus_unassisted": {
+    "ci95": null,
+    "mean": null,
+    "verdict": "no paired cases"
+   },
+   "withheld": {
+    "WITHHELD_CENSORED": 65,
+    "WITHHELD_SPARSE": 21
+   }
+  }
+ }
+}
